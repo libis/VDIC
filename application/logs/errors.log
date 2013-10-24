@@ -192,3 +192,13 @@ Stack trace:
 #34 /opt/lampp/htdocs/omeka/vdic/application/libraries/Omeka/Application.php(79): Zend_Application->run()
 #35 /opt/lampp/htdocs/omeka/vdic/admin/index.php(28): Omeka_Application->run()
 #36 {main}
+2013-10-24T14:15:08+02:00 ERR (3): exception 'Zend_Controller_Response_Exception' with message 'Cannot send headers; headers already sent in /opt/lampp/htdocs/omeka/vdic/plugins/Apc/plugin.php, line 9' in /opt/lampp/htdocs/omeka/vdic/application/libraries/Zend/Controller/Response/Abstract.php:323
+Stack trace:
+#0 /opt/lampp/htdocs/omeka/vdic/application/libraries/Zend/Controller/Response/Abstract.php(341): Zend_Controller_Response_Abstract->canSendHeaders(true)
+#1 /opt/lampp/htdocs/omeka/vdic/application/libraries/Zend/Controller/Response/Abstract.php(768): Zend_Controller_Response_Abstract->sendHeaders()
+#2 /opt/lampp/htdocs/omeka/vdic/application/libraries/Zend/Controller/Front.php(992): Zend_Controller_Response_Abstract->sendResponse()
+#3 /opt/lampp/htdocs/omeka/vdic/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#4 /opt/lampp/htdocs/omeka/vdic/application/libraries/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#5 /opt/lampp/htdocs/omeka/vdic/application/libraries/Omeka/Application.php(79): Zend_Application->run()
+#6 /opt/lampp/htdocs/omeka/vdic/index.php(23): Omeka_Application->run()
+#7 {main}
