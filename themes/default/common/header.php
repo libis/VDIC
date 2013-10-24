@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="<?php echo get_html_lang(); ?>">
 <head>
