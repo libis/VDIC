@@ -14,6 +14,6 @@
         </div>
     </div>
 </div>
- <script>jQuery("#wegwijs").load('/wegwijs/ #wegwijs');</script> 
+ <script>jQuery("#wegwijs").load('<?php echo WEB_ROOT;?>/wegwijs/ #wegwijs');</script> 
 </body>
 </html>
