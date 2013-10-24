@@ -11,4 +11,4 @@ class Apc_IndexController extends Omeka_Controller_AbstractActionController
             exit;
         }
 
-}
+}?>
