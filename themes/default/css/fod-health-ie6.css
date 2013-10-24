@@ -1,0 +1,83 @@
+/* IE6 css fixer v0.4: Fri, 28 Aug 2009 10:13:34 +0200 */
+
+/* ============================================= */
+/* safe settings                                 */
+
+/* add display:inline to floated elements */
+.gridTwoRight .wrapper .content, .gridTwoRight .wrapper .context, .gridTwoLeft .wrapper .content, .gridThree .wrapper2 .wrapperIn, .gridThree .wrapper .content, .gridThree .wrapper .context, .navMain ul li, .navSecond, .navSecond ul li, .navAction ul li, .navPaging .paging .result, .navPaging .paging .controls div, .navPaging .paging .pager li, .doormat .doormatWrap .col1, .image.leftImg, .siteLabel .siteTag, .search .formrow .control, .js .carousel .carouselBody .introList, .focusList ul li .image, .searchList .resultList .resultHead .relevance, .imageList ul li, .applyNewsletter .formBox .formMain, .applyNewsletter .formBox .formFooter, .formRow .inputElement, .formRow .inputElement .inputCaption, .formRow .inputElement.grid .inputControl .col, .gridTwoLeft .wrapper .navigation,.gridThree .wrapper .navigation, .navPaging .paging .controls,.navPaging .paging .pager, .related .theme,.siteLabel .siteLogo,.searchBlock .formMain,.searchBlock .formFooter,.searchList .resultList .resultHead .heading,.errorPage #allContainer h1 {display:inline;}
+
+/* convert min height values */
+.gridOne {height:20em;}
+.gridTwoRight .wrapper .content {height:20em;}
+.gridThree .wrapper2 {height:20em;}
+.navSub .subHead .subHeadWrap {height:50px;}
+.gridTwoRight .wrapper,.gridTwoLeft .wrapper {height:20em;}
+
+
+/* add zoom:1 to overflow:hidden */
+#allContainer, #allContainer .allWrap1, .skipLinks a, .navMain, .breadcrumb, .navSub .subHead .subHeadWrap, .navFilter .filterHead .filterHeadWrap, .navPaging .paging, .doormat .doormatWrap, .related .relatedWrap2, #header .meta, .siteLabel, .search .formrow, .carousel .carouselBody .newsList li, .js .carousel .carouselBody .introList li .introWrap2, .focusList ul li, .contextBlock .section, .imageList ul, .formRow, #splash #allContainer .langList li, .navSecond ul,.searchBlock .formBox,.searchList .resultList .resultHead,.applyNewsletter .formBox,.formRow .inputElement .inputControl .control .subordinate,.formRow .inputElement.grid .inputControl, .navSub .subContent,.navFilter .filterContent, .navAnchor,.navRepeat {zoom:1;}
+
+/* fix negative margins */
+#allContainer .allWrap1, .gridTwoRight .wrapper .context, .gridThree .wrapper .context, .navSub .subHead .heading a, .related .theme .heading, .siteLabel .siteTag, .js .carousel .carouselBody .introList li .introWrap2, .js .carousel .carouselBody .introList li.active, .js .carousel .carouselBody .introList li.active .introWrap2, .searchBlock .formMain .remark, .gridTwoLeft .wrapper .navigation,.gridThree .wrapper .navigation {position:relative; zoom:1;}
+
+/* add zoom:1 to pos:relative elements */
+#header, .gridTwoLeft .wrapper .content, .gridThree .wrapper .content, .navSub .subHead .heading a, .search .formrow .control, .carousel .carouselHead, .js .carousel .carouselBody .introList li .introWrap2, .searchBlock, .searchList .resultList .resultHead .relevance, .newsList .news .newsHead, .formRow .inputElement, .formRow .inputElement .inputCaption .label, #splash #allContainer .langList li {zoom:1;}
+
+
+/* ============================================= */
+/* potentially harmful settings                  */
+
+/* add zoom:1 to backgrounds -- Manually check for problems with inline elements! */
+body, #allContainer, #allContainer .allWrap1, .gridOne, .more, .rss, .print, .share, .submit, .skipLinks a:focus,.skip a:active, .navMain, .navMain ul li .page .navWrap, .navMain ul li .page .navWrap2, .navMain ul li .active,.navMain ul li a:hover, .navMain ul li.first .page .navWrap2, .navMain ul li.last .navWrap, .navSecond ul li, .navSecond ul li.last, #footer .navSecond, #splash #footer .navSecond, .breadcrumb, .breadcrumb ol li, .breadcrumb ol li.last, .navSub .subHead .subHeadWrap, .navSub .subHead .back, .navSub .subContent ul li ul li .page, .navFilter .filterHead .filterHeadWrap, .navCloud, .navAction ul li, .navPaging .paging, .navPaging .paging .controls .first .page, .navPaging .paging .controls .prev .page, .navPaging .paging .controls .next, .navPaging .paging .controls .next .page, .navPaging .paging .controls .last .page, .navPaging .paging .pager li, .navPaging .paging .pager li.active, .doormat, .doormat .doormatWrap, .doormat .doormatWrap .theme .heading span, .related, .related .relatedWrap1, .related .relatedWrap2, .related .theme ul li, .textblock ul li, #header .meta, .siteLabel, .siteLabel.themed .siteTag,.siteLabel.site .siteTag, .search, .search form, .search .submit, .carousel .carouselHead .navSecond li, .carousel .carouselBody, .js .carousel .carouselBody .introList li, .js .carousel .carouselBody .introList li .introWrap2, .js .carousel .carouselBody .introList li .horse, .js .carousel .carouselBody .introList li.active, .js .carousel .carouselBody .introList li.active .introWrap2, .focusList ul li.extraFocus, .focusList ul li .heading a, .searchSummary, .searchList .resultList li.word .resultHead, .searchList .resultList li.pdf .resultHead, .searchList .resultList .resultHead .relevance, .searchList .resultList .resultHead .relevance .percentage, .contact, .newsList .news .newsHead .meta, .contextBlock, .contextBlock .section, .contextBlock .section.first, .contextBlock .section ul li, .feedback, .applyNewsletter .formBox .formMain .nav ul li, .fourOfour, .formBox, #splash, #splash #allContainer, #splash #allContainer .allWrap1, #splash #allContainer .allWrap2, #splash #allContainer .allWrap3, #splash #allContainer .allWrap4, #splash #allContainer .allWrap5, #splash #allContainer .allWrap6, #splash #allContainer .allWrap7, #splash #allContainer .langList li.nl, #splash #allContainer .langList li.fr, #splash #allContainer .langList li.de, #splash #allContainer .langList li.en, #splash #allContainer .langList li .nav a, .navSub,.navFilter, .navSub .subHead,.navFilter .filterHead, .navAction ul li.last,.siteLabel.themed,.siteLabel.site,.carousel .carouselHead .navSecond li.last, .navAnchor,.navRepeat, .navAnchor ul li,.navRepeat ul li {zoom:1;}
+
+body {font-size:83.9%;}
+
+/* Main Nav */
+.navMain {background:transparent url("img/mainnav-bg.gif") top left repeat-x;margin-right:1px;}
+.navMain ul li.last {padding-right:0; width:auto; margin-left:0; float:left;}
+.navMain ul li a.page {cursor:pointer;}
+.navMain ul li .page .navWrap2 {padding-top:0.65em;padding-bottom:9px}
+.navMain ul li .active .navWrap2 {padding-top:0.65em;}
+.navMain ul li .page {margin-bottom:0px;}
+
+/* Second Nav service */
+.navSecond ul {float:right;}
+#footer .navSecond ul {float:none;}
+
+/* Profile */
+.profile {margin-left:0.5em;}
+
+/* related */
+.related .theme.partner {float:left;margin-left:0;width:auto;}
+
+/* carousel */
+.carouselHead {display:block;}
+.carousel .carouselHead .navSecond {width:18em;}
+
+/* breadcrumb */
+.breadcrumb {height:auto;zoom:1;}
+.breadcrumb .wrapper {zoom:1;}
+
+/* search */
+.search {margin-top:-1px;}
+
+/* navsub */
+.navSub .subContent ul li {zoom:1;}
+.navFilter .filterContent ul li {zoom:1;}
+
+/* formFooter */
+.applyNewsletter .formBox .formFooter {/*position:relative;top:-6.65em;left:26em;height:0;*/}
+
+.applyNewsletter .formBox .formMain .formRow .checklist .inputCaption {display:none;}
+#newsletter .applyNewsletter .formBox .formFooter {position:static;}
+.applyNewsletter .formBox .formMain {width:27em;}
+.applyNewsletter .formBox .formMain .formRow .inputElement .inputControl {zoom:1;}
+#newsletter .applyNewsletter .formBox .formFooter  {zoom:1;}
+
+#allContainer {width:74.85em;}
+.downloads ul {overflow:hidden;padding-bottom:1em;}
+.downloads ul li {zoom:1;}
+
+.azList {zoom:1;position:relative;}
+
+.anysurfer {position:static;float:right;margin-top:-2.75em;z-index:100;}

@@ -1,0 +1,592 @@
+/* viyo css - written and maintained by Niels Matthijs                        */
+/* Yahoo fonts.css integrated. (c) 2007, Yahoo! Inc. All rights reserved.     */
+
+/* ========================================================================== */
+/* 00. base styles                                                            */
+
+/* set base body ............................................................ */
+body {width:100%;font:11pt/1 arial,trebuchet MS,tahoma,helvetica,clean,sans-serif; background:#fff; color:#fff;}
+
+/* general reset ............................................................ */
+* {margin:0; padding:0;}
+div, p, li, span, a {line-height:1.25em;}
+html, body, form, img, fieldset, legend, table, tbody, thead, tfoot, tr, th, td {border:none;}
+li {list-style:none;}
+
+/* hide elements from screen but not from source ............................ */
+.hidden {position:absolute !important; top:auto; left:-999em;}
+
+/* clearfix class ........................................................... */
+.clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix {display:inline-block; display:block;}
+
+
+/* ========================================================================== */
+/* 01. page frame                                                             */
+
+/* site frame ............................................................... */
+#allContainer {width:100%;margin:0 0em; background:none; color:#000; overflow:visible; padding-right:0px;}
+#allContainer .allWrap1 {background:none; padding-left:0px; margin-right:0; overflow:visible;}
+
+#header {margin:0em 0em; position:relative;}
+#content {margin:0em;}
+#footer {margin:0em; margin-top:2em;}
+
+/* grid one ................................................................. */
+.gridOne {padding-left:0px; background:none; margin-top:2em; min-height:20em;}
+
+/* grid two right ........................................................... */
+.gridTwoRight {padding-right:0em;}
+.gridTwoRight .wrapper {min-height:20em;}
+.gridTwoRight .wrapper .content {float:left; min-height:20em;}
+.gridTwoRight .wrapper .context {display:none;float:right; width:26em; margin-right:-26em;}
+
+/* grid two left ........................................................... */
+.gridTwoLeft {padding-left:0; margin-top:2em;}
+.gridTwoLeft .wrapper {min-height:20em;}
+.gridTwoLeft .wrapper .content {float:right; position:relative;}
+.gridTwoLeft .wrapper .navigation {display:none;float:left; width:15em; margin-left:-15em;}
+
+/* grid two right ........................................................... */
+.gridThree {padding-right:0em; margin-top:2em;}
+.gridThree .wrapper2 {padding-left:0em; min-height:20em;}
+.gridThree .wrapper2 .wrapperIn {float:right; }
+.gridThree .wrapper .content {float:left; position:relative;}
+.gridThree .wrapper .context {display:none;float:right; width:19em; margin-right:-19em;}
+.gridThree .wrapper .navigation {display:none;float:left; width:15em; margin-left:-15em;}
+
+/* ========================================================================== */
+/* 02. headings                                                               */
+
+/* general heading declaration .............................................. */
+.heading {font-size:100%; color:#000;}
+.heading a {text-decoration:none;}
+/* hX specifications */
+h1.heading {margin:0.5em 0em 1em 0em;}
+h1.heading span {font-size:161.6%; color:#000;}
+h2.heading span {font-size:116%; color:#000;}
+h3.heading span {font-size:108%; color:#036;}
+/* in grid three */
+.gridThree .content h1 {margin-top:2em;}
+.newsDetailPage h1 {margin-top:2em;}
+
+/* themed heading ........................................................... */
+.heading .theme {font-size:100%; color:#903;}
+/* search term */
+.heading .searchTerm {font-size:100%; color:#903;}
+
+/* ========================================================================== */
+/* 03. links & buttons                                                        */
+
+/* basic link ............................................................... */
+a {color:#036;}
+a:hover {color:#903;}
+
+/* more link ................................................................. */
+.more {padding-right:11px; background:url("img/link-more.gif") right 60% no-repeat;}
+a.more:hover {background:url("img/link-more-hover.gif") right 60% no-repeat;}
+
+/* rss link ................................................................. */
+.rss {display:none;padding-right:18px; background:url("img/rss.gif") right top no-repeat;}
+
+/* print link ............................................................... */
+.print {display:none;padding-right:20px; background:url("img/print.gif") right top no-repeat;}
+
+/* share link ............................................................... */
+.share {display:none;padding-right:20px; background:url("img/share.gif") right top no-repeat;}
+
+/* submit button ............................................................ */
+.submit {border:1px solid #838383; background:#f9f9f9 url("img/feedback-button-bg.gif") left top repeat-x; font-weight:700; padding:0.25em 1em; margin-right:0.25em;}
+
+
+/* ========================================================================== */
+/* 04. navigation                                                             */
+
+/* skip links --------------------------------------------------------------- */
+.skipLinks {list-style:none;  list-style-image:none; position:absolute; left:2em; top:0.25em; z-index:1; width:25em;}
+.skipLinks a {display:block; text-decoration:none; top:-700em; overflow:hidden; position:absolute;}
+.skipLinks a:focus, .skip a:active {top:0em; overflow:visible; color:#c7160e; background:#ffffff; border:3px solid #c7160e;}
+
+/* main navigation .......................................................... */
+.navMain {display:none;
+	margin-top:1em; background:#606e2f url("img/mainnav-bg.gif") top left repeat-x; overflow:hidden;}
+.navMain ul li {float:left; width:20.5%;}
+.navMain ul li .page {display:block; color:#fff; text-decoration:none; font-weight:700; text-align:center; font-size:116%;}
+.navMain ul li .page .navWrap {display:block; background:url("img/mainnav-sep-right.gif") right top no-repeat;}
+.navMain ul li .page .navWrap2 {display:block; background:url("img/mainnav-sep-left.gif") left top no-repeat; padding:0.75em 8px;}
+.navMain ul li .active, .navMain ul li a:hover {background:#903 url("img/mainnav-bg-active.gif") top left repeat-x;}
+.navMain ul li .active .navWrap, .navMain ul li a:hover .navWrap {background-image:url("img/mainnav-sep-right-active.gif");}
+.navMain ul li .active .navWrap2, .navMain ul li a:hover .navWrap2 {background-image:url("img/mainnav-sep-left-active.gif");}
+.navMain ul li.first .page .navWrap2 {background:url("img/mainnav-lt.gif") left top no-repeat;}
+.navMain ul li.first .active .navWrap2, .navMain ul li.first a:hover .navWrap2 {background-image:url("img/mainnav-lt-active.gif");}
+.navMain ul li.last {padding-right:0; width:auto; margin-left:82%; float:none;}
+.navMain ul li.last .navWrap {background:url("img/mainnav-rt.gif") right top no-repeat;}
+.navMain ul li.last .active .navWrap, .navMain ul li.last a:hover .navWrap {background-image:url("img/mainnav-rt-active.gif");}
+
+/* secondary navigation ..................................................... */
+.navSecond {display:none;
+float:right; margin:0.5em 0em; margin-right:1em;}
+.navSecond ul {overflow:hidden;}
+.navSecond ul li {float:left; background:url("img/second-sep.gif") right center repeat-y; padding-right:1px;}
+.navSecond ul li .page {color:#485223; text-decoration:none; margin:0em 0.5em; font-weight:700;}
+.navSecond ul li a.page:hover {color:#903;}
+.navSecond ul li.active .page {color:#903;}
+.navSecond ul li.last {background:none; padding-right:0;}
+.navSecond ul li.last .page {margin-right:0;}
+/* in footer */
+#footer .navSecond {display:block;float:none; background:#eff0ea; padding:0.5em; margin-right:0;}
+#footer .navSecond .page {font-weight:300;}
+#footer .navSecond span.page {color:#000; font-weight:300;}
+#footer .navSecond span.page .copyright {}
+/* on splash */
+#splash #footer .navSecond {padding:0; background:none;}
+#splash #footer .navSecond li {padding:0em 0.5em;}
+#splash #footer .navSecond li.first {padding-left:0;}
+#splash #footer .navSecond li .page {margin:0; text-decoration:underline; color:#036; font-size:93%;font-weight:300;}
+#splash #footer .navSecond li a.page:hover {color:#903;}
+#splash #footer .navSecond li.last {padding-right:0;}
+
+/* breadcrumb ............................................................... */
+.breadcrumb {background:#fff;border-top:1px solid #000;padding-top:0.5em;width:100%;}
+.breadcrumb .wrapper {background:none;padding-right:0;}
+.breadcrumb ol {line-height:1.75em; margin:0.4em 0.5em;}
+.breadcrumb ol li {display:inline; background:url("img/bread-sep.gif") left 0 no-repeat; padding-left:13px;}
+.breadcrumb ol li .page {font-weight:700; font-size:116%; color:#903;}
+.breadcrumb ol li a.page {color:#606e2f; text-decoration:none;}
+.breadcrumb ol li a.page:hover {color:#903;}
+.breadcrumb ol li.first {padding-left:0; background:none;}
+/* on homepage */
+#home .breadcrumb {height:2.5em;}
+
+/* sub navigation ........................................................... */
+.navSub {display:none;
+background:#e7e9e0 url("img/subnav-rb.gif") right bottom no-repeat;}
+.navSub .subHead {background:#616F30 url("img/subnav-head-bg.gif") left top repeat-x;color:#fff;}
+.navSub .subHead .subHeadWrap {background: url("img/topic-kid.gif") 5px 5px no-repeat; padding-left:55px; min-height:50px; overflow:hidden;}
+.navSub .subHead .back {color:#fff; display:block; padding:0.5em; padding-left:0; padding-bottom:0.25em; background:url("img/subnav-rt.gif") right top no-repeat;}
+.navSub .subHead .heading a {text-decoration:none; color:#fff; display:block; margin:-2em 0 -0.5em -55px; padding:2em 0 0.5em 55px; position:relative;}
+.navSub .subHead .heading span {font-size:108%; color:#fff;}
+.navSub .subContent {border-left:1px solid #d9d9cc; overflow:hidden;}
+.navSub .subContent ul {margin:0.5em;}
+.navSub .subContent ul li {margin:0.25em 0em;}
+.navSub .subContent ul li .page {font-weight:700; text-decoration:none; display:block;}
+.navSub .subContent ul li .page.active {color:#903;}
+.navSub .subContent ul li ul li .page {font-weight:400; background:url("img/bullet.gif") left 0.5em no-repeat; padding-left:15px;}
+/* topic */
+#topic .navSub .subHead .subHeadWrap {xbackground-image:url("img/subnav-topic.gif");}
+
+/* filters .................................................................. */
+.navFilter {background:#e7e9e0 url("img/subnav-rb.gif") right bottom no-repeat;}
+.navFilter .filterHead {background:#616F30 url("img/subnav-head-bg.gif") left top repeat-x;color:#fff;}
+.navFilter .filterHead .filterHeadWrap {background:url("img/subnav-rt.gif") right top no-repeat; overflow:hidden;}
+.navFilter .filterHead .heading {margin:0.5em;}
+.navFilter .filterHead .heading span {font-size:108%; color:#fff;}
+.navFilter .filterContent {border-left:1px solid #d9d9cc; overflow:hidden;}
+.navFilter .filterContent ul {margin:0.5em;}
+.navFilter .filterContent ul li {margin:0.25em 0em;}
+.navFilter .filterContent ul li .page {font-weight:700; text-decoration:none; display:block;}
+.navFilter .filterContent ul li .page.active {color:#903;}
+
+/* cloud navigation ......................................................... */
+.navCloud {background:#fcfaf5; border:1px solid #f2e5cc; margin:1em; margin-left:0;}
+.navCloud .heading {margin:0.5em 1em;}
+.navCloud ol {margin:0.5em 1em;text-align:justify;}
+.navCloud ol li {display:inline; margin-right:0.5em; line-height:2.25em;}
+.navCloud ol li span {position:absolute; left:-999em; top:auto;}
+.navCloud ol li a {text-decoration:none;}
+.navCloud ol li a:hover {}
+.navCloud ol li.size1 a {font-size:85%;}
+.navCloud ol li.size2 a {font-size:108%;}
+.navCloud ol li.size3 a {font-size:146.5%;}
+.navCloud ol li.size4 a {font-size:189%;}
+/* in context */
+.context .navCloud {margin:1em; margin-right:0;}
+.context .navCloud .heading {margin:0.5em;}
+.context .navCloud ol {margin:0.5em;}
+
+/* action navigation ........................................................ */
+.navAction ul li {display:none;float:left; background:url("img/nav-action-sep.gif") right center no-repeat; padding-right:1px;}
+.navAction ul li.last {background:none;}
+.navAction ul li a {margin:0em 0.5em;}
+.navAction ul li.last a {margin-right:0;}
+/* in grid three */
+.gridThree .content .navAction, .gridTwoLeft .content .navAction {position:absolute; right:1em; top:0;}
+
+/* paging ................................................................... */
+.navPaging {display:none;margin:1em; margin-left:2em;}
+.navPaging .heading {margin:0.5em 0em;}
+.navPaging .heading span {color:#000;}
+.navPaging .heading .extra {font-weight:400; font-size:93%;}
+.navPaging .paging {background:#e5eff5; border:1px solid #bfd9e5; overflow:hidden; padding:0.5em 1em;}
+.navPaging .paging .result {float:left; font-weight:700;}
+.navPaging .paging .controls {float:right;}
+.navPaging .paging .controls div {float:left; margin-left:0.75em;}
+.navPaging .paging .controls div a {text-decoration:none;}
+.navPaging .paging .controls .first .page {background:url("img/pager-first.gif") left 0.4em no-repeat; padding-left:14px;}
+.navPaging .paging .controls .prev .page {background:url("img/pager-prev.gif") left 0.4em no-repeat; padding-left:9px;}
+.navPaging .paging .controls .next {background:url("img/pager-sep.gif") left bottom no-repeat; padding-left:0.75em;}
+.navPaging .paging .controls .next .page {background:url("img/pager-next.gif") right 0.4em no-repeat; padding-right:9px;}
+.navPaging .paging .controls .last .page {background:url("img/pager-last.gif") right 0.4em no-repeat; padding-right:14px;}
+.navPaging .paging .controls .first a.page:hover {background-image:url("img/pager-first-hover.gif");}
+.navPaging .paging .controls .prev a.page:hover {background-image:url("img/pager-prev-hover.gif");}
+.navPaging .paging .controls .next a.page:hover {background-image:url("img/pager-next-hover.gif");}
+.navPaging .paging .controls .last a.page:hover {background-image:url("img/pager-last-hover.gif");}
+.navPaging .paging .pager {float:right;}
+.navPaging .paging .pager li {float:left; border:1px solid #acc0d1; background:#f2f5f7;  margin-left:0.5em;}
+.navPaging .paging .pager li .page {text-decoration:none;line-height:1.75em; height:1.75em; width:1.75em; text-align:center;display:block;}
+.navPaging .paging .pager li a.page:hover {background:#903;color:#fff}
+.navPaging .paging .pager li.active .page {background:#036; color:#fff; font-weight:700;}
+/* bottom */
+.navPaging.bottom .paging {padding:0.25em 1em;}
+
+/* doormat navigation ....................................................... */
+.doormat {background:#eff0ea; border:1px solid #d7dbcb; padding:1em 0em; margin:1em; margin-left:0;}
+.doormat .doormatWrap {background:url("img/doormat-border.gif") center top repeat-y; overflow:hidden;}
+.doormat .doormatWrap .col1 {float:left; width:50%}
+.doormat .doormatWrap .col2 {margin-left:50%}
+.doormat .doormatWrap .theme {margin:1em;}
+.doormat .doormatWrap .first {margin-top:0em;}
+.doormat .doormatWrap .last {margin-bottom:0em;}
+.doormat .doormatWrap .theme .heading span .more {background:url("img/link-more-fat.gif") right 0.4em no-repeat; padding-right:13px;}
+.doormat .doormatWrap .theme .heading span a.more:hover {background:url("img/link-more-fat-hover.gif") right 0.4em no-repeat;}
+.doormat .doormatWrap .theme ul li {display:inline;}
+
+/* related .................................................................. */
+.related {display:none;margin:2em 1em; margin-left:0; border:1px solid #ebccd6; background:#faf2f5; padding:1em 0em;}
+.related .relatedWrap1 {background:url("img/related-border.gif") 10em top repeat-y;}
+.related .relatedWrap2 {overflow:hidden; background:url("img/related-border.gif") 27em top repeat-y;}
+.related .theme {float:left;}
+.related .theme.service {width:10em;}
+.related .theme.institute {width:17em;}
+.related .theme.partner {margin-left:27em; float:none;}
+.related .theme .heading, .related .theme ul, .related .theme .nav {margin:1em;}
+.related .theme .heading {margin-bottom:-0.5em; margin-top:0;}
+.related .theme ul li {background:url("img/bullet.gif") left 0.5em no-repeat; padding-left:15px; margin-bottom:0.25em;}
+.related .theme .nav {text-align:right;}
+
+/* anchor navigation ........................................................ */
+.navAnchor {display:none;margin:1em; margin-left:0em; background:#eff0ea; overflow:hidden;}
+.navAnchor .heading {margin:1em;}
+.navAnchor .heading span {color:#000; font-size:100%;}
+.navAnchor ul {margin:1em;}
+.navAnchor ul li {margin-bottom:0.25em; padding-left:15px; background:url("img/bullet.gif") left 0.45em no-repeat;}
+.navAnchor ul li a {text-decoration:none;}
+
+/* repeat navigation ........................................................ */
+.navRepeat {display:none;margin:1em; margin-left:0em; background:#eff0ea; overflow:hidden;}
+.navRepeat .heading {margin:1em;}
+.navRepeat .heading span {color:#000; font-size:100%;}
+.navRepeat ul {margin:1em;}
+.navRepeat ul li {margin-bottom:0.25em; padding-left:15px; background:url("img/bullet.gif") left 0.45em no-repeat;}
+.navRepeat ul li a {text-decoration:none;}
+
+
+/* ========================================================================== */
+/* 05. simple content                                                         */
+
+/* text block ............................................................... */
+.textblock {margin-bottom:1em;}
+.textblock .heading {color:#0e2951; margin:0.5em 0em;}
+.textblock p {line-height:1.45em; margin:1em 0em;}
+.textblock ul {margin:1em 0em;}
+.textblock ul li {margin:0.5em 0em; padding-left:12px; background:url("img/bullet.gif") left 0.5em no-repeat; line-height:1.45em;}
+/* intro */
+.textblock.intro {font-weight:700;}
+/* in grid three */
+.gridThree .content .textblock {margin-left:0em;}
+
+/* image .................................................................... */
+.image img {border:1px solid #2079a6; display:block;}
+.image.leftImg {float:left; margin:0.5em; margin-top:0.5em; margin-left:0;}
+
+
+/* ========================================================================== */
+/* 06. components                                                             */
+
+/* header meta block ........................................................ */
+#header .meta {display:none;background:#eff0ea; border-bottom:1px solid #d7dbcb; overflow:hidden;}
+
+/* Pofile ................................................................... */
+.profile {float:left;margin:0.5em 0 0.5em 1em;}
+.profile .heading {float:left;}
+.profile .heading span {font-size:100%;font-weight:400;color:#000;}
+.profile .actions {float:left;background:transparent url("img/link-more-hover.gif") no-repeat left 60%;padding-left:1em;margin-left:0.55em;}
+.profile .actions a {color:#606E2F; font-weight:700;text-decoration:none;}
+.profile .actions a:hover {color:#903;}
+
+/* site label ............................................................... */
+.siteLabel {background:url("img/header-basic.jpg") right top no-repeat; overflow:hidden; margin:10px; margin-right:0;}
+.siteLabel .siteLogo  {float:left;}
+.siteLabel .siteTag {float:left; margin-top:45px; margin-left:-10px;}
+/* themed */
+.siteLabel.themed, .siteLabel.site {background:none;}
+.siteLabel.themed .siteTag, .siteLabel.site .siteTag {margin:0; margin-left:30px; padding-left:30px; height:80px; line-height:80px; font-size:225%; font-weight:700; color:#606e2f; background:url("img/label-sep.gif") left top repeat-y;}
+
+/* search box ............................................................... */
+.search {display:none;position:absolute; right:0; top:auto; background:#606e2f url("img/search-rb.gif") right bottom no-repeat;}
+.search form {height:4.25em; width:23em; background:url("img/search-lb.gif") left bottom no-repeat;}
+.search .formrow {margin:0.5em 0.75em; margin-top:0; overflow:hidden;}
+.search .formrow .control {float:left; margin-right:0.5em; position:relative; padding-left:18px; color:#fff;}
+.search .formrow .control input {position:absolute; top:2px; left:0;}
+.search .formrow .control.last {margin-right:0;}
+.search .textfield {width:14.5em;}
+.search .submit {position:absolute; right:0.5em; top:0; background:#0a6c9d url("img/submit-bg.gif") left top repeat-x; border:1px solid #fff; color:#fff; font-size:108%; padding:0 0.25em;}
+/* home */
+#home .search form {height:2.5em;}
+
+/* carousel ................................................................. */
+.carousel {margin:1em; margin-left:0;}
+.carousel .carouselHead {position:relative; padding-right:18em;}
+.carousel .carouselHead .heading {margin:0.25em 1em;}
+.carousel .carouselHead .heading span {font-size:153.9%;}
+.carousel .carouselHead .navSecond {position:absolute; right:0; top:0; margin-right:0;}
+.carousel .carouselHead .navSecond li {background:url("img/second-carousel-sep.gif") right top no-repeat;}
+.carousel .carouselHead .navSecond li .page {color:#036; text-decoration:underline;}
+.carousel .carouselHead .navSecond li a.page:hover {color:#903x;}
+.carousel .carouselHead .navSecond li.last {background:none;}
+.carousel .carouselBody {border:1px solid #bfd9e5; background:#fafcfd;}
+.carousel .carouselBody .heading {color:#036;}
+.carousel .carouselBody .textblock {margin:1em 0em;}
+.carousel .carouselBody .introList {display:none; visibility:hidden;}
+.carousel .carouselBody .newsList li {margin:1em 0 0 1em; overflow:hidden;margin-left:0;}
+.carousel .carouselBody .newsList li .heading span {font-size:123.1%;}
+.carousel .carouselBody .newsList li .extra {margin:0.5em 0em;}
+.carousel .carouselBody .newsList .extra {margin:0.5em 1em;}
+/* js */
+.js .carousel .carouselBody .introList {float:right; width:20em; display:inline; visibility:visible;}
+.js .carousel .carouselBody .introList li {background:#bbd6e4 url("img/introlist-bg.gif") left top repeat-x; border-left:1px solid #bbd6e4; cursor:pointer;}
+.js .carousel .carouselBody .introList li .introWrap2 {background:url("img/introlist-kink.gif") left 10px no-repeat; position:relative; padding-right:60px; margin-left:-1px; overflow:hidden;}
+.js .carousel .carouselBody .introList li .heading {line-height:1.15em; margin:0.5em; margin-left:1em;}
+.js .carousel .carouselBody .introList li .heading span {font-size:100%; line-height:1.15em;}
+.js .carousel .carouselBody .introList li.hover .heading span {color:#fff;}
+.js .carousel .carouselBody .introList li.hover {background:#990033 url("img/introlist-bg-hover.gif") left top repeat-x; border-left:1px solid #bbd6e4; cursor:pointer;}
+.js .carousel .carouselBody .introList li.hover .introWrap2 {background:url("img/introlist-kink-hover.gif") left 10px no-repeat;}
+.js .carousel .carouselBody .introList li.active {border:1px solid #036; background:#03689a url("img/introlist-bg-active.gif") left top repeat-x; margin-right:-1px;}
+.js .carousel .carouselBody .introList li.active .heading {color:#fff;}
+.js .carousel .carouselBody .introList li.active .introWrap2 {background:url("img/introlist-kink-active.gif") left 10px no-repeat; margin-left:-7px; padding-left:8px;}
+
+.js .carousel .carouselBody .introList li .dierenEnPlanten {background:url("img/illustratie-dierenEnPlanten-green.gif") right center no-repeat; }
+.js .carousel .carouselBody .introList li.active .dierenEnPlanten {background-image:url("img/illustratie-dierenEnPlanten-white.gif");}
+.js .carousel .carouselBody .introList li.hover .dierenEnPlanten {background-image:url("img/illustratie-dierenEnPlanten-white.gif");}
+.js .carousel .carouselBody .introList li .milieu {background:url("img/illustratie-milieu-green.gif") right center no-repeat; }
+.js .carousel .carouselBody .introList li.active .milieu {background-image:url("img/illustratie-milieu-white.gif");}
+.js .carousel .carouselBody .introList li.hover .milieu {background-image:url("img/illustratie-milieu-white.gif");}
+.js .carousel .carouselBody .introList li .mijnGezondheid {background:url("img/illustratie-mijnGezondheid-green.gif") right center no-repeat; }
+.js .carousel .carouselBody .introList li.active .mijnGezondheid {background-image:url("img/illustratie-mijnGezondheid-white.gif");}
+.js .carousel .carouselBody .introList li.hover .mijnGezondheid {background-image:url("img/illustratie-mijnGezondheid-white.gif");}
+.js .carousel .carouselBody .introList li .gezondheidszorg {background:url("img/illustratie-gezondheidszorg-green.gif") right center no-repeat; }
+.js .carousel .carouselBody .introList li.active .gezondheidszorg {background-image:url("img/illustratie-gezondheidszorg-white.gif");}
+.js .carousel .carouselBody .introList li.hover .gezondheidszorg {background-image:url("img/illustratie-gezondheidszorg-white.gif");}
+.js .carousel .carouselBody .introList li .voedselveiligheid {background:url("img/illustratie-voedselveiligheid-green.gif") right center no-repeat; }
+.js .carousel .carouselBody .introList li.active .voedselveiligheid {background-image:url("img/illustratie-voedselveiligheid-white.gif");}
+.js .carousel .carouselBody .introList li.hover .voedselveiligheid {background-image:url("img/illustratie-voedselveiligheid-white.gif");}
+
+.js .carousel .carouselBody .newsList {margin-right:21em;margin-left:1em;}
+.js .carousel .carouselBody .newsList li {position:absolute; left:-999em; top:auto;}
+.js .carousel .carouselBody .newsList li.first {position:static;}
+
+/* focus list ............................................................... */
+.focusList {margin:1em; margin-right:0;}
+.focusList ul {border:2px solid #903; border-left:none; border-right:none;}
+.focusList ul li {border-bottom:1px dotted #903; overflow:hidden;}
+.focusList ul li.extraFocus {background:#FAF5E5;}
+.focusList ul li.last {border-bottom:0;}
+.focusList ul li .image {float:left; margin:0.5em;}
+.focusList ul li .image img {border-color:#606e2f;}
+.focusList ul li .heading {margin:0.5em; margin-bottom:0;}
+.focusList ul li .heading span {color:#606E2F;}
+.focusList ul li .heading a {text-decoration:none; background:url("img/link-more-fat.gif") right 60% no-repeat; padding-right:12px;}
+.focusList ul li .heading a:hover {background-image:url("img/link-more-fat-hover.gif");}
+.focusList ul li p {margin:0.5em; margin-top:0;}
+.focusList .extra {margin:0.5em 0em;}
+
+/* search block ............................................................. */
+.searchBlock {display:none;margin:1em; margin-left:2em; position:relative;}
+.searchBlock .formBox {overflow:hidden;}
+.searchBlock .formMain, .searchBlock .formFooter {float:left;}
+.searchBlock .formMain {width:50%;}
+.searchBlock .formMain .formRow {margin:0;}
+.searchBlock .formMain .inputElement {float:none;}
+.searchBlock .formMain .inputElement .inputCaption {position:absolute; left:-999em; top:auto;}
+.searchBlock .formMain .inputElement .inputControl {margin-left:0;}
+.searchBlock .formMain .formRow  .inputElement .inputControl .textfield {width:99%; border-color:#000; padding:0.3em 0em;}
+.searchBlock .formMain .remark {margin-top:1em; margin-right:-100%;}
+.searchBlock .formMain .nav {position:absolute; right:1.5em; top:1.25em;}
+.searchBlock .formMain .nav a {font-weight:700; text-decoration:none;}
+
+/* search expanded .......................................................... */
+.searchExpanded {margin:1em; margin-left:2em;}
+.searchExpanded .formBox .formMain .formRow .inputElement .inputControl .textfield {padding:0.15em 0em; border-color:#000; width:25em;}
+.searchExpanded .formBox .formFooter {margin-left:13.5em; margin-top:1.5em;}
+
+/* search summary ........................................................... */
+.searchSummary {border:1px solid #bfbfbf; background:#eff0ea; margin:1em; margin-left:2em;}
+.searchSummary p, .searchSummary .nav {margin:1em;}
+.searchSummary p .searchTerm {color:#903; font-weight:700;}
+.searchSummary p .theme {color:#903; font-weight:700;}
+
+/* search result list ....................................................... */
+.searchList .resultList {margin:1em; margin-left:0em;}
+.searchList .resultList li {margin:1.5em 0em;}
+.searchList .resultList li.word .resultHead {padding-left:21px; background:url("img/word.gif") left top no-repeat;}
+.searchList .resultList li.pdf .resultHead {padding-left:21px; background:url("img/pdf.gif") left 0.25em no-repeat;}
+.searchList .resultList .resultHead {overflow:hidden;}
+.searchList .resultList .resultHead .heading {float:left;}
+.searchList .resultList .resultHead .relevance {float:left; margin-left:1em; border:1px solid #036; background:#e5eaef; position:relative; width:5em; top:0.35em;}
+.searchList .resultList .resultHead .relevance .percentage {background:#7f99b2; height:0.75em; color:#036; font-weight:700;}
+.searchList .resultList .resultHead .relevance .percentage span {position:absolute; left:100%; top:-0.25em; margin-left:0.75em;}
+
+/* contact  block ........................................................... */
+.contact {margin:1em; margin-left:0em; border:1px solid #d7dbcb; background:#eff0ea;}
+.contact .heading {margin:1em;}
+.contact .heading span {font-size:100%; color:#606e2f;}
+.contact .specs {margin:1em;}
+.contact .specs .tel .detail {font-weight:700;}
+.contact .specs .open .caption {position:absolute; left:-999em; top:auto;}
+
+/* published ................................................................ */
+.published {margin:1em; margin-left:0em; color:#606e2f; }
+.published p {font-size:108%;}
+
+/* news item ................................................................ */
+.newsItem .newsHead, .newsItem .newsContent {margin:1em; margin-left:1em;}
+.newsItem .newsHead h1 {margin-left:0;}
+.newsItem .newsHead .meta {color:#333; margin-bottom:2em;}
+.newsItem .newsContent .textblock {margin:1em 0em;}
+
+/* news list ................................................................ */
+.newsList {margin:1em 0em;margin-left:0em;}
+.newsList .heading {margin-bottom:0.25em;}
+.newsList .news .newsHead {padding-left:5.75em; position:relative; margin-bottom:0.25em;}
+.newsList .news .newsHead .heading {margin-bottom:0;}
+.newsList .news .newsHead .heading span {font-size:105%;}
+.newsList .news .newsHead .meta {position:absolute; left:0; top:0.05em; background:url("img/news-head-sep.gif") right center no-repeat; padding-right:0.5em; color:#333;}
+.newsList .news .newsContent .textblock {margin:0;}
+.newsList .news .newsContent .textblock p {margin:0.5em 0em;}
+.newsList .news.expanded {margin:1.5em 0em;}
+.newsList .nav {margin:0.75em 0em;}
+
+/* context block ............................................................ */
+.contextBlock {margin:1em; margin-right:0; margin-top:0; border:1px solid #bfd9e5; background:#e5eff5;}
+.contextBlock .section {background:url("img/context-border.gif") left top repeat-x; overflow:hidden; margin:0.5em;}
+.contextBlock .section.first {background:none; margin-top:0;}
+.contextBlock .section .heading {margin:0.5em 0em;}
+.contextBlock .section .heading span {color:#000; font-size:116%;}
+.contextBlock .section ul li {padding-left:15px; background:url("img/bullet.gif") left 0.45em no-repeat; margin-bottom:0.25em;}
+.contextBlock .section ul li a {text-decoration:none;}
+
+/* feedback ................................................................. */
+.feedback {margin:1em; margin-right:0; border:1px solid #e5bfcc; background:#f5e5ea;}
+.feedback .heading,.feedback p, .feedback .formbox {margin:0.5em;}
+.feedback .heading span {color:#000; font-size:116%;}
+.feedback p .searchTerm {font-weight:700; color:#903;}
+.feedback .formbox {margin-top:0.75em;}
+
+/* image list ............................................................... */
+.imageList ul {overflow:hidden; margin-left:1em;}
+.imageList ul li {float:left; width:151px; margin-left:1em; margin-bottom:1.5em;}
+.imageList ul li img {border:1px solid #036;}
+.imageList ul li a {display:block; text-decoration:none;}
+.imageList ul li a:hover img {border-color:#903;}
+.imageList ul li a span {text-decoration:underline;}
+
+/* gallery image ............................................................ */
+.galleryImage {margin:2em; text-align:center;}
+.galleryImage img {border:1px solid #606E2F;}
+.galleryImage span {display:block; text-align:center;}
+
+/* newsletter apply ......................................................... */
+.applyNewsletter {margin:1em; margin-left:2em;}
+.applyNewsletter .formBox {overflow:hidden;}
+.applyNewsletter .formBox .formMain {float:left; margin:0em 1em;}
+.applyNewsletter .formBox .formMain .formRow .inputElement .textfield {border-color:#000; font-size:116%; width:15em;}
+.applyNewsletter .formBox .formMain .formRow .inputElement .inputCaption {width:6em;}
+.applyNewsletter .formBox .formMain .formRow .inputElement .inputControl {margin-left:6.5em;}
+.applyNewsletter .formBox .formMain .formRow .inputElement .inputControl .inputControl {margin-left:0;}
+.applyNewsletter .formBox .formMain .nav {margin-left:6.5em; margin-bottom:1em;}
+.applyNewsletter .formBox .formMain .nav ul li {margin-bottom:0.25em; padding-left:14px; background:url("img/bullet.gif") left 0.35em no-repeat;}
+.applyNewsletter .formBox .formMain .nav ul li a {text-decoration:none;}
+.applyNewsletter .formBox .formFooter {float:left; margin-top:0.4em;}
+/* newsletter page */
+#newsletter .applyNewsletter .formBox .formMain {float:none;}
+#newsletter .applyNewsletter .formBox .formFooter {float:none; margin-left:7.5em; margin-top:1em;}
+
+/* 404 error ................................................................ */
+.fourOfour {margin:0em 2em 1em; border:1px solid #d7dbcb; background:#eff0ea;}
+.fourOfour .heading {margin-left:1em;}
+.fourOfour .heading span {font-size:138.5%;}
+.fourOfour .intro {margin:1em; font-weight:700; font-size:108%;}
+.fourOfour .textblock p {font-weight:700;}
+.fourOfour .textblock ul li {margin:0; background-image:url("img/bullet-simple.gif");}
+.fourOfour .textblock ul li a {text-decoration:none;}
+
+/* notifictaion ............................................................. */
+.notification {margin:0em 2em 1em; border:2px solid;padding-left:2.5em;background:no-repeat 0.75em 0.75em}
+.notification .heading {margin-left:1em;}
+.notification .heading span {font-size:138.5%;}
+.notification .intro {margin:1em; font-weight:700; font-size:108%;}
+.notification .textblock p {font-weight:700;}
+.notification .textblock ul li {margin:0; background-image:url("img/bullet-simple.gif");}
+.notification .textblock ul li a {text-decoration:none;}
+.error {border-color:#900;background-color:#f5e5e5; background-image:url("img/icon_notification_error.gif");}
+.warning {border-color:#fc3;background-color:#fffaea; background-image:url("img/icon_notification_warning.gif")}
+.information{border-color:#069;background-color:#e5eff5; background-image:url("img/icon_notification_info.gif")}
+.confirmation {border-color:#360;background-color:#eaefe5; background-image:url("img/icon_notification_confirm.gif")}
+
+/* ========================================================================== */
+/* 07. forms                                                                  */
+
+/* form box ................................................................. */
+.formBox {border:1px solid #bfbfbf; background:#eff0ea;}
+.formBox .formHeader, .formBox .formMain, .formBox .formFooter  {margin:1em;}
+
+/* form row ................................................................. */
+.formRow {overflow:hidden; margin:0.5em 0em;}
+
+/* input element ............................................................ */
+.formRow .inputElement {float:left; position:relative; margin:0;}
+.formRow .inputElement .inputCaption {float:left; text-align:right; line-height:1.75em; width:12em;}
+.formRow .inputElement .inputCaption .label {display:block; margin-right:0.75em; position:relative; color:#666; line-height:1.5em;}
+.formRow .inputElement .inputCaption .label .required {position:absolute; right:-0.5em; top:0.1em; font-size:108%;}
+.formRow .inputElement .inputControl {margin-left:12.5em;}
+.formRow .inputElement .inputControl .control .textfield {border:1px solid #ccc;}
+.formRow .inputElement .inputControl .control .subordinate {overflow:hidden;}
+
+/* simple textfield ......................................................... */
+.textfield {border:1px solid #036; padding:2px;}
+
+/* radiobutton list ......................................................... */
+.formRow .inputElement.radiolist .inputControl .control {margin:0.75em 0em;}
+
+/* checkbox grid ............................................................ */
+.formRow .inputElement.grid .inputControl {overflow:hidden;}
+.formRow .inputElement.grid .inputControl .col {float:left; margin:0.5em 1.25em;}
+.formRow .inputElement.grid .inputControl .col .control {margin:0.5em 0em;}
+
+/* ========================================================================== */
+/* 08. splash page                                                            */
+
+#splash {background:#606e2f url("img/splash-bg.gif") left top repeat-x;}
+#splash #allContainer {width:61.5em; margin:5em auto; background:#fff url("img/splash-wrap-top.gif") left top repeat-x; padding:0;}
+#splash #allContainer .allWrap1 { background:url("img/splash-wrap-bottom.gif") left bottom repeat-x; margin:0; padding:0;}
+#splash #allContainer .allWrap2 { background:url("img/splash-wrap-left.gif") left top repeat-y;}
+#splash #allContainer .allWrap3 { background:url("img/splash-wrap-right.gif") right top repeat-y;}
+#splash #allContainer .allWrap4 { background:url("img/splash-wrap-rb.gif") right bottom no-repeat;}
+#splash #allContainer .allWrap5 { background:url("img/splash-wrap-lb.gif") left bottom no-repeat;}
+#splash #allContainer .allWrap6 { background:url("img/splash-wrap-rt.gif") right top no-repeat;}
+#splash #allContainer .allWrap7 { background:url("img/splash-wrap-lt.gif") left top no-repeat; padding:20px;}
+#splash #allContainer .be-logo {margin:1.5em; text-align:right;}
+#splash #allContainer .langList li {border:1px solid #d7dbcb; margin:1em 0em; padding-left:70px; position:relative; overflow:hidden;}
+#splash #allContainer .langList li.nl {background:#eff0ea url("img/langlist-nl.gif") left top no-repeat;}
+#splash #allContainer .langList li.fr {background:#eff0ea url("img/langlist-fr.gif") left top no-repeat;}
+#splash #allContainer .langList li.de {background:#eff0ea url("img/langlist-de.gif") left top no-repeat;}
+#splash #allContainer .langList li.en {background:#eff0ea url("img/langlist-en.gif") left top no-repeat;}
+#splash #allContainer .langList li h1 {margin:1em 0em; font-size:100%;}
+#splash #allContainer .langList li .nav {position:absolute; right:1em; top:1em;}
+#splash #allContainer .langList li .nav a {background:url("img/link-more-fat.gif") right 0.4em no-repeat; padding-right:15px; text-decoration:none; font-weight:700; font-size:123.1% }
+#splash #allContainer .langList li .nav a:hover {background-image:url("img/link-more-fat-hover.gif");}
+#splash #allContainer #footer {margin-top:1em;}
+.errorPage #allContainer h1 {float:left;}
+.errorPage #allContainer .msg {margin:1.5em; margin-left:300px;}
+.errorPage #allContainer .msg p {font-weight:700; font-size:116%; margin:1em 0em;}
+

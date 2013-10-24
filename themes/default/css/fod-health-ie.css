@@ -1,0 +1,42 @@
+.search .formrow .control input {top:-2px;}
+.searchBlock .formMain .remark {zoom:1;position:relative;margin-bottom:1em;}
+
+.breadcrumb ol li {zoom:1;padding-right:6px;}
+
+/* search */
+.search .textfield {width:12em;}
+.search .formrow {white-space:nowrap;}
+
+.navMain ul li.last {padding-right:0; width:auto; margin-left:81.8%; float:none;}
+.contextBlock {zoom:1;}
+
+.js .carousel .carouselBody {height:26.5em;overflow:hidden;}
+.js .carousel .carouselBody .newsList li .extra {position:static;margin:1em 0em 0;}
+.js .carousel .carouselBody .newsList .extra {position:static;margin:1.5em 0 0;}
+.js .carousel .carouselBody .newsList li {margin-top:0;zoom:1;}
+
+/* add zoom:1 to backgrounds -- Manually check for problems with inline elements! */
+.mapBlock h2.heading,
+.mapBlock .cat1 .row .rowWrap1,
+.mapBlock .cat1 .row .rowWrap2,
+.mapBlock .cat1 .row .rowWrap3,
+.mapBlock .cat1 .row .cat2 .cat3 .cat4 li {zoom:1;}
+.mapBlock .cat1 .row .cat2 .cat3 li {position:relative;zoom:1;}
+.mapBlock .cat1 .row .cat2 .cat3 li.expandCollapse a {padding-left:15px;}
+.mapBlock .cat1 .row .cat2 .cat3 li.expandCollapse li a {padding-left:0;}
+.mapBlock .cat1 .row .cat2 .cat3 .cat4 li.expandCollapse a {padding-left:15px;}
+.mapBlock .cat1 .row .cat2 .cat3 .cat4 li.expandCollapse li a {padding-left:0;}
+.mapBlock .cat1 .row .cat2 .cat3 .cat4 .cat5 li.expandCollapse a {padding-left:15px;}
+.mapBlock .cat1 .row .cat2 .cat3 .cat4 .cat5 li.expandCollapse li a {padding-left:0;}
+.mapBlock .cat1 .row .cat2 .cat3 .cat4 .cat5 .cat6 li.expandCollapse a {padding-left:15px;}
+.mapBlock .cat1 .row .cat2 .cat3 .cat4 .cat5 .cat6 li.expandCollapse li a {padding-left:0;}
+.mapBlock .cat1 .row .cat2 .cat3 li a.openClose {float:none;position:absolute;left:0;top:auto;}
+
+
+.external {background:none;padding-left:0;}
+.doormat .doormatWrap .theme .heading span .more {background:none;}
+.doormat .doormatWrap .theme .heading span a.more:hover {background:none;}
+.focusList ul li .heading a {background:none;}
+.focusList ul li .heading a:hover {background:none;}
+
+.anysurfer {bottom:0.5em;zoom:1}
