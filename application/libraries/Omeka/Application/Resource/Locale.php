@@ -20,17 +20,8 @@ class Omeka_Application_Resource_Locale extends Zend_Application_Resource_Locale
         $bootstrap->bootstrap('Config');
         $config = $bootstrap->getResource('Config');
         
-        //$locale = $config->locale;
-          //AANPASSING TAAL-SWITCHER
-        $locale = get_language_for_omeka_switch();
-        
-        if(!$locale){
-            $locale= $config->locale;
-            if(isset($SESSION['lang'])){
-                if($_SESSION['lang']=='en'){$locale="en_US";}
-            }    
-        }    
-        //END AANPASSING TAAL-SWITCHER  
+        $locale = $config->locale;
+      
         
         if ($locale instanceof Zend_Config) {
             $localeName = $locale->name;
