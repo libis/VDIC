@@ -12,7 +12,7 @@ $elfinder_base_uri = WEB_PLUGIN."/ImageManager/view/javascript/elfinder/";
         var elf = jQuery('#elfinder').elfinder({
             // lang: 'ru', // language (OPTIONAL)
             url : '<?php echo url('/image-manager/connector') ?>', // connector URL (REQUIRED)           
-            resizable: false,
+            resizable: false
            
         }).elfinder('instance');
     });
