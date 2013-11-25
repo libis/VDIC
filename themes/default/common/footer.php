@@ -14,6 +14,13 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+   var addthis_config = {
+      data_ga_property: 'UA-33179353-2',
+      data_ga_social: true
+   };
+</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4de3a8704c741536"></script>
  <script>jQuery("#wegwijs").load('<?php echo WEB_ROOT;?>/wegwijs/ #wegwijs');</script> 
 </body>
 </html>

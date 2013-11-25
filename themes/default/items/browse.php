@@ -85,7 +85,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
                     <div class="label"><?php echo __("Deze pagina: ")?></div>
                     <ul>
                         <li class="first"><a href="#" class="page print"><?php echo __("printen")?></a></li>
-                        <li><a href="#" class="page share"><?php echo __("delen")?></a></li>
+                        <li><li><a class="addthis_button page share" " href="http://www.addthis.com/bookmark.php"><?php echo __("delen")?></a></li>
                     </ul>
 		</div>
             </div>
