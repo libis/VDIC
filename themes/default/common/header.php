@@ -113,7 +113,7 @@
                 </div>
             </div>
                 
-            <?php echo search_form(array('submit_value'=>__("Zoek een tijdschrift"),'form_attributes'=>array('id'=>'search-form')));?>
+            <?php echo search_form(array('submit_value'=>__("Zoek"),'form_attributes'=>array('id'=>'search-form')));?>
             					
             <div class="navMain">					
                 <ul>
