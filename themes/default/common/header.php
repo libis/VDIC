@@ -119,7 +119,7 @@
                 <ul>
                     <li class="first">
                         <div align="center">
-                            <a href="<?php echo url("tijdschriften")?>" class="page">
+                            <a href="<?php echo url(libis_get_language_slug()."periodicals")?>" class="page">
                                 <span class="navWrap">
                                     <span class="navWrap2"><?php echo __("Tijdschriften"); ?></span>
                                 </span>
@@ -127,21 +127,21 @@
                         </div>
                     </li>
                     <li>
-	       		<a href="<?php echo url("databanken")?>" class="page">
+	       		<a href="<?php echo url(libis_get_language_slug()."databases")?>" class="page">
                             <span class="navWrap">
                                 <span class="navWrap2"><?php echo __("Databanken"); ?></span>
                             </span>
                         </a>
                     </li>
                     <li>
-	       		<a href="<?php echo url("monografien")?>" class="page">
+	       		<a href="<?php echo url(libis_get_language_slug()."books")?>" class="page">
                             <span class="navWrap">
                                 <span class="navWrap2"><?php echo __("Boeken"); ?></span>
                             </span>
                         </a>
                     </li>
                     <li>
-	       		<a href="<?php echo url("publicaties")?>" class="page">
+	       		<a href="<?php echo url(libis_get_language_slug()."publications")?>" class="page">
                             <span class="navWrap">
                                 <span class="navWrap2"><?php echo __("Publicaties"); ?></span>
                             </span>

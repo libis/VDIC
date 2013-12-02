@@ -165,5 +165,13 @@ function Libis_language_widget(){
         </li>
     <?php
 }
+
+function libis_get_language_slug(){
+    if(!isset($_SESSION['lang']) || $_SESSION['lang']=='nl'){
+        return "nl/";
+    }else{
+        return $_SESSION['lang']."/";
+    }   
+}
 ?>
 
