@@ -121,7 +121,7 @@
                         <div align="center">
                             <a href="<?php echo url("tijdschriften")?>" class="page">
                                 <span class="navWrap">
-                                    <span class="navWrap2">Tijdschriften</span>
+                                    <span class="navWrap2"><?php echo __("Tijdschriften"); ?></span>
                                 </span>
                             </a>
                         </div>
@@ -129,21 +129,21 @@
                     <li>
 	       		<a href="<?php echo url("databanken")?>" class="page">
                             <span class="navWrap">
-                                <span class="navWrap2">Databanken</span>
+                                <span class="navWrap2"><?php echo __("Databanken"); ?></span>
                             </span>
                         </a>
                     </li>
                     <li>
 	       		<a href="<?php echo url("monografien")?>" class="page">
                             <span class="navWrap">
-                                <span class="navWrap2">Monografieën</span>
+                                <span class="navWrap2"><?php echo __("Boeken"); ?></span>
                             </span>
                         </a>
                     </li>
                     <li>
 	       		<a href="<?php echo url("publicaties")?>" class="page">
                             <span class="navWrap">
-                                <span class="navWrap2">Publicaties</span>
+                                <span class="navWrap2"><?php echo __("Publicaties"); ?></span>
                             </span>
                         </a>	
                     </li>
