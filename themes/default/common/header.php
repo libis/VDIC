@@ -53,6 +53,21 @@
     queue_js_file('globals');
     echo head_js(); 
     ?>
+    <script>
+    jQuery('document').ready(function(){
+        //only show links of current language
+        jQuery('.navigation li').each(function(){
+            var that = jQuery(this);
+            var link = jQuery('a',that).attr('href');
+            if(link.indexOf('fr/')==-1 && link.indexOf('nl/')==-1 && link.indexOf('de/')==-1 && link.indexOf('en/')==-1){
+                that.show();
+            }
+            if(link.indexOf('<?php echo libis_get_language_slug(); ?>')!=-1){
+                that.show();
+            }
+        });
+    });
+    </script>
 </head>
 <body id="topic" class="">
 <div id="allContainer">	
@@ -86,7 +101,7 @@
                         </li>
                     </ul>
                     <div id="blgm_beLink">
-                            Andere informatie en diensten van de overheid: <a href="http://www.belgium.be/nl/" class="blgm_loglink" title="http://www.belgium.be/nl/">www.belgium.be</a>
+                            <?php echo __("Andere informatie en diensten van de overheid:");?> <a href="http://www.belgium.be/nl/" class="blgm_loglink" title="http://www.belgium.be/nl/">www.belgium.be</a>
                     </div>
                 </div>
             </div>
