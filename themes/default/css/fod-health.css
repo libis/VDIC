@@ -168,7 +168,7 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 .navSecond {float:right;margin:0.5em 0em;margin-right:1em;}
 .navSecond ul {overflow:hidden;}
 .navSecond ul li {float:left;background:url("img/second-sep.gif") right center repeat-y;padding-right:1px;}
-    .navgiantion.navSecond ul li{display:none;}
+   .navSecond .navigation li{display:none;}
 .navSecond ul li:last-child {float:left;background:none;padding-right:0px;}
 .navSecond ul li .page {color:#485223;text-decoration:none;margin:0em 0.5em;font-weight:700;}
 .navSecond ul li a.page:hover {color:#903;}
