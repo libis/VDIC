@@ -763,6 +763,11 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 .formRow .inputElement .inputControl .control .textarea {border:1px solid #ccc;}
 .formRow .inputElement .inputControl .control .subordinate {overflow:hidden;}
 
+#contact-form label{width:150px;display:inline-block;}
+#contact-form h4{margin:10px 0 5px 0;}
+#send{margin-top:10px;}
+#flash{color:red;}
+
 /* dropdown ................................................................. */
 .formRow .inputElement .inputControl .control select {border:1px solid #ccc;}
 
