@@ -4,50 +4,29 @@
  * @return string
  */
 function Libis_get_nieuws($number){
-	$items = get_records('Item',array(),$number);
-	//get current date
-	//$now= strtotime(date('Y-m-d'));
-        $lang = libis_get_language();        
+        $lang = libis_get_language();    
+        $items = get_records('Item',array('type'=>'nieuws-'.$lang),$number);	   
+	
         $html =""; 
         if(sizeof($items)>0){                      
             set_loop_records('items', $items);
-            foreach(loop('items') as $item):               
-                if($lang == 'nl'){                   
-                    if(metadata('Item',array('Dublin Core','Title'))){
-                        $html .="<div class='newsitem'>";
-                        if(metadata('Item',array('Dublin Core','Date'))){
-                            $html .= "<span class='date'>".metadata('Item',array('Dublin Core','Date'))."</span>";
-                        }                   
-                        $html .= "<h2 class='heading'><span>".link_to_item(metadata('Item',array('Dublin Core','Title')))."</span></h2>";
-                     
-                        if(metadata('Item',array('Dublin Core','Description'))){
-                            $html .= metadata('Item',array('Dublin Core','Description'));
-                        }   
-                        $html .="</div>";        
-                    }
-                }else{                  
-                    if(metadata('Item',array('Item Type Metadata','Title-'.$lang))){
-                        $html .="<div class='newsitem'>";
-                        if(metadata('Item',array('Dublin Core','Date'))){
-                            $html .= "<span class='date'>".metadata('Item',array('Dublin Core','Date'))."</span>";
-                        }                   
-                        $html .= "<h2 class='heading'><span>".link_to_item(metadata('Item',array('Item Type Metadata','Title-'.$lang)))."</span></h2>";
-
-                     
-                        if(metadata('Item',array('Item Type Metadata','Message-'.$lang))){
-                            $html .= metadata('Item',array('Item Type Metadata','Message-'.$lang));
-                        }
-                        $html .="</div>"; 
-                    }
-                }                   
+            foreach(loop('items') as $item):        
+                $html .="<div class='newsitem'>";
+                if(metadata('Item',array('Dublin Core','Title'))){                   
+                    if(metadata('Item',array('Dublin Core','Date'))){
+                        $html .= "<span class='date'>".metadata('Item',array('Dublin Core','Date'))."</span>";
+                    }                   
+                    $html .= "<h2 class='heading'><span>".link_to_item(metadata('Item',array('Dublin Core','Title')))."</span></h2>";
+                }     
+                if(metadata('Item',array('Dublin Core','Description'))){
+                    $html .= metadata('Item',array('Dublin Core','Description'));
+                }   
+                $html .="</div>";                               
             endforeach;
-        }
-        if($html==""){
-            return __("Er zijn geen nieuwsberichten.");
-        }else{
             return $html;
+        }else{
+            return __("Er zijn geen nieuwsberichten.");
         }
-        	
 }
 
 /**
@@ -56,16 +35,17 @@ function Libis_get_nieuws($number){
  * @return string
  */
 function Libis_get_nieuws_partners($number){
+    $lang = libis_get_language();
     $partners = array(
-        array('name'=>'WIV','link'=>'/items/browse/?tag=WIV'),
-        array('name'=>'CODA','link'=>'/items/browse/?tag=CODA'),
-        array('name'=>'HGR','link'=>'/items/browse/?tag=HGR'),
-        array('name'=>'FAGG','link'=>'/items/browse/?tag=FAGG'),
-        array('name'=>'VESALIUS Eurostation','link'=>'/items/browse/?tag=Vesalius'),
-        array('name'=>'Raadgevend Comité voor Bio-ethiek','link'=>'/items/browse/?tag=Bio-ethiek'),
-        array('name'=>'FAVV','link'=>'/items/browse/?tag=FAVV'),
-        array('name'=>'KCE','link'=>'/items/browse/?tag=KCE'),
-        array('name'=>'NICC','link'=>'/items/browse/?tag=NICC')
+        array('name'=>'WIV','link'=>'/items/browse/?tag=WIV&type=nieuws-'.$lang),
+        array('name'=>'CODA','link'=>'/items/browse/?tag=CODA&type=nieuws-'.$lang),
+        array('name'=>'HGR','link'=>'/items/browse/?tag=HGR&type=nieuws-'.$lang),
+        array('name'=>'FAGG','link'=>'/items/browse/?tag=FAGG&type=nieuws-'.$lang),
+        array('name'=>'VESALIUS Eurostation','link'=>'/items/browse/?tag=Vesalius&type=nieuws-'.$lang),
+        array('name'=>'Raadgevend Comité voor Bio-ethiek','link'=>'/items/browse/?tag=Bio-ethiek&type=nieuws-'.$lang),
+        array('name'=>'FAVV','link'=>'/items/browse/?tag=FAVV&type=nieuws-'.$lang),
+        array('name'=>'KCE','link'=>'/items/browse/?tag=KCE&type=nieuws-'.$lang),
+        array('name'=>'NICC','link'=>'/items/browse/?tag=NICC&type=nieuws-'.$lang)
     );
     $html = "<ul>";
     foreach($partners as $partner){

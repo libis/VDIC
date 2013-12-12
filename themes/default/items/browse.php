@@ -29,9 +29,9 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
                             <?php if ($total_results > 0): ?>
 
                             <?php
-                            //$sortLinks[__('Title')] = 'Dublin Core,Title';
+                            $sortLinks[__('Title')] = 'Dublin Core,Title';
                             //$sortLinks[__('Creator')] = 'Dublin Core,Creator';
-                            //$sortLinks[__('Date Added')] = 'added';
+                            $sortLinks[__('Date Added')] = 'added';
                             ?>
                            
 
