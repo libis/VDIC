@@ -30,7 +30,7 @@
                         <?php endif; ?>
 
                         <?php if (metadata('item', 'has tags')): ?>
-                        <div class="tags"><p><strong><?php echo __('Tags'); ?>:</strong>
+                        <div class="tags"><p><strong><?php echo __('Trefwoorden'); ?>:</strong>
                             <?php echo tag_string('items'); ?></p>
                         </div>
                         <?php endif; ?>
@@ -74,7 +74,7 @@
                 <!-- The following returns all of the files associated with an item. -->
                 <?php if (metadata('item', 'has files')): ?>
                 <div id="itemfiles" class="element">
-                    <h3><?php echo __('Files'); ?></h3>
+                    <h3><?php echo __('Bestanden'); ?></h3>
                     <?php if (get_theme_option('Item FileGallery') == 1): ?>
                     <div class="element-text"><?php echo item_image_gallery(); ?></div>
                     <?php else: ?>

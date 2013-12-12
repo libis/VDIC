@@ -18,7 +18,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
             <div class="wrapper clearfix">
                 <div class="wrapperIn">
                     <div class="content">
-                        <h1 class="heading "><span><?php echo $pageTitle;?> <?php echo __('(%s total)', $total_results); ?></span></h1>
+                        <h1 class="heading "><span><?php echo $pageTitle;?> <?php echo __('(%s totaal)', $total_results); ?></span></h1>
                         <div class="textblock">
                             
 
@@ -29,13 +29,11 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
                             <?php if ($total_results > 0): ?>
 
                             <?php
-                            $sortLinks[__('Title')] = 'Dublin Core,Title';
+                            //$sortLinks[__('Title')] = 'Dublin Core,Title';
                             //$sortLinks[__('Creator')] = 'Dublin Core,Creator';
-                            $sortLinks[__('Date Added')] = 'added';
+                            //$sortLinks[__('Date Added')] = 'added';
                             ?>
-                            <!--<div id="sort-links">
-                                <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
-                            </div>-->
+                           
 
                             <?php endif; ?>
 
@@ -59,7 +57,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
                                 <?php endif; ?>
 
                                 <?php if (metadata('item', 'has tags')): ?>
-                                <div class="tags"><p><strong><?php echo __('Tags'); ?>:</strong>
+                                <div class="tags"><p><strong><?php echo __('Trefwoorden'); ?>:</strong>
                                     <?php echo tag_string('items'); ?></p>
                                 </div>
                                 <?php endif; ?>
@@ -74,12 +72,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
                             
                             <?php fire_plugin_hook('public_items_browse', array('items'=>$items, 'view' => $this)); ?>
                             
-                            <!--<div id="outputs">
-                                <span class="outputs-label"><?php echo __('Output Formats'); ?></span>
-                                <?php echo output_format_list(false); ?>
-                            </div>-->
-
-                        </div>
+                          </div>
                         
                 <div class="navAction">
                     <div class="label"><?php echo __("Deze pagina: ")?></div>

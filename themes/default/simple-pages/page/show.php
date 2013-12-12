@@ -43,26 +43,24 @@
                 <li><a href="databases.aspx?lang=NL"><img src="<?php echo img("header/periodicals_1.gif")?>" onmouseout="this.src='<?php echo img("header/periodicals_1.gif")?>'" onmouseover="this.src='<?php echo img("header/periodicals_2.gif")?>'"></a></li>
                 <li><a href="databases.aspx?lang=NL"><img src="<?php echo img("header/publications_1.gif")?>" onmouseout="this.src='<?php echo img("header/publications_1.gif")?>'" onmouseover="this.src='<?php echo img("header/publications_2.gif")?>'"></a></li>
             </ul>
-                <div class="contextBlock">
-                    <div class="section first">
-                        <?php 
-                            if(get_current_record('simple_pages_page', false)->parent_id == 0){
-                                $parent = get_current_record('simple_pages_page', false)->id;
-                            }else{
-                                $parent = get_current_record('simple_pages_page', false)->parent_id;
-                            }
-                            $html = nav(simple_pages_get_links_for_children_pages($parent));
-                         
-                            if($html->render() != ""){
-                                echo '<h2 class="heading "><span>'.__("Meer Info").'</span></h2>';
-                                echo $html;
-                            }
-                            ?>
+               
+                <?php 
+                    if(get_current_record('simple_pages_page', false)->parent_id == 0){
+                        $parent = get_current_record('simple_pages_page', false)->id;
+                    }else{
+                        $parent = get_current_record('simple_pages_page', false)->parent_id;
+                    }
+                    $html = nav(simple_pages_get_links_for_children_pages($parent));
+
+                    if($html->render() != ""){
+                        echo "<div class='contextBlock'><div class='section first'>";
+                        echo '<h2 class="heading "><span>'.__("Meer Info").'</span></h2>';
+                        echo $html;
+                        echo "</div></div>";
+                    }
+                ?>
                                           
-                    </div>
-			 
                     
-                </div>
 	    </div>
         </div>
         <div class="navigation simple">
