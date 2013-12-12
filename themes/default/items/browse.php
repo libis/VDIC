@@ -7,7 +7,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
             <div class="breadIndicator"> U bevindt zich hier: </div>
             <ol>
                 <li class="first"><span class="page"><a href="<?php echo url("");?>">Home</a></span></li> /
-                <li class="last"><span class="page">Nieuwsarchief</span></li>
+                <li class="last"><span class="page"><?php __('Nieuwsarchief');?></span></li>
             </ol>   
         </div>
     </div>
@@ -99,11 +99,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
                 <div class="contextBlock">
                     <div class="section first">
                         <h2 class="heading"><span class="sort-label"><?php echo __('Sorteer op'); ?></span></h2>
-                        <?php echo browse_sort_links($sortLinks); ?>
-                        
-                        <h2 class="heading "><span><?php echo __("Wegwijs");?></span></h2>
-                       
-                        <div id="wegwijs"></div>                     
+                        <?php echo browse_sort_links($sortLinks); ?>                                       
                     </div>
 									
                 </div>

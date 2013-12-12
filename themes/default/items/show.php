@@ -66,14 +66,7 @@
                 <li><a href="databases.aspx?lang=NL"><img src="<?php echo img("header/periodicals_1.gif")?>" onmouseout="this.src='<?php echo img("header/periodicals_1.gif")?>'" onmouseover="this.src='<?php echo img("header/periodicals_2.gif")?>'"></a></li>
                 <li><a href="databases.aspx?lang=NL"><img src="<?php echo img("header/publications_1.gif")?>" onmouseout="this.src='<?php echo img("header/publications_1.gif")?>'" onmouseover="this.src='<?php echo img("header/publications_2.gif")?>'"></a></li>
             </ul>
-                <div class="contextBlock">
-                    <div class="section first">
-                        <h2 class="heading "><span><?php echo __("Wegwijs");?></span></h2>
-                       
-                        <div id="wegwijs"></div>                     
-                    </div>
-									
-                </div>
+              
 	    </div>
         </div>
         <div class="navigation">

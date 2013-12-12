@@ -1,37 +1,53 @@
 <?php
-/**
- * 
+/** 
  * @param type $number
  * @return string
  */
 function Libis_get_nieuws($number){
-	$items = get_records('Item',array('type'=> '8','tag'=>'algemeen'),$number);
+	$items = get_records('Item',array(),$number);
 	//get current date
 	//$now= strtotime(date('Y-m-d'));
-      
-        if(sizeof($items)>0){
-            $html ="";
+        $lang = libis_get_language();        
+        $html =""; 
+        if(sizeof($items)>0){                      
             set_loop_records('items', $items);
-            foreach(loop('items') as $item):                
-                $html .="<div class='newsitem'>";
-                if(metadata('Item',array('Dublin Core','Title'))){
-                    
-                    if(metadata('Item',array('Dublin Core','Date'))){
-                        $html .= "<span class='date'>".metadata('Item',array('Dublin Core','Date'))."</span>";
-                    }                   
-                    $html .= "<h2 class='heading'><span>".link_to_item(metadata('Item',array('Dublin Core','Title')))."</span></h2>";
-                                    
-                }  
-                if(metadata('Item',array('Dublin Core','Description'))){
-                    $html .= metadata('Item',array('Dublin Core','Description'));
-                }   
-                $html .="</div>";               
-               
+            foreach(loop('items') as $item):               
+                if($lang == 'nl'){                   
+                    if(metadata('Item',array('Dublin Core','Title'))){
+                        $html .="<div class='newsitem'>";
+                        if(metadata('Item',array('Dublin Core','Date'))){
+                            $html .= "<span class='date'>".metadata('Item',array('Dublin Core','Date'))."</span>";
+                        }                   
+                        $html .= "<h2 class='heading'><span>".link_to_item(metadata('Item',array('Dublin Core','Title')))."</span></h2>";
+                     
+                        if(metadata('Item',array('Dublin Core','Description'))){
+                            $html .= metadata('Item',array('Dublin Core','Description'));
+                        }   
+                        $html .="</div>";        
+                    }
+                }else{                  
+                    if(metadata('Item',array('Item Type Metadata','Title-'.$lang))){
+                        $html .="<div class='newsitem'>";
+                        if(metadata('Item',array('Dublin Core','Date'))){
+                            $html .= "<span class='date'>".metadata('Item',array('Dublin Core','Date'))."</span>";
+                        }                   
+                        $html .= "<h2 class='heading'><span>".link_to_item(metadata('Item',array('Item Type Metadata','Title-'.$lang)))."</span></h2>";
+
+                     
+                        if(metadata('Item',array('Item Type Metadata','Message-'.$lang))){
+                            $html .= metadata('Item',array('Item Type Metadata','Message-'.$lang));
+                        }
+                        $html .="</div>"; 
+                    }
+                }                   
             endforeach;
-            return $html;
+        }
+        if($html==""){
+            return __("Er zijn geen nieuwsberichten.");
         }else{
-            return __("There are no current news items.");
-        }	
+            return $html;
+        }
+        	
 }
 
 /**
@@ -53,7 +69,7 @@ function Libis_get_nieuws_partners($number){
     );
     $html = "<ul>";
     foreach($partners as $partner){
-        $html .= "<li><a class='page active' href='".$partner['link']."'>".$partner['name']."</a>";
+        $html .= "<li><a class='page active' href='".url($partner['link'])."'>".$partner['name']."</a>";
         
         $items = get_records('Item',array('type'=> '8','tag'=>$partner['name']),$number);
        
@@ -171,6 +187,15 @@ function libis_get_language_slug(){
         return "nl/";
     }else{
         return $_SESSION['lang']."/";
+    }   
+}
+
+
+function libis_get_language(){
+    if(!isset($_SESSION['lang']) || $_SESSION['lang']=='nl'){
+        return "nl";
+    }else{
+        return $_SESSION['lang'];
     }   
 }
 ?>

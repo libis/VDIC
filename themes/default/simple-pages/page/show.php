@@ -58,8 +58,7 @@
                                 echo $html;
                             }
                             ?>
-                        <h2 class="heading "><span><?php echo __("Wegwijs");?></span></h2>
-                        <div id="wegwijs"></div>                     
+                                          
                     </div>
 			 
                     
