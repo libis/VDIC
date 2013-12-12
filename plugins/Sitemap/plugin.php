@@ -61,7 +61,7 @@ add_plugin_hook('after_update_page', 'xml_sitemap_after_update_page');
 add_plugin_hook('after_delete_page', 'xml_sitemap_after_delete_page');
 */
 // nav filter for admin menu
-add_filter('admin_navigation_main', 'xml_sitemap_admin_nav');
+//add_filter('admin_navigation_main', 'xml_sitemap_admin_nav');
 
 function xml_sitemap_install() {
 	// update the robots.txt file included with omeka to reflect the location of the sitemap 
