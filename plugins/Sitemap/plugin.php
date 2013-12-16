@@ -475,12 +475,12 @@ function xml_sitemap_build_html_sitemap()
        
         //home + news       
         $html .= '<li><a href="'.url("").'">'.__('Home').'</a></li>';
-        $html .= '<li><a href="'.url("items").'">'.__('Nieuwsarchief').'</a>';
+        $html .= '<li><a href="'.url("items/browse/?type=nieuws-".libis_get_language()).'">'.__('Nieuwsarchief').'</a>';
        
         $tags = get_records('Tag',array('sort' => 'alpha','type' => 'item', 'public' => true),15000);
         $html .= '<ul>';
         foreach($tags as $tag){
-            $html .= '<li><a href="'.url("items/browse/?tag=".$tag).'">'.__($tag).'</a></li>';            
+            $html .= '<li><a href="'.url("items/browse/?tag=".$tag."&type=nieuws-".libis_get_language()).'">'.__($tag).'</a></li>';            
         }
         $html .= '</ul>';
         $html .= '</ul></li></ul>';
