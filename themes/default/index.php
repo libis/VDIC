@@ -36,9 +36,12 @@
                 </ul>
                 <div class="contextBlock">
                     <div class="section first">
-                        <h2 class="heading "><span><?php echo __("Wegwijs");?></span></h2>
-                       
-                        <div id="wegwijs"></div>                     
+                        <h2 class="heading "><span><?php echo __("Meer Info");?></span></h2>
+                        <ul>
+                            <li><a href="<?php echo url(libis_get_language_slug()."manual/periodicals")?>"><?php echo __("Wegwijs")." ".__("Tijdschriften");?></a></li>
+                            <li><a href="<?php echo url(libis_get_language_slug()."manual/databases")?>"><?php echo __("Wegwijs")." ".__("Databanken");?></a></li>
+                            <li><a href="<?php echo url(libis_get_language_slug()."manual/books")?>"><?php echo __("Wegwijs")." ".__("Boeken");?></a></li>
+                        </ul>                  
                     </div>
 									
                 </div>
