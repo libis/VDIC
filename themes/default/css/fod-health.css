@@ -177,6 +177,10 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 .navSecond ul li.active .page {color:#903;}
 .navSecond ul li.last {background:none;padding-right:0;}
 .navSecond ul li.last .page {margin-right:0;}
+
+/*sitemap nav */
+.sitemap-links .navigation li {display:none;}
+
 /* in footer */
 #footer .navSecond {float:none;background:#eff0ea;padding:0.5em;margin-right:3em;}
 #footer .navSecond .page {font-weight:300;}

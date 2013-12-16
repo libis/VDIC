@@ -21,6 +21,5 @@
    };
 </script>
 <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4de3a8704c741536"></script>
-<script>jQuery("#wegwijs").load('<?php echo WEB_ROOT.'/'.  libis_get_language_slug();?>guide/ #wegwijs');</script> 
 </body>
 </html>

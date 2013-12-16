@@ -474,7 +474,7 @@ function xml_sitemap_build_html_sitemap()
         $html .= '<ul class="navigation">';
        
         //home + news       
-        $html .= '<li><a href="'.url("").'">Home</a></li>';
+        $html .= '<li><a href="'.url("").'">'.__('Home').'</a></li>';
         $html .= '<li><a href="'.url("items").'">'.__('Nieuwsarchief').'</a>';
        
         $tags = get_records('Tag',array('sort' => 'alpha','type' => 'item', 'public' => true),15000);
