@@ -106,6 +106,18 @@ function mailer_define_routes($args)
 	);
         
         $router->addRoute(
+	    'mailer_cebam',
+	    new Zend_Controller_Router_Route(
+	        MAILER_PAGE_PATH . 'cebam',
+	        array(
+	            'module'       => 'mailer',
+	            'controller'   => 'index',
+	            'action'       => 'cebam',
+	        )
+	    )
+	);
+        
+        $router->addRoute(
 	    'mailer_periodicals',
 	    new Zend_Controller_Router_Route(
 	        MAILER_PAGE_PATH . 'periodicals',

@@ -36,9 +36,7 @@
                     </ul>
 		</div>
             </div>
-            <div class="context">
-                
-               
+            <div class="context">              
                 <?php 
                     if(get_current_record('simple_pages_page', false)->parent_id == 0){
                         $parent = get_current_record('simple_pages_page', false)->id;
@@ -54,13 +52,26 @@
                         echo "</div></div>";
                     }
                 ?>
+                <?php 
+                    $slug= get_current_record('simple_pages_page', false)->slug; 
+                   
+                    if(strpos($slug,'nl/databases')!==false
+                       || strpos($slug,'fr/databases')!==false      
+                       || strpos($slug,'de/databases')!==false
+                       || strpos($slug,'en/databases')!==false     
+                    ){
+                        echo "<div class='contextBlock'><div class='section first'>";
+                        echo '<h2 class="heading "><span>CEBAM</span></h2>';
+                        echo '<a href='.url("request/cebam").'>'.__("Aanvraag CEBAM-login").'</a>';
+                        echo "</div></div>";
+                    }
+                
+                ?>
                                           
                     
 	    </div>
         </div>
-        <div class="navigation simple">
-         
-    </div>
+        
 </div>
 </div>
 </div>

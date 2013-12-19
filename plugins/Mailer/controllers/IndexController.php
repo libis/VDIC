@@ -126,6 +126,49 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
                         'auteur','jaar','editie', 'bibliotheek','plaatsingsnummer','commentaar','voornaam',
                         'familienaam','email','instelling','dienst','captcha'));
 	}
+        
+        public function cebamAction()
+	{         
+            $voornaam = isset($_POST['voornaam']) ? $_POST['voornaam'] : '';   
+            $familienaam = isset($_POST['familienaam']) ? $_POST['familienaam'] : '';   
+            $email = isset($_POST['email']) ? $_POST['email'] : '';  
+            $instelling = isset($_POST['instelling']) ? $_POST['instelling'] : ''; 
+            $dienst = isset($_POST['dienst']) ? $_POST['dienst'] : ''; 
+            $taal = isset($_POST['taal']) ? $_POST['taal'] : '';     
+	    $captchaObj = $this->_setupCaptcha();
+
+	    if ($this->getRequest()->isPost()) {
+    		// If the form submission is valid, then send out the email
+               
+    		if ($this->_validate_cebam($captchaObj)) {                    
+                    //
+	            //$this->_redirect->gotoRoute(array(), 'mailer_thankyou');
+                    $mailer = new Mailer();                   
+                    $message = "<h2>".__('Aanvraagformulier voor toegangscodes tot CEBAM')."</h2>";
+                    $message .= __("Naam: ").$voornaam." ".$familienaam."<br>";   
+                    $message .= __("Email: ").$email."<br>";  
+                    $message .= __("Instelling: ").$instelling."<br>"; 
+                    $message .= __("Dienst: ").$dienst."<br>";
+                    $message .= __("Taal: ").$taal."<br>";
+                       
+                    $this->sendEmailNotification($email,$voornaam.' '.$familienaam, $message);               
+                    
+                    $this->_helper->redirector('thankyou');
+    		}
+                
+	    }
+
+	    // Render the HTML for the captcha itself.
+	    // Pass this a blank Zend_View b/c ZF forces it.
+		if ($captchaObj) {
+		    $captcha = $captchaObj->render(new Zend_View);
+		} else {
+		    $captcha = '';
+		}
+
+		$this->view->assign(compact('voornaam','familienaam','email','instelling',
+                        'dienst','taal','captcha'));
+	}
 
 	public function thankyouAction()
 	{
@@ -215,6 +258,38 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
             } else if (empty($jaar)) {
                         $this->_helper->flashMessenger(__('Je moet het jaar van uitgave geven.'));
                         $valid = false;
+            } else if (empty($voornaam)) {
+                        $this->_helper->flashMessenger(__('Je bent je voornaam vergeten.'));
+                        $valid = false;
+            } else if (empty($familienaam)) {
+                        $this->_helper->flashMessenger(__('Je bent je familienaam vergeten.'));
+                        $valid = false;
+            } else if (empty($instelling)) {
+                        $this->_helper->flashMessenger(__('Je bent je instelling vergeten.'));
+                        $valid = false;
+            } else if (empty($dienst)) {
+                        $this->_helper->flashMessenger(__('Je bent je dienst vergeten.'));
+                        $valid = false;
+            }
+
+            return $valid;
+    }
+    
+    protected function _validate_cebam($captcha = null)
+    {
+            $valid = true;
+            $voornaam = $this->getRequest()->getPost('voornaam');
+            $familienaam = $this->getRequest()->getPost('familienaam');
+            $instelling = $this->getRequest()->getPost('instelling');
+            $dienst = $this->getRequest()->getPost('dienst');
+            $email = $this->getRequest()->getPost('email');
+            // ZF ReCaptcha ignores the 1st arg.
+            if ($captcha and !$captcha->isValid('foo', $_POST)) {
+                        $this->_helper->flashMessenger(__('Je CAPTCHA submissie is niet geldig.'));
+                        $valid = false;
+            } else if (!Zend_Validate::is($email, 'EmailAddress')) {
+                        $this->_helper->flashMessenger(__('Je emailadres is niet geldig.'));
+                        $valid = false;           
             } else if (empty($voornaam)) {
                         $this->_helper->flashMessenger(__('Je bent je voornaam vergeten.'));
                         $valid = false;
