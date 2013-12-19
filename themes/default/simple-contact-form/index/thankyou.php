@@ -32,12 +32,7 @@
                     </div>
                 </div>
                 <div class="context">
-                     <ul class="fotolinks">    
-                    <li><a href="<?php echo url(libis_get_language_slug()."databases")?>"><img src="<?php echo img("header/databases_1.gif")?>" onmouseout="this.src='<?php echo img("header/databases_1.gif")?>'" onmouseover="this.src='<?php echo img("header/databases_2.gif")?>'"></a></li>
-                    <li><a href="<?php echo url(libis_get_language_slug()."books")?>"><img src="<?php echo img("header/monographs_1.gif")?>" onmouseout="this.src='<?php echo img("header/monographs_1.gif")?>'" onmouseover="this.src='<?php echo img("header/monographs_2.gif")?>'"></a></li>
-                    <li><a href="<?php echo url(libis_get_language_slug()."periodicals")?>"><img src="<?php echo img("header/periodicals_1.gif")?>" onmouseout="this.src='<?php echo img("header/periodicals_1.gif")?>'" onmouseover="this.src='<?php echo img("header/periodicals_2.gif")?>'"></a></li>
-                    <li><a href="<?php echo url(libis_get_language_slug()."publications")?>"><img src="<?php echo img("header/publications_1.gif")?>" onmouseout="this.src='<?php echo img("header/publications_1.gif")?>'" onmouseover="this.src='<?php echo img("header/publications_2.gif")?>'"></a></li>
-                </ul>
+                     
                     <div class="contextBlock">
                         <div class="section first">
                             <h2 class="heading "><span><?php echo __("Contacteer een partner");?></span></h2>
