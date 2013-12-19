@@ -68,7 +68,7 @@
                 
                 ?>
                 <?php 
-                    if(strpos($slug,'manual')==false){
+                    if(strpos($slug,'manual')==false && strpos($slug,'about')==false){
                 ?>
                     <div class='contextBlock'>
                         <div class="section first">
