@@ -3512,7 +3512,7 @@ msgstr ""
 #: mailer/index/books.php:123 simple-contact-form/index/index.php:106
 #: simple-contact-form/index/thankyou.php:27 sitemap/index/index.php:29
 msgid "Deze pagina: "
-msgstr ""
+msgstr "This page"
 
 #: index.php:25 simple-pages/page/show.php:34 items/browse.php:80
 #: items/show.php:57 mailer/index/periodicals.php:132
@@ -3776,7 +3776,7 @@ msgstr ""
 
 #: simple-contact-form/index/index.php:95
 msgid "Verstuur"
-msgstr ""
+msgstr "Send"
 
 #: sitemap/index/index.php:7 sitemap/index/index.php:19
 msgid "Sitemap"

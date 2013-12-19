@@ -1,23 +1,26 @@
-# Translation template for Omeka.
-# Copyright (C) 2011 Roy Rosenzweig Center for History and New Media
-# This file is distributed under the same license as the Omeka package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: Omeka 2.0\n"
-"Report-Msgid-Bugs-To: omeka-dev@googlegroups.com\n"
-"POT-Creation-Date: 2012-11-26 14:33-0500\n"
-"PO-Revision-Date: 2013-12-19 10:02+0100\n"
+"Project-Id-Version: vdic-vertaling\n"
+"POT-Creation-Date: 2013-12-12 14:54+0100\n"
+"PO-Revision-Date: 2013-12-19 11:26+0100\n"
 "Last-Translator: \n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: English (http://www.transifex.com/projects/p/vdic-vertaling/"
+"language/en/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.5.4\n"
+"X-Poedit-Basepath: /opt/lampp/htdocs/omeka/vdic/themes/default/\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__\n"
+"X-Poedit-SearchPath-0: .\n"
 
 #. Dublin Core description
-msgid "The Dublin Core metadata element set is common to all Omeka records, including items, files, and collections. For more information see, http://dublincore.org/documents/dces/."
+msgid ""
+"The Dublin Core metadata element set is common to all Omeka records, "
+"including items, files, and collections. For more information see, http://"
+"dublincore.org/documents/dces/."
 msgstr ""
 
 #. Dublin Core: Title element name
@@ -86,7 +89,9 @@ msgid "Date"
 msgstr ""
 
 #. Dublin Core: Date element description
-msgid "A point or period of time associated with an event in the lifecycle of the resource"
+msgid ""
+"A point or period of time associated with an event in the lifecycle of the "
+"resource"
 msgstr ""
 
 #. Dublin Core: Type element name
@@ -143,7 +148,9 @@ msgid "Coverage"
 msgstr ""
 
 #. Dublin Core: Coverage element description
-msgid "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant"
+msgid ""
+"The spatial or temporal topic of the resource, the spatial applicability of "
+"the resource, or the jurisdiction under which the resource is relevant"
 msgstr ""
 
 #. Dublin Core: Rights element name
@@ -159,7 +166,9 @@ msgid "Item Type Metadata"
 msgstr ""
 
 #. Item Type Metadata description
-msgid "The item type metadata element set, consisting of all item type elements bundled with Omeka and all item type elements created by an administrator."
+msgid ""
+"The item type metadata element set, consisting of all item type elements "
+"bundled with Omeka and all item type elements created by an administrator."
 msgstr ""
 
 #. Omeka Legacy File
@@ -167,7 +176,11 @@ msgid "Omeka Legacy File"
 msgstr ""
 
 #. Omeka Legacy File description
-msgid "The metadata element set that, in addition to the Dublin Core element set, was included in the `files` table in previous versions of Omeka. These elements are common to all Omeka files. This set may be deprecated in future versions."
+msgid ""
+"The metadata element set that, in addition to the Dublin Core element set, "
+"was included in the `files` table in previous versions of Omeka. These "
+"elements are common to all Omeka files. This set may be deprecated in future "
+"versions."
 msgstr ""
 
 #. Omeka Legacy File: Additional Creator element
@@ -227,7 +240,9 @@ msgid "Omeka Image File"
 msgstr ""
 
 #. Omeka Image File description
-msgid "The metadata element set that was included in the `files_images` table in previous versions of Omeka. These elements are common to all image files."
+msgid ""
+"The metadata element set that was included in the `files_images` table in "
+"previous versions of Omeka. These elements are common to all image files."
 msgstr ""
 
 #. Omeka Image File: Width element
@@ -267,7 +282,9 @@ msgid "Omeka Video File"
 msgstr ""
 
 #. Omeka Video File description
-msgid "The metadata element set that was included in the `files_videos` table in previous versions of Omeka. These elements are common to all video files."
+msgid ""
+"The metadata element set that was included in the `files_videos` table in "
+"previous versions of Omeka. These elements are common to all video files."
 msgstr ""
 
 #. Omeka Video File: Bitrate element
@@ -311,7 +328,9 @@ msgid "Appearance"
 msgstr ""
 
 #: admin/themes/default/appearance/edit-navigation.php:14
-msgid "Check the links to display them in the main navigation. Click and drag the links into the preferred display order."
+msgid ""
+"Check the links to display them in the main navigation. Click and drag the "
+"links into the preferred display order."
 msgstr ""
 
 #: admin/themes/default/appearance/edit-navigation.php:19
@@ -691,7 +710,9 @@ msgid "Edit Element Set"
 msgstr ""
 
 #: admin/themes/default/element-sets/edit.php:17
-msgid "Click and drag the elements into the preferred display order. Click the right arrows to add customized comments to element descriptions."
+msgid ""
+"Click and drag the elements into the preferred display order. Click the "
+"right arrows to add customized comments to element descriptions."
 msgstr ""
 
 #: admin/themes/default/element-sets/edit.php:29
@@ -721,7 +742,10 @@ msgid "404: Page Not Found"
 msgstr ""
 
 #: admin/themes/default/error/404.php:6
-msgid "You&#8217;ve tried to access a page that does not seem to exist. Sometimes this happens. Below is a quick break-down of the items, collections, and exhibits on this site."
+msgid ""
+"You&#8217;ve tried to access a page that does not seem to exist. Sometimes "
+"this happens. Below is a quick break-down of the items, collections, and "
+"exhibits on this site."
 msgstr ""
 
 #: admin/themes/default/error/404.php:10
@@ -751,7 +775,9 @@ msgstr ""
 
 #: admin/themes/default/error/405.php:9
 #, php-format
-msgid "You must use a different method to access this URL. If you reached this page by following a link or clicking a button in Omeka, please contact the %s."
+msgid ""
+"You must use a different method to access this URL. If you reached this page "
+"by following a link or clicking a button in Omeka, please contact the %s."
 msgstr ""
 
 #: admin/themes/default/files/edit.php:8
@@ -1004,7 +1030,8 @@ msgid "Batch Delete Items"
 msgstr ""
 
 #: admin/themes/default/items/batch-delete.php:38
-msgid "Some items were excluded because you do not have permission to delete them."
+msgid ""
+"Some items were excluded because you do not have permission to delete them."
 msgstr ""
 
 #: admin/themes/default/items/batch-delete.php:41
@@ -1372,7 +1399,9 @@ msgstr ""
 
 #: admin/themes/default/plugins/browse.php:29
 #, php-format
-msgid "%1$s requires the following plugins to be installed, activated, and loaded: %2$s"
+msgid ""
+"%1$s requires the following plugins to be installed, activated, and loaded: "
+"%2$s"
 msgstr ""
 
 #: admin/themes/default/plugins/browse.php:32
@@ -1424,7 +1453,9 @@ msgid "Install"
 msgstr ""
 
 #: admin/themes/default/plugins/browse.php:140
-msgid "You do not have any plugins installed. Add them to the plugins directory to see them listed here."
+msgid ""
+"You do not have any plugins installed. Add them to the plugins directory to "
+"see them listed here."
 msgstr ""
 
 #: admin/themes/default/plugins/config.php:2
@@ -1473,7 +1504,12 @@ msgstr ""
 
 #: admin/themes/default/settings/edit-api.php:32
 #, php-format
-msgid "After enabling the API, applications may be able to show, browse, add, edit, and delete your site resources. Viewing protected content, as well as adding, editing, and deleting content, is protected and requires key authentication. Each key corresponds to, and has all permissions of, an existing Omeka user. You can create keys on each user's %sedit page%s."
+msgid ""
+"After enabling the API, applications may be able to show, browse, add, edit, "
+"and delete your site resources. Viewing protected content, as well as "
+"adding, editing, and deleting content, is protected and requires key "
+"authentication. Each key corresponds to, and has all permissions of, an "
+"existing Omeka user. You can create keys on each user's %sedit page%s."
 msgstr ""
 
 #: admin/themes/default/settings/edit-item-type-elements.php:12
@@ -1490,7 +1526,10 @@ msgid "Confirm Delete"
 msgstr ""
 
 #: admin/themes/default/settings/edit-item-type-elements.php:43
-msgid "Are you sure you want to delete the selected item type elements from the database? You will lose all text related to the selected elements. This cannot be undone."
+msgid ""
+"Are you sure you want to delete the selected item type elements from the "
+"database? You will lose all text related to the selected elements. This "
+"cannot be undone."
 msgstr ""
 
 #: admin/themes/default/settings/edit-item-type-elements.php:50
@@ -1515,7 +1554,12 @@ msgid "Click on the \"Index Records\" button to re-index your records."
 msgstr ""
 
 #: admin/themes/default/settings/edit-search.php:28
-msgid "Indexing means to collect, parse, and store data to facilitate fast and accurate searches. Omeka will automatically index individual records as they are saved, but there are circumstances when your records are not indexed; for instance, when updating from an earlier version of Omeka or after you customize which records will be searchable."
+msgid ""
+"Indexing means to collect, parse, and store data to facilitate fast and "
+"accurate searches. Omeka will automatically index individual records as they "
+"are saved, but there are circumstances when your records are not indexed; "
+"for instance, when updating from an earlier version of Omeka or after you "
+"customize which records will be searchable."
 msgstr ""
 
 #: admin/themes/default/settings/edit-security.php:23
@@ -1560,11 +1604,15 @@ msgid "To view all items with a tag, click the number."
 msgstr ""
 
 #: admin/themes/default/tags/browse.php:28
-msgid "To edit the tag name, click the name and begin editing, and hit \"enter\" to save. To cancel an edit, click the ESC key or click away from the tag."
+msgid ""
+"To edit the tag name, click the name and begin editing, and hit \"enter\" to "
+"save. To cancel an edit, click the ESC key or click away from the tag."
 msgstr ""
 
 #: admin/themes/default/tags/browse.php:29
-msgid "To delete a tag, click the X. Deleting a tag will not delete the tagged items."
+msgid ""
+"To delete a tag, click the X. Deleting a tag will not delete the tagged "
+"items."
 msgstr ""
 
 #: admin/themes/default/tags/browse.php:39
@@ -1609,7 +1657,11 @@ msgid "By %s"
 msgstr ""
 
 #: admin/themes/default/themes/browse.php:27
-msgid "Add new themes by downloading them from the <a href=\"http://omeka.org/add-ons/themes/\" target=\"_blank\">Omeka Theme Directory</a>, or <a href=\"http://omeka.org/codex/Theme_Writing_Best_Practices\" target=\"_blank\">design your own</a>!"
+msgid ""
+"Add new themes by downloading them from the <a href=\"http://omeka.org/add-"
+"ons/themes/\" target=\"_blank\">Omeka Theme Directory</a>, or <a href="
+"\"http://omeka.org/codex/Theme_Writing_Best_Practices\" target=\"_blank"
+"\">design your own</a>!"
 msgstr ""
 
 #: admin/themes/default/themes/browse.php:45
@@ -1630,11 +1682,13 @@ msgid "Upgrade Your Omeka Database"
 msgstr ""
 
 #: admin/themes/default/upgrade/index.php:34
-msgid "Your Omeka database is not compatible with your current version of Omeka."
+msgid ""
+"Your Omeka database is not compatible with your current version of Omeka."
 msgstr ""
 
 #: admin/themes/default/upgrade/index.php:35
-msgid "Please back up your existing database and then click the button to upgrade."
+msgid ""
+"Please back up your existing database and then click the button to upgrade."
 msgstr ""
 
 #: admin/themes/default/upgrade/index.php:37
@@ -1650,7 +1704,10 @@ msgid "Please restore from your database backup and try again."
 msgstr ""
 
 #: admin/themes/default/upgrade/migrate.php:39
-msgid "If you have any questions please refer to <a href=\"http://omeka.org/codex\">Omeka documentation</a> or post a message on the <a href=\"http://omeka.org/forums\">Omeka forums</a>."
+msgid ""
+"If you have any questions please refer to <a href=\"http://omeka.org/codex"
+"\">Omeka documentation</a> or post a message on the <a href=\"http://omeka."
+"org/forums\">Omeka forums</a>."
 msgstr ""
 
 #: admin/themes/default/upgrade/migrate.php:42
@@ -1748,7 +1805,10 @@ msgid "New key label"
 msgstr ""
 
 #: admin/themes/default/users/edit.php:31
-msgid "To create a new API key, enter a label for the key below. For example, describe for what purpose it will be used. This key will have all your permissions; treat it as you would your password."
+msgid ""
+"To create a new API key, enter a label for the key below. For example, "
+"describe for what purpose it will be used. This key will have all your "
+"permissions; treat it as you would your password."
 msgstr ""
 
 #: admin/themes/default/users/edit.php:41
@@ -1832,7 +1892,9 @@ msgid "The navigation settings have been updated."
 msgstr ""
 
 #: application/controllers/AppearanceController.php:69
-msgid "The navigation settings were not saved because of missing or invalid values. All changed values have been restored."
+msgid ""
+"The navigation settings were not saved because of missing or invalid "
+"values.  All changed values have been restored."
 msgstr ""
 
 #: application/controllers/CollectionsController.php:74
@@ -1867,16 +1929,24 @@ msgstr ""
 
 #: application/controllers/CollectionsController.php:104
 #, php-format
-msgid "This will delete the collection \"%s\" and its associated metadata. This will not delete any items in this collection, but will delete the reference to this collection in each item."
+msgid ""
+"This will delete the collection \"%s\" and its associated metadata. This "
+"will not delete any items in this collection, but will delete the reference "
+"to this collection in each item."
 msgstr ""
 
 #: application/controllers/CollectionsController.php:108
 #, php-format
-msgid "This will delete the collection #%s and its associated metadata. This will not delete any items in this collection, but will delete the reference to this collection in each item."
+msgid ""
+"This will delete the collection #%s and its associated metadata. This will "
+"not delete any items in this collection, but will delete the reference to "
+"this collection in each item."
 msgstr ""
 
 #: application/controllers/ElementSetsController.php:21
-msgid "This will delete the element set and all elements assigned to the element set. Items will lose all metadata that is specific to this element set."
+msgid ""
+"This will delete the element set and all elements assigned to the element "
+"set. Items will lose all metadata that is specific to this element set."
 msgstr ""
 
 #: application/controllers/ElementSetsController.php:65
@@ -1907,12 +1977,17 @@ msgstr ""
 
 #: application/controllers/ItemTypesController.php:150
 #, php-format
-msgid "This will delete the \"%s\" item type but will not delete the elements assigned to the item type. Items that are assigned to this item type will lose all metadata that is specific to the item type."
+msgid ""
+"This will delete the \"%s\" item type but will not delete the elements "
+"assigned to the item type. Items that are assigned to this item type will "
+"lose all metadata that is specific to the item type."
 msgstr ""
 
 #: application/controllers/ItemTypesController.php:158
 #, php-format
-msgid "The item type \"%s\" was successfully added! You may now add elements to your new item type."
+msgid ""
+"The item type \"%s\" was successfully added!  You may now add elements to "
+"your new item type."
 msgstr ""
 
 #: application/controllers/ItemsController.php:95
@@ -1947,12 +2022,16 @@ msgstr ""
 
 #: application/controllers/ItemsController.php:125
 #, php-format
-msgid "This will delete the item \"%s\" and its associated metadata. It will also delete all files and file metadata associated with this item."
+msgid ""
+"This will delete the item \"%s\" and its associated metadata. It will also "
+"delete all files and file metadata associated with this item."
 msgstr ""
 
 #: application/controllers/ItemsController.php:129
 #, php-format
-msgid "This will delete the item #%s and its associated metadata. It will also delete all files and file metadata associated with this item."
+msgid ""
+"This will delete the item #%s and its associated metadata. It will also "
+"delete all files and file metadata associated with this item."
 msgstr ""
 
 #: application/controllers/ItemsController.php:255
@@ -1989,7 +2068,9 @@ msgstr ""
 
 #: application/controllers/PluginsController.php:45
 #, php-format
-msgid "Error in configuring plugin named \"%s\". Missing config and/or config_form hook(s)."
+msgid ""
+"Error in configuring plugin named \"%s\". Missing config and/or config_form "
+"hook(s)."
 msgstr ""
 
 #: application/controllers/PluginsController.php:52
@@ -2087,11 +2168,15 @@ msgid "The security settings have been updated."
 msgstr ""
 
 #: application/controllers/SettingsController.php:95
-msgid "You have changed which records are searchable in Omeka. Please re-index the records using the form below."
+msgid ""
+"You have changed which records are searchable in Omeka. Please re-index the "
+"records using the form below."
 msgstr ""
 
 #: application/controllers/SettingsController.php:102
-msgid "Indexing records. This may take a while. You may continue administering your site."
+msgid ""
+"Indexing records. This may take a while. You may continue administering your "
+"site."
 msgstr ""
 
 #: application/controllers/SettingsController.php:131
@@ -2153,7 +2238,9 @@ msgid "SQL error in migration: "
 msgstr ""
 
 #: application/controllers/UsersController.php:70
-msgid "Unable to reset password. Please verify that the information is correct and contact an administrator if necessary."
+msgid ""
+"Unable to reset password. Please verify that the information is correct and "
+"contact an administrator if necessary."
 msgstr ""
 
 #: application/controllers/UsersController.php:108
@@ -2231,7 +2318,10 @@ msgstr ""
 
 #: application/controllers/UsersController.php:297
 #, php-format
-msgid "%s will be deleted from the system. Items, collections, and tags created by this user will remain in the system, but will no longer be associated with this user."
+msgid ""
+"%s will be deleted from the system. Items, collections, and tags created by "
+"this user will remain in the system, but will no longer be associated with "
+"this user."
 msgstr ""
 
 #: application/controllers/UsersController.php:318
@@ -2240,7 +2330,9 @@ msgstr ""
 
 #: application/controllers/UsersController.php:320
 #, php-format
-msgid "Your account for the %s repository has been created. Please click the following link to activate your account:"
+msgid ""
+"Your account for the %s repository has been created. Please click the "
+"following link to activate your account:"
 msgstr ""
 
 #: application/controllers/UsersController.php:323
@@ -2284,7 +2376,9 @@ msgid "Results Per Page (admin)"
 msgstr ""
 
 #: application/forms/AppearanceSettings.php:44
-msgid "Limit the number of results displayed per page in the administrative interface."
+msgid ""
+"Limit the number of results displayed per page in the administrative "
+"interface."
 msgstr ""
 
 #: application/forms/AppearanceSettings.php:50
@@ -2375,7 +2469,9 @@ msgid "Tag Delimiter"
 msgstr ""
 
 #: application/forms/GeneralSettings.php:46
-msgid "Separate tags using this character or string. Be careful when changing this setting. You run the risk of splitting tags that contain the old delimiter."
+msgid ""
+"Separate tags using this character or string. Be careful when changing this "
+"setting. You run the risk of splitting tags that contain the old delimiter."
 msgstr ""
 
 #: application/forms/GeneralSettings.php:59 application/forms/Install.php:163
@@ -2419,7 +2515,8 @@ msgid "Items Per Page (admin)"
 msgstr ""
 
 #: application/forms/Install.php:142
-msgid "Limit the number of items displayed per page in the administrative interface."
+msgid ""
+"Limit the number of items displayed per page in the administrative interface."
 msgstr ""
 
 #: application/forms/Install.php:149
@@ -2489,7 +2586,7 @@ msgstr ""
 
 #: application/forms/Navigation.php:344
 #, php-format
-msgid "Invalid URI for \"%s\" navigation link: \"%s\""
+msgid "Invalid URI for \"%s\" navigation link:  \"%s\""
 msgstr ""
 
 #: application/forms/Navigation.php:377
@@ -2529,7 +2626,8 @@ msgid "Disable File Upload Validation"
 msgstr ""
 
 #: application/forms/SecuritySettings.php:26
-msgid "Check this field if you would like to allow any file to be uploaded to Omeka."
+msgid ""
+"Check this field if you would like to allow any file to be uploaded to Omeka."
 msgstr ""
 
 #: application/forms/SecuritySettings.php:32
@@ -2553,7 +2651,9 @@ msgid "ReCaptcha Public Key"
 msgstr ""
 
 #: application/forms/SecuritySettings.php:53
-msgid "Enter public key from recaptcha.net. Both this and the private key must be filled in to secure public forms."
+msgid ""
+"Enter public key from recaptcha.net. Both this and the private key must be "
+"filled in to secure public forms."
 msgstr ""
 
 #: application/forms/SecuritySettings.php:60
@@ -2561,7 +2661,9 @@ msgid "ReCaptcha Private Key"
 msgstr ""
 
 #: application/forms/SecuritySettings.php:61
-msgid "Enter private key from recaptcha.net. Both this and the public key must be filled in to secure public forms."
+msgid ""
+"Enter private key from recaptcha.net. Both this and the public key must be "
+"filled in to secure public forms."
 msgstr ""
 
 #: application/forms/SecuritySettings.php:69
@@ -2597,7 +2699,9 @@ msgid "HTML Filtering"
 msgstr ""
 
 #: application/forms/User.php:30
-msgid "Username must contain only letters and numbers, and be 30 characters or fewer."
+msgid ""
+"Username must contain only letters and numbers, and be 30 characters or "
+"fewer."
 msgstr ""
 
 #: application/forms/User.php:37
@@ -2645,7 +2749,9 @@ msgid "This email address is already in use."
 msgstr ""
 
 #: application/forms/User.php:129
-msgid "Roles describe the permissions a user has. See <a href='http://omeka.org/codex/User_Roles' target='_blank'>documentation</a> for details."
+msgid ""
+"Roles describe the permissions a user has. See <a href='http://omeka.org/"
+"codex/User_Roles' target='_blank'>documentation</a> for details."
 msgstr ""
 
 #: application/forms/User.php:137
@@ -2668,7 +2774,9 @@ msgstr ""
 
 #: application/libraries/Omeka/Job/Process/Dispatcher.php:127
 #, php-format
-msgid "The configured PHP path (%s) points to a PHP-CLI binary with an invalid version (%s)"
+msgid ""
+"The configured PHP path (%s) points to a PHP-CLI binary with an invalid "
+"version (%s)"
 msgstr ""
 
 #: application/libraries/Omeka/Navigation.php:214
@@ -2676,7 +2784,9 @@ msgid "The page must be normalized and have a valid uid."
 msgstr ""
 
 #: application/libraries/Omeka/Navigation.php:226
-msgid "The parent container must either be the navigation object or a descendant subpage of the navigation object."
+msgid ""
+"The parent container must either be the navigation object or a descendant "
+"subpage of the navigation object."
 msgstr ""
 
 #: application/libraries/Omeka/Navigation/Page/Uri.php:128
@@ -2874,7 +2984,8 @@ msgid "\"%s\" is not a valid file derivative."
 msgstr ""
 
 #: application/models/Item.php:317
-msgid "Files cannot be attached to an item that is not persistent in the database!"
+msgid ""
+"Files cannot be attached to an item that is not persistent in the database!"
 msgstr ""
 
 #. / Chicago-style item citation: two authors
@@ -2935,11 +3046,15 @@ msgid "There are too few values in the element ordering array."
 msgstr ""
 
 #: application/models/ItemType.php:218
-msgid "Invalid element data. To add elements, you must either pass an element objects or an array of element metadata."
+msgid ""
+"Invalid element data. To add elements, you must either pass an element "
+"objects or an array of element metadata."
 msgstr ""
 
 #: application/models/ItemType.php:282
-msgid "Cannot remove elements from an item type that is not persistent in the database!"
+msgid ""
+"Cannot remove elements from an item type that is not persistent in the "
+"database!"
 msgstr ""
 
 #: application/models/ItemType.php:291
@@ -2953,7 +3068,9 @@ msgid "Item type does not contain an element with the ID %s!"
 msgstr ""
 
 #: application/models/ItemType.php:353
-msgid "Invalid parameter. The hasElement function requires either an element object or an element id to determine if an item type has an element."
+msgid ""
+"Invalid parameter. The hasElement function requires either an element object "
+"or an element id to determine if an item type has an element."
 msgstr ""
 
 #: application/models/Mixin/ElementText.php:278
@@ -3251,7 +3368,10 @@ msgid "Omeka has encountered an error"
 msgstr ""
 
 #: application/views/scripts/error/index.php:33
-msgid "To learn how to see more detailed information about this error, see the Omeka Codex page on <a href=\"http://omeka.org/codex/Retrieving_error_messages\">retrieving error messages</a>."
+msgid ""
+"To learn how to see more detailed information about this error, see the "
+"Omeka Codex page on <a href=\"http://omeka.org/codex/"
+"Retrieving_error_messages\">retrieving error messages</a>."
 msgstr ""
 
 #: application/views/scripts/index.php:16
@@ -3339,7 +3459,8 @@ msgid "Installation Error"
 msgstr ""
 
 #: install/views/scripts/index/errors.phtml:2
-msgid "Before installation can continue, the following errors must be resolved:"
+msgid ""
+"Before installation can continue, the following errors must be resolved:"
 msgstr ""
 
 #: install/views/scripts/index/fatal-error.phtml:1
@@ -3351,7 +3472,9 @@ msgid "Installation Warning"
 msgstr ""
 
 #: install/views/scripts/index/index.phtml:4
-msgid "The following issues will not affect installation, but they may negatively affect the behavior of Omeka:"
+msgid ""
+"The following issues will not affect installation, but they may negatively "
+"affect the behavior of Omeka:"
 msgstr ""
 
 #: install/views/scripts/index/index.phtml:14
@@ -3564,174 +3687,11 @@ msgstr "Contact a partner"
 msgid "Dank U"
 msgstr "Thank you"
 
-#: index.php:17 index.php:50 items/browse.php:104
-msgid "Nieuws"
-msgstr "News"
-
-#: index.php:23 simple-pages/page/show.php:32 items/browse.php:78
-#: items/show.php:55 mailer/index/periodicals.php:130
-#: mailer/index/index.php:130 mailer/index/thankyou.php:27
-#: mailer/index/books.php:123 simple-contact-form/index/index.php:106
-#: simple-contact-form/index/thankyou.php:27 sitemap/index/index.php:29
-msgid "Deze pagina: "
-msgstr "This page:"
-
-#: index.php:25 simple-pages/page/show.php:34 items/browse.php:80
-#: items/show.php:57 mailer/index/periodicals.php:132
-#: mailer/index/index.php:132 mailer/index/thankyou.php:29
-#: mailer/index/books.php:125 simple-contact-form/index/index.php:108
-#: simple-contact-form/index/thankyou.php:29 sitemap/index/index.php:31
-msgid "printen"
-msgstr "print"
-
-#: index.php:26 simple-pages/page/show.php:35 items/browse.php:81
-#: items/show.php:58 mailer/index/periodicals.php:133
-#: mailer/index/index.php:133 mailer/index/thankyou.php:30
-#: mailer/index/books.php:126 simple-contact-form/index/index.php:109
-#: simple-contact-form/index/thankyou.php:30 sitemap/index/index.php:32
-msgid "delen"
-msgstr "share"
-
-#: index.php:39
-msgid "Wegwijs"
-msgstr "Manual"
-
-#: index.php:51 items/browse.php:105
-msgid "Partners"
-msgstr "Partners"
-
-#: custom.php:46
-msgid "Er zijn geen nieuwsberichten."
-msgstr "No news items available."
-
-#: custom.php:147
-msgid "Adres: "
-msgstr "Address"
-
-#: custom.php:148
-msgid "Tel: "
-msgstr "Phone:"
-
-#: custom.php:149
-msgid "Fax: "
-msgstr "Fax:"
-
-#: custom.php:150 simple-contact-form/index/index.php:46
-msgid "E-mail: "
-msgstr "E-mail:"
-
-#: simple-pages/page/show.php:57
-msgid "Meer Info"
-msgstr "More Info"
-
-#: items/browse.php:2 items/browse.php:10
-msgid "Nieuwsarchief"
-msgstr "News archive"
-
-#: items/browse.php:21
-#, php-format
-msgid "(%s totaal)"
-msgstr "(%s total)"
-
-#: items/browse.php:60 items/show.php:33
-msgid "Trefwoorden"
-msgstr "Keywords"
-
-#: items/browse.php:94
-msgid "Sorteer op"
-msgstr "Sort on"
-
-#: items/show.php:77
-msgid "Bestanden"
-msgstr "Files"
-
-#: mailer/index/periodicals.php:7 mailer/index/periodicals.php:19
-#: mailer/index/index.php:7
-msgid "Aanvraagformulier tijdschrift"
-msgstr "Periodical request form"
-
-#: mailer/index/periodicals.php:24 mailer/index/books.php:24
-msgid "Velden met * zijn verplicht in the vullen"
-msgstr "Fields with * are obligatory"
-
-#: mailer/index/periodicals.php:30 mailer/index/index.php:30
-msgid "Welk tijdschrift?"
-msgstr "Which periodical?"
-
-#: mailer/index/periodicals.php:33 mailer/index/index.php:33
-msgid "Titel tijdschrift*:"
-msgstr "Periodical title*:"
-
-#: mailer/index/periodicals.php:38 mailer/index/index.php:38
-msgid "Uitgever:"
-msgstr "Publisher:"
-
-#: mailer/index/periodicals.php:43 mailer/index/index.php:43
-msgid "ISSN?:"
-msgstr "ISSN?:"
-
-#: mailer/index/periodicals.php:47 mailer/index/index.php:47
-msgid "Welk artikel?"
-msgstr "Which article?"
-
-#: mailer/index/periodicals.php:51 mailer/index/index.php:51
-msgid "Titel artikel*:"
-msgstr "Article title*:"
-
-#: mailer/index/periodicals.php:56 mailer/index/index.php:56
-#: mailer/index/books.php:49
-msgid "Auteur:"
-msgstr "Author:"
-
-#: mailer/index/periodicals.php:61 mailer/index/index.php:61
-#: mailer/index/books.php:54
-msgid "Jaar*:"
-msgstr "Year*:"
-
-#: mailer/index/periodicals.php:66 mailer/index/index.php:66
-msgid "Volume*:"
-msgstr "Volume*:"
-
-#: mailer/index/periodicals.php:71 mailer/index/index.php:71
-msgid "Tijdschriftnummer:"
-msgstr "Issue:"
-
-#: mailer/index/periodicals.php:76 mailer/index/index.php:76
-msgid "Pagina*:"
-msgstr "Page*:"
-
-#: mailer/index/periodicals.php:81 mailer/index/index.php:81
-#: mailer/index/books.php:74
-msgid "Commentaar:"
-msgstr "Comment:"
-
-#: mailer/index/periodicals.php:85 mailer/index/index.php:85
-#: mailer/index/books.php:78
-msgid "Wie bent u?"
-msgstr "Who are you?"
-
-#: mailer/index/periodicals.php:89 mailer/index/index.php:89
-#: mailer/index/books.php:82
-msgid "Voornaam*:"
-msgstr "First name*:"
-
-#: mailer/index/periodicals.php:94 mailer/index/index.php:94
-msgid "Familienaam:"
-msgstr "Surname*:"
-
-#: mailer/index/periodicals.php:99 mailer/index/index.php:99
-#: mailer/index/books.php:92
-msgid "E-mail*:"
-msgstr "E-mail*:"
-
-#: mailer/index/periodicals.php:104 mailer/index/index.php:104
-#: mailer/index/books.php:97
-msgid "Instelling*:"
-msgstr "Institution*:"
-
 #: mailer/index/thankyou.php:21
-msgid "We hebben uw aanvraag goed ontvangen en helpen u zo spoedig mogelijk verder."
-msgstr "We have received your request and we will help you as soon as possible."
+msgid ""
+"We hebben uw aanvraag goed ontvangen en helpen u zo spoedig mogelijk verder."
+msgstr ""
+"We have received your request and we will help you as soon as possible."
 
 #: mailer/index/books.php:7 mailer/index/books.php:19
 msgid "Aanvraagformulier boek"
@@ -3826,4 +3786,3 @@ msgstr "Sitemap"
 #: tags
 msgid "algemeen"
 msgstr "general"
-
