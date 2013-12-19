@@ -1,0 +1,304 @@
+#
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: vdic-vertaling\n"
+"POT-Creation-Date: 2013-12-12 14:54+0100\n"
+"PO-Revision-Date: 2013-12-19 09:38+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl_BE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-Basepath: /opt/lampp/htdocs/omeka/vdic/themes/default/\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: index.php:17 index.php:50 items/browse.php:104
+msgid "Nieuws"
+msgstr "Nieuws"
+
+#: index.php:23 simple-pages/page/show.php:32 items/browse.php:78
+#: items/show.php:55 mailer/index/periodicals.php:130
+#: mailer/index/index.php:130 mailer/index/thankyou.php:27
+#: mailer/index/books.php:123 simple-contact-form/index/index.php:106
+#: simple-contact-form/index/thankyou.php:27 sitemap/index/index.php:29
+msgid "Deze pagina: "
+msgstr "Deze pagina: "
+
+#: index.php:25 simple-pages/page/show.php:34 items/browse.php:80
+#: items/show.php:57 mailer/index/periodicals.php:132
+#: mailer/index/index.php:132 mailer/index/thankyou.php:29
+#: mailer/index/books.php:125 simple-contact-form/index/index.php:108
+#: simple-contact-form/index/thankyou.php:29 sitemap/index/index.php:31
+msgid "printen"
+msgstr "printen"
+
+#: index.php:26 simple-pages/page/show.php:35 items/browse.php:81
+#: items/show.php:58 mailer/index/periodicals.php:133
+#: mailer/index/index.php:133 mailer/index/thankyou.php:30
+#: mailer/index/books.php:126 simple-contact-form/index/index.php:109
+#: simple-contact-form/index/thankyou.php:30 sitemap/index/index.php:32
+msgid "delen"
+msgstr "delen"
+
+#: index.php:39
+msgid "Wegwijs"
+msgstr "Wegwijs"
+
+#: index.php:51 items/browse.php:105
+msgid "Partners"
+msgstr "Partners"
+
+#: custom.php:46
+msgid "Er zijn geen nieuwsberichten."
+msgstr "Er zijn geen nieuwsberichten."
+
+#: custom.php:147
+msgid "Adres: "
+msgstr "Adres: "
+
+#: custom.php:148
+msgid "Tel: "
+msgstr "Tel: "
+
+#: custom.php:149
+msgid "Fax: "
+msgstr "Fax: "
+
+#: custom.php:150 simple-contact-form/index/index.php:46
+msgid "E-mail: "
+msgstr "E-mail: "
+
+#: simple-pages/page/show.php:57
+msgid "Meer Info"
+msgstr "Meer Info"
+
+#: items/browse.php:2 items/browse.php:10
+msgid "Nieuwsarchief"
+msgstr "Nieuwsarchief"
+
+#: items/browse.php:21
+#, php-format
+msgid "(%s totaal)"
+msgstr "(%s totaal)"
+
+#: items/browse.php:60 items/show.php:33
+msgid "Trefwoorden"
+msgstr "Trefwoorden"
+
+#: items/browse.php:94
+msgid "Sorteer op"
+msgstr "Sorteer op"
+
+#: items/show.php:77
+msgid "Bestanden"
+msgstr "Bestanden"
+
+#: mailer/index/periodicals.php:7 mailer/index/periodicals.php:19
+#: mailer/index/index.php:7
+msgid "Aanvraagformulier tijdschrift"
+msgstr "Aanvraagformulier tijdschrift"
+
+#: mailer/index/periodicals.php:24 mailer/index/books.php:24
+msgid "Velden met * zijn verplicht in the vullen"
+msgstr "Velden met * zijn verplicht in the vullen"
+
+#: mailer/index/periodicals.php:30 mailer/index/index.php:30
+msgid "Welk tijdschrift?"
+msgstr "Welk tijdschrift?"
+
+#: mailer/index/periodicals.php:33 mailer/index/index.php:33
+msgid "Titel tijdschrift*:"
+msgstr "Titel tijdschrift*:"
+
+#: mailer/index/periodicals.php:38 mailer/index/index.php:38
+msgid "Uitgever:"
+msgstr "Uitgever:"
+
+#: mailer/index/periodicals.php:43 mailer/index/index.php:43
+msgid "ISSN?:"
+msgstr "ISSN?:"
+
+#: mailer/index/periodicals.php:47 mailer/index/index.php:47
+msgid "Welk artikel?"
+msgstr "Welk artikel?"
+
+#: mailer/index/periodicals.php:51 mailer/index/index.php:51
+msgid "Titel artikel*:"
+msgstr "Titel artikel*:"
+
+#: mailer/index/periodicals.php:56 mailer/index/index.php:56
+#: mailer/index/books.php:49
+msgid "Auteur:"
+msgstr "Auteur:"
+
+#: mailer/index/periodicals.php:61 mailer/index/index.php:61
+#: mailer/index/books.php:54
+msgid "Jaar*:"
+msgstr "Jaar*:"
+
+#: mailer/index/periodicals.php:66 mailer/index/index.php:66
+msgid "Volume*:"
+msgstr "Volume*:"
+
+#: mailer/index/periodicals.php:71 mailer/index/index.php:71
+msgid "Tijdschriftnummer:"
+msgstr "Tijdschriftnummer:"
+
+#: mailer/index/periodicals.php:76 mailer/index/index.php:76
+msgid "Pagina*:"
+msgstr "Pagina*:"
+
+#: mailer/index/periodicals.php:81 mailer/index/index.php:81
+#: mailer/index/books.php:74
+msgid "Commentaar:"
+msgstr "Commentaar:"
+
+#: mailer/index/periodicals.php:85 mailer/index/index.php:85
+#: mailer/index/books.php:78
+msgid "Wie bent u?"
+msgstr "Wie bent u?"
+
+#: mailer/index/periodicals.php:89 mailer/index/index.php:89
+#: mailer/index/books.php:82
+msgid "Voornaam*:"
+msgstr "Voornaam*:"
+
+#: mailer/index/periodicals.php:94 mailer/index/index.php:94
+msgid "Familienaam:"
+msgstr "Familienaam:"
+
+#: mailer/index/periodicals.php:99 mailer/index/index.php:99
+#: mailer/index/books.php:92
+msgid "E-mail*:"
+msgstr "E-mail*:"
+
+#: mailer/index/periodicals.php:104 mailer/index/index.php:104
+#: mailer/index/books.php:97
+msgid "Instelling*:"
+msgstr "Instelling*:"
+
+#: mailer/index/periodicals.php:109 mailer/index/index.php:109
+#: mailer/index/books.php:102
+msgid "Dienst*:"
+msgstr "Dienst*:"
+
+#: mailer/index/periodicals.php:122 mailer/index/index.php:122
+#: mailer/index/thankyou.php:7 mailer/index/books.php:115
+msgid "Aanvragen"
+msgstr "Aanvragen"
+
+#: mailer/index/periodicals.php:146 mailer/index/index.php:146
+#: mailer/index/thankyou.php:43 mailer/index/books.php:139
+#: simple-contact-form/index/index.php:122
+#: simple-contact-form/index/thankyou.php:43 sitemap/index/index.php:45
+msgid "Contacteer een partner"
+msgstr "Contacteer een partner"
+
+#: mailer/index/thankyou.php:19
+msgid "Dank U"
+msgstr "Dank U"
+
+#: mailer/index/thankyou.php:21
+msgid ""
+"We hebben uw aanvraag goed ontvangen en helpen u zo spoedig mogelijk verder."
+msgstr ""
+"We hebben uw aanvraag goed ontvangen en helpen u zo spoedig mogelijk verder."
+
+#: mailer/index/books.php:7 mailer/index/books.php:19
+msgid "Aanvraagformulier boek"
+msgstr "Aanvraagformulier boek"
+
+#: mailer/index/books.php:30
+msgid "Welk boek?"
+msgstr "Welk boek?"
+
+#: mailer/index/books.php:33
+msgid "Titel boek*:"
+msgstr "Titel boek*:"
+
+#: mailer/index/books.php:38
+msgid "Uitgever*:"
+msgstr "Uitgever*:"
+
+#: mailer/index/books.php:43
+msgid "ISBN?:"
+msgstr "ISBN?:"
+
+#: mailer/index/books.php:59
+msgid "Editie:"
+msgstr "Editie:"
+
+#: mailer/index/books.php:64
+msgid "Bibliotheek:"
+msgstr "Bibliotheek:"
+
+#: mailer/index/books.php:69
+msgid "Plaatsingsnummer:"
+msgstr "Plaatsingsnummer:"
+
+#: mailer/index/books.php:87
+msgid "Familienaam*:"
+msgstr "Familienaam*:"
+
+#: common/header.php:104
+msgid "Andere informatie en diensten van de overheid:"
+msgstr "Andere informatie en diensten van de overheid:"
+
+#: common/header.php:131
+msgid "Zoek"
+msgstr "Zoek"
+
+#: common/header.php:139
+msgid "Tijdschriften"
+msgstr "Tijdschriften"
+
+#: common/header.php:147
+msgid "Databanken"
+msgstr "Databanken"
+
+#: common/header.php:154
+msgid "Boeken"
+msgstr "Boeken"
+
+#: common/header.php:161
+msgid "Publicaties"
+msgstr "Publicaties"
+
+#: simple-contact-form/index/index.php:40
+msgid "Naam: "
+msgstr "Naam: "
+
+#: simple-contact-form/index/index.php:58
+#: simple-contact-form/index/index.php:70
+msgid "IBL aanvraag"
+msgstr "IBL aanvraag"
+
+#: simple-contact-form/index/index.php:61
+#: simple-contact-form/index/index.php:69
+msgid "Vraag naar bijkomende informatie"
+msgstr "Vraag naar bijkomende informatie"
+
+#: simple-contact-form/index/index.php:65
+msgid "Onderwerp"
+msgstr "Onderwerp"
+
+#: simple-contact-form/index/index.php:79
+msgid "Boodschap: "
+msgstr "Boodschap: "
+
+#: simple-contact-form/index/index.php:95
+msgid "Verstuur"
+msgstr "Verstuur"
+
+#: sitemap/index/index.php:7 sitemap/index/index.php:19
+msgid "Sitemap"
+msgstr "Sitemap"
+
+#: tags
+msgid "algemeen"
+msgstr "algemeen"
