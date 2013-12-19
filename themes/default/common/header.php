@@ -59,8 +59,10 @@
         jQuery('.navigation li').each(function(){
             var that = jQuery(this);
             var link = jQuery('a',that).attr('href');
+            var lang = '<?php echo libis_get_language(); ?>';
             if(link.indexOf('fr/')==-1 && link.indexOf('nl/')==-1 && link.indexOf('de/')==-1 && link.indexOf('en/')==-1){
                 that.show();
+                if(jQuery('a',that).text()=='Contact' && lang == 'de'){jQuery('a',that).text('Kontakt')}
             }
             if(link.indexOf('<?php echo libis_get_language_slug(); ?>')!=-1){
                 that.show();
