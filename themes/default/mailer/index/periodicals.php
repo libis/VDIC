@@ -91,7 +91,7 @@
             </div>
             <div class="field">
                     <?php 
-                        echo $this->formLabel('familienaam', __('Familienaam:'));
+                        echo $this->formLabel('familienaam', __('Familienaam*:'));
                         echo $this->formText('familienaam', $familienaam, array('class'=>'textinput')); ?>
             </div>           
             <div class="field">
