@@ -71,7 +71,7 @@
                     
 	    </div>
         </div>
-        
+        <div class="navigation simple"></div>
 </div>
 </div>
 </div>
