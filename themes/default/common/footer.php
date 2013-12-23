@@ -5,9 +5,9 @@
             <?php endif; ?>
             <div class="navSecond">
                 <ul>
-                    <li class="first"><span class="page"><span class="copyright">© 2013</span> - FOD Volksgezondheid, Veilighed van de Voedselketen en Leefmilieu</span></li>
-                    <li><a href="#" class="page">Juridische informatie</a></li>
-                    <li class="last active"><a href="<?php echo url("privacy")?>" class="page">Privacy</a></li>
+                    <li class="first"><span class="page"><span class="copyright">© 2013</span> - <?php echo __('FOD Volksgezondheid, Veilighed van de Voedselketen en Leefmilieu');?></span></li>
+                    <li><a href="#" class="page"><?php echo __("Juridische informatie")?></a></li>
+                    <li class="last active"><a href="<?php echo url("privacy")?>" class="page"><?php echo __('Privacy');?></a></li>
                 </ul>
             </div>
             <?php fire_plugin_hook('public_footer'); ?>

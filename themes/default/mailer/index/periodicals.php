@@ -128,7 +128,7 @@
         <?php 
             echo __('Het International Serials Standard Number (ISSN) is een uniek identificatienummer voor periodieke
         publicaties. Een ISSN bestaat uit twee groepen van vier cijfers, gescheiden door een liggend streepje.');
-            echo __('Het laatste cijfer, een controlecijfer, kan ook een "X" zijn. U kunt een ISSN meestal snel vinden door in Google de volledige naam van het tijdschrift, gevolgd door “issn” in te tikken (bijv. “environmental health perspectives issn”).');
+            echo __('Het laatste cijfer, een controlecijfer, kan ook een "X" zijn. U kunt een ISSN meestal snel vinden door in Google de volledige naam van het tijdschrift, gevolgd door "issn" in te tikken (bijv. "environmental health perspectives issn").');
         ?> 
         </p>
 </div>

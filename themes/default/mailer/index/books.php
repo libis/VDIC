@@ -119,7 +119,7 @@
 	</form>
     <p><b>(?)</b>
         <?php
-            echo __('Het International Standard Book Number (ISBN) is een uniek identificatienummer voor (een bepaalde uitgave van) een boek. De meest recente ISBN bestaat uit 13 cijfers (…-.-….-….-.). De oudere ISBN bestaan uit 10 (.-….-….-.) of 9 cijfers. U kunt een ISBN meestal snel vinden door in Google de volledige naam van het boek, gevolgd door “isbn” in te tikken (bijv. “how to publish in biomedicine: 500 tips for success isbn”).');
+            echo __('Het International Standard Book Number (ISBN) is een uniek identificatienummer voor (een bepaalde uitgave van) een boek. De meest recente ISBN bestaat uit 13 cijfers (...-.-....-....-.). De oudere ISBN bestaan uit 10 (...-...-...-.) of 9 cijfers. U kunt een ISBN meestal snel vinden door in Google de volledige naam van het boek, gevolgd door "isbn" in te tikken (bijv. "how to publish in biomedicine: 500 tips for success isbn").');
         ?>
     </p>
 </div>

@@ -3785,3 +3785,72 @@ msgstr ""
 #: tags
 msgid "algemeen"
 msgstr ""
+
+#: simple-contact-form/index/index.php:65
+#, fuzzy
+msgid "Onderwerp: "
+msgstr ""
+
+#: simple-contact-form/index/index.php:7
+#: simple-contact-form/index/index.php:19
+msgid "Contact"
+msgstr ""
+
+#: simple-contact-form/index/index.php:31
+msgid "Toegangsplan FOD VVVL"
+msgstr ""
+
+#: mailer/index/books.php:122
+msgid ""
+"Het International Standard Book Number (ISBN) is een uniek "
+"identificatienummer voor (een bepaalde uitgave van) een boek. De meest "
+"recente ISBN bestaat uit 13 cijfers (...-.-....-....-.). De oudere ISBN "
+"bestaan uit 10 (...-...-...-.) of 9 cijfers. U kunt een ISBN meestal snel "
+"vinden door in Google de volledige naam van het boek, gevolgd door \"isbn\" "
+"in te tikken (bijv. \"how to publish in biomedicine: 500 tips for success "
+"isbn\")."
+msgstr ""
+
+#: mailer/index/periodicals.php:129
+msgid ""
+"Het International Serials Standard Number (ISSN) is een uniek "
+"identificatienummer voor periodieke\n"
+"        publicaties. Een ISSN bestaat uit twee groepen van vier cijfers, "
+"gescheiden door een liggend streepje."
+msgstr ""
+
+#: mailer/index/periodicals.php:131
+msgid ""
+"Het laatste cijfer, een controlecijfer, kan ook een \"X\" zijn. U kunt een "
+"ISSN meestal snel vinden door in Google de volledige naam van het "
+"tijdschrift, gevolgd door \"issn\" in te tikken (bijv. \"environmental "
+"health perspectives issn\")."
+msgstr ""
+
+#: mailer/index/cebam.php:19
+msgid "Aanvraagformulier voor toegangscodes tot CEBAM"
+msgstr ""
+
+#: mailer/index/cebam.php:59
+msgid "Taal*:"
+msgstr ""
+
+#: search/index.php:23
+msgid "Zoekresultaten"
+msgstr ""
+
+#: simple-pages/page/show.php:65
+msgid "Aanvraag CEBAM-login"
+msgstr ""
+
+#common/footer.php:8
+msgid "FOD Volksgezondheid, Veilighed van de Voedselketen en Leefmilieu"
+msgstr ""
+
+#common/footer.php:9
+msgid "Juridische informatie"
+msgstr ""
+
+#common/footer.php:10
+msgid "Privacy"
+msgstr ""

@@ -20,7 +20,7 @@ $query = $_GET['query'];
             <div class="wrapper clearfix">
                 <div class="wrapperIn">
                     <div class="content">
-                        <h1 class="heading "><span><?php echo __('Search results for')?> "<?php echo html_escape($query); ?>" <?php echo __('(%s total)', $total_results);?></span></h1>
+                        <h1 class="heading "><span><?php echo __('Zoekresultaten')?> "<?php echo html_escape($query); ?>" <?php echo __('(%s total)', $total_results);?></span></h1>
                         <div class="textblock">
                             <?php if ($total_results): ?>
                             <?php echo pagination_links(); ?>

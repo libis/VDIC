@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: Omeka\n"
 "Report-Msgid-Bugs-To: omeka-dev@googlegroups.com\n"
 "POT-Creation-Date: 2012-11-26 14:33-0500\n"
-"PO-Revision-Date: 2013-12-19 09:54+0100\n"
+"PO-Revision-Date: 2013-12-23 14:36+0100\n"
 "Last-Translator: \n"
 "Language-Team: French (http://www.transifex.com/projects/p/omeka/language/"
 "fr/)\n"
@@ -4020,3 +4020,84 @@ msgstr "Plan du site"
 #: tags
 msgid "algemeen"
 msgstr "général"
+
+#: simple-contact-form/index/index.php:65
+msgid "Onderwerp: "
+msgstr "Sujet:"
+
+#: simple-contact-form/index/index.php:7
+#: simple-contact-form/index/index.php:19
+msgid "Contact"
+msgstr "Contact"
+
+#: simple-contact-form/index/index.php:31
+msgid "Toegangsplan FOD VVVL"
+msgstr "Plan d'accès au SPF SPSCAE"
+
+#: mailer/index/books.php:122
+msgid ""
+"Het International Standard Book Number (ISBN) is een uniek "
+"identificatienummer voor (een bepaalde uitgave van) een boek. De meest "
+"recente ISBN bestaat uit 13 cijfers (...-.-....-....-.). De oudere ISBN "
+"bestaan uit 10 (...-...-...-.) of 9 cijfers. U kunt een ISBN meestal snel "
+"vinden door in Google de volledige naam van het boek, gevolgd door \"isbn\" "
+"in te tikken (bijv. \"how to publish in biomedicine: 500 tips for success "
+"isbn\")."
+msgstr ""
+"L’International Standard Book Number (ISBN) est un numéro qui permet "
+"d’identifier, de manière unique, chaque édition de chaque livre publié. "
+"L’ISBN le plus récent est constitué de 13 chiffres (…-.-….-….-.). L’ancien "
+"ISBN est constitué de 10 (.-….-….-.) ou 9 chiffres. De manière générale, "
+"l’ISBN d’un livre se retrouve assez vite: dans Google, introduisez le nom "
+"complet du périodique, suivi d’ “isbn” (par exemple “how to publish in "
+"biomedicine: 500 tips for success isbn”)."
+
+#: mailer/index/periodicals.php:129
+msgid ""
+"Het International Serials Standard Number (ISSN) is een uniek "
+"identificatienummer voor periodieke\n"
+"        publicaties. Een ISSN bestaat uit twee groepen van vier cijfers, "
+"gescheiden door een liggend streepje."
+msgstr ""
+"L’International Serials Standard Number (ISSN) est un numéro "
+"d’identification unique destiné aux publications en série. L’ISSN est "
+"constitué de deux groupes de quatre chiffres, ces groupes étant séparés par "
+"un tiret."
+
+#: mailer/index/periodicals.php:131
+msgid ""
+"Het laatste cijfer, een controlecijfer, kan ook een \"X\" zijn. U kunt een "
+"ISSN meestal snel vinden door in Google de volledige naam van het "
+"tijdschrift, gevolgd door \"issn\" in te tikken (bijv. \"environmental "
+"health perspectives issn\")."
+msgstr ""
+"Le dernier chiffre, situé au 8ème position, sert de clé de contrôle; il peut "
+"parfois prendre la valeur \"X\". De manière générale, le numéro ISSN d’un "
+"périodique se retrouve assez vite: dans Google, introduisez le nom complet "
+"du périodique, suivi par “issn” (par exemple “environmental health "
+"perspectives issn”)."
+
+#: mailer/index/cebam.php:19
+msgid "Aanvraagformulier voor toegangscodes tot CEBAM"
+msgstr "Formulaire de demande pour des codes d'accès CEBAM"
+
+#: mailer/index/cebam.php:59
+msgid "Taal*:"
+msgstr "Langue*:"
+
+#: search/index.php:23
+msgid "Zoekresultaten"
+msgstr "Résultats de recherche"
+
+#: simple-pages/page/show.php:65
+msgid "Aanvraag CEBAM-login"
+msgstr "Demande de code d'accès CEBAM"
+
+msgid "FOD Volksgezondheid, Veilighed van de Voedselketen en Leefmilieu"
+msgstr "SPF Santé publique, Sécurité de la Chaîne Alimentaire et Environnement"
+
+msgid "Juridische informatie"
+msgstr "Informations juridiques"
+
+msgid "Privacy"
+msgstr "Vie privée"
