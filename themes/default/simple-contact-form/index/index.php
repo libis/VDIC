@@ -4,7 +4,7 @@
             <div class="breadIndicator"> U bevindt zich hier: </div>
             <ol>
                 <li class="first"><span class="page"><a href="<?php echo url("");?>">Home</a></span></li> /
-                <li class="last"><span class="page">Contact</span></li>
+                <li class="last"><span class="page"><?php echo __("Contact");?></span></li>
             </ol>   
         </div>
     </div>
@@ -16,18 +16,20 @@
             <div class="wrapper clearfix">
                 <div class="wrapperIn">
                     <div class="content">
-                        <h1 class="heading "><span><?php echo html_escape(get_option('simple_contact_form_contact_page_title')); ?></span></h1>
+                        <h1 class="heading "><span><?php echo __("Contact");?></span></h1>
                         <div class="textblock">
                             <div id="simple-contact">
                                 <div id="form-instructions">
-                                    <?php
-                                        if(isset($_GET['partner'])){
-                                            $info = Libis_partner_info($_GET['partner']);
-                                        }else{
-                                            $info = Libis_partner_info('WIV');
-                                        }    
-                                        echo $info['html'];
-                                    ?>
+                                   
+                                    <table class='bib-info'>
+                                        <tr><td><?php echo __("Adres: ");?></td><td>Vesalius Documentation and Information Center (VDIC)
+                                                <br>Victor Hortaplein/Place Victor Horta 40/10
+                                                <br>1060 Brussel / Bruxelles
+                                            </td></tr>
+                                        <tr><td><?php echo __("Tel: ");?></td><td>+32 (0)2 524 93 55 (Bernadette Claus), +32 (0)2 524 98 41 (Kristof Eelen)</td></tr>
+                                        <tr><td><?php echo __("E-mail: ");?></td><td><a href="mailto:biblio@health.belgium.be">biblio@health.belgium.be</a></td></tr>
+                                        <tr><td colspan="2"><a href="http://www.health.belgium.be/eportal/Aboutus/ourorganisation/HowtogettotheFPS/index.htm?fodnlang=<?php echo Libis_get_language();?>"><?php echo __("Toegangsplan FOD VVVL");?></a></td></tr>
+                                    </table>
                                     
                                     <?php //echo get_option('simple_contact_form_contact_page_instructions'); // HTML ?>
                                 </div>
@@ -46,7 +48,7 @@
                                                 echo $this->formLabel('email', __('E-mail: '));
                                                 echo $this->formText('email', $email, array('class'=>'textinput'));  ?>
                                     </div>
-                                    
+                                    <br>
                                     <div class="field">
                                         <?php 
                                                
@@ -58,31 +60,22 @@
                                                         $value = __('IBL aanvraag');
                                                     }
                                                 }else{
-                                                    $value = __('Vraag naar bijkomende informatie');
+                                                    $value = "";
                                                 }
-                                                
-                                                $title = new Zend_Form_Element_Select('onderwerp');
-                                                $title->setLabel(__('Onderwerp'))
-                                                        
-                                                        ->setValue($value)
-                                                        ->setMultiOptions(array(
-                                                        __("Vraag naar bijkomende informatie") => __("Vraag naar bijkomende informatie"),
-                                                        __("IBL aanvraag") => __("IBL aanvraag")
-                                                        ))
-                                                ->setRequired(true)->addValidator('NotEmpty', true);
-                                            echo "<p>".$title."</p>";
+                                                echo $this->formLabel('onderwerp', __('Onderwerp: '));
+                                                echo $this->formText('onderwerp', $value, array('class'=>'textinput')); 
+                                        
                                         ?>
                                     </div>
-
+                                    <br>
                                     <div class="field">
                                       <?php 
                                         echo $this->formLabel('message', __('Boodschap: '));
                                         echo $this->formTextarea('message', $message, array('class'=>'textinput', 'cols' => '62', 'rows' => '10')); ?>
                                     </div>    
 
-                                </fieldset>
-                                    
-                                <input type="hidden" name="email_to" value="<?php echo $info["email"];?>">
+                                </fieldset>               
+                              
 
                                 <fieldset>
                                     <?php if ($captcha): ?>
@@ -115,7 +108,23 @@
                     <div class="contextBlock">
                         <div class="section first">
                             <h2 class="heading "><span><?php echo __("Contacteer een partner");?></span></h2>
-                            <?php echo Libis_contact_partners();?>                                                 
+                            <?php 
+                            $lang = libis_get_language();
+                            if($lang == 'nl')
+                                $html = nav(simple_pages_get_links_for_children_pages(5));
+                            if($lang == 'fr')
+                                $html = nav(simple_pages_get_links_for_children_pages(106));
+                            if($lang == 'de')
+                                $html = nav(simple_pages_get_links_for_children_pages(229));
+                            if($lang == 'en')
+                                $html = nav(simple_pages_get_links_for_children_pages(259));
+                            
+                            if($html->render() != ""){
+                              
+                                echo $html;
+                              
+                            }
+                ?>                                                
                         </div>
 
                     </div>
