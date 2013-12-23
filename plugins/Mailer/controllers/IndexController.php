@@ -45,7 +45,7 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
                     $message .= __("Instelling: ").$instelling."<br>"; 
                     $message .= __("Dienst: ").$dienst;
                        
-                    $this->sendEmailNotification($email,$voornaam.' '.$familienaam, $message);               
+                    $this->sendEmailNotification($email,$voornaam.' '.$familienaam, $message,'biblio@wiv-isp.be');               
                     
                     $this->_helper->redirector('thankyou');
     		}
@@ -312,15 +312,21 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
         return Omeka_Captcha::getCaptcha();
     }
 
-    protected function sendEmailNotification($formEmail, $formName, $formMessage) {
+    protected function sendEmailNotification($formEmail, $formName, $formMessage,$diff_email=null) {
 
 		//setup smtp
 		$tr = new Zend_Mail_Transport_Smtp('smtp.kuleuven.be');
 		Zend_Mail::setDefaultTransport($tr);
+                
 
-		//notify the admin
-		//use the admin email specified in the plugin configuration.
+        //notify the admin
+        //use the admin email specified in the plugin configuration.
         $forwardToEmail = get_option('mailer_forward_to_email');
+        
+        if($diff_email){
+            $formEmail = $diff_email;
+            $forwardToEmail = $diff_email;
+        }
 
         if (!empty($forwardToEmail)) {
             $mail = new Zend_Mail();
