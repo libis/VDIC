@@ -383,7 +383,7 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 /* in grid three */
 .gridThree .content .textblock {margin-left:2em;}
 .textblock .date {color: #606E2F;}
-.textblock .newsitem {padding-bottom:10px;margin-bottom:10px;border-bottom: 1px solid #EFF0EA;}
+.textblock .newsitem {padding-bottom:10px;margin-bottom:10px;border-bottom: 1px solid #EFF0EA;clear:both;}
 
 
 /* image .................................................................... */
@@ -835,7 +835,7 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
   }
   .pagination li {
     list-style-type: none;
-    background:none;
+    background:none !important;
     line-height: 24px;
     height: 24px;
     display: inline-block;
@@ -845,9 +845,7 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
   .pagination input[type=text] {
     width: 2em;
     margin-right: 5px;
-    padding:0 2px;
-    border-style: solid;
-    border-width: 0.0625em;   
+    padding:0 2px;  
   }
   .pagination .pagination_next, .pagination .pagination_previous {
     height: 24px;
