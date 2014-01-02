@@ -3,16 +3,16 @@ if ($this->pageCount > 1):
     $getParams = $_GET;
 ?>
 
-<ul class="pagination">
+<div class="pagination">
     <?php if (isset($this->previous)): ?>
     <!-- Previous page link --> 
-    <li class="pagination_previous">
+   
         <?php $getParams['page'] = $previous; ?>
         <a href="<?php echo html_escape($this->url(array(), null, $getParams)); ?>"><?php echo __('&lt;'); ?></a>
-    </li>
+   
     <?php endif; ?>
     
-    <li class="page-input">
+   
     <form action="<?php echo html_escape($this->url()); ?>" method="get" accept-charset="utf-8">
     <?php
     $hiddenParams = array();
@@ -31,17 +31,16 @@ if ($this->pageCount > 1):
         }
     }
     ?>
-    <?php echo __('%s of %s', $this->formText('page', $this->current), $this->last); ?>
+    <?php echo __('%s of %s', $this->formText('page', $this->current,array('size'=>'10')), $this->last); ?>
     </form>
-    </li>
+  
     
     <?php if (isset($this->next)): ?> 
     <!-- Next page link -->
-    <li class="pagination_next">
+   
         <?php $getParams['page'] = $next; ?>
         <a href="<?php echo html_escape($this->url(array(), null, $getParams)); ?>"><?php echo __('&gt;'); ?></a>
-    </li>
     <?php endif; ?>
-</ul>
+</div>
 
 <?php endif; ?>
