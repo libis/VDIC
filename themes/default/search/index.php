@@ -24,7 +24,9 @@ $query = $_GET['query'];
                         <h1 class="heading "><span><?php echo __('Zoekresultaten')?> "<?php echo html_escape($query); ?>" <?php echo __('(%s total)', $total_results);?></span></h1>
                         <div class="textblock">
                             <?php if ($total_results): ?>
-                            <?php echo pagination_links(); ?>
+                            <div class="pagination-container">
+                                <?php echo pagination_links(); ?>
+                            </div>    
                             <?php foreach (loop('search_texts') as $searchText): ?>
                             <?php $record = get_record_by_id($searchText['record_type'], $searchText['record_id']); ?>
                             <?php $searchRecordType = $searchText['record_type']; ?>

@@ -822,17 +822,20 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 .errorPage #allContainer .msg p {font-weight:700;font-size:116%;margin:1em 0em;}
 
 /* Pagination */
+.pagination-container{
+    width:100%;
+}
 .pagination {
     padding-left: 0;
-    float: left;
-    margin: 12px 0;
-    height: 48px;
+    float: right;   
     display: block;
     overflow: auto;
     line-height: 48px;
+    
   }
   .pagination li {
     list-style-type: none;
+    background:none;
     line-height: 24px;
     height: 24px;
     display: inline-block;
@@ -840,16 +843,13 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
     margin: 12px 10px 12px 0;
   }
   .pagination input[type=text] {
-    width: 5em;
+    width: 2em;
     margin-right: 5px;
-    vertical-align: top;
-    height: 24px;
+    padding:0 2px;
     border-style: solid;
-    border-width: 0.0625em;
-    padding: -0.0625em;
+    border-width: 0.0625em;   
   }
   .pagination .pagination_next, .pagination .pagination_previous {
-    background-color: #000;
     height: 24px;
     overflow: auto;
   }
