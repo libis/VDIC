@@ -9,7 +9,8 @@ $query = $_GET['query'];
         <div class="wrapper">
             <div class="breadIndicator"> U bevindt zich hier: </div>
             <ol>
-                <li class="first"><span class="page">Home</span></li>
+                <li class="first"><span class="page"><a href="/omeka/vdic/">Home</a></span></li> / 
+                <li ><span class="page"><?php echo __('Zoekresultaten')?></span></li>
             </ol>   
         </div>
     </div>
