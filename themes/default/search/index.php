@@ -27,7 +27,7 @@ $query = $_GET['query'];
                             <?php foreach (loop('search_texts') as $searchText): ?>
                             <?php $record = get_record_by_id($searchText['record_type'], $searchText['record_id']); ?>
                             <?php $searchRecordType = $searchText['record_type']; ?>
-                            <div class="search-result <?php echo strtolower($searchRecordType); ?>">
+                            <div class="newsitem search-result <?php echo strtolower($searchRecordType); ?>">
                             <?php if ($searchRecordType == 'Item' && metadata($record, 'item_type_name')): ?>
                             <?php if (metadata($record, 'has_thumbnail')): ?>
                             <?php echo link_to_item(item_image('square_thumbnail', array(), 0, $record), array('class' => 'image'), 'show', $record); ?>
@@ -40,8 +40,8 @@ $query = $_GET['query'];
                                                         echo link_to($record, 'show', file_image('square_thumbnail', array(), $exhibitImage), array('class' => 'image'));
                                                     ?>
                             <?php endif; ?>
-                            <h3><a href="<?php echo record_url($record, 'show'); ?>"><?php echo $searchText['title'] ? $searchText['title'] : '[Unknown]'; ?></a></h3>
-                            <?php if ($searchRecordType == 'Item' && $desc = metadata($record, array('Dublin Core', 'Description'), array('snippet' => 250))): ?>
+                            <h2 class='heading'><span><a href="<?php echo record_url($record, 'show'); ?>"><?php echo $searchText['title'] ? $searchText['title'] : '[Unknown]'; ?></a></span></h3>
+                            <?php if ($searchRecordType == 'Item' && $desc = metadata($record, array('Dublin Core', 'Description'), array('snippet' => 200))): ?>
                             <div class="description"><?php echo $desc; ?></div>
                             <?php endif; ?>
                             </div>
