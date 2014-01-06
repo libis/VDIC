@@ -134,14 +134,12 @@
             					
             <div class="navMain">					
                 <ul>
-                    <li class="first">
-                        <div align="center">
+                    <li class="first">                        
                             <a href="<?php echo url(libis_get_language_slug()."periodicals")?>" class="page">
                                 <span class="navWrap">
                                     <span class="navWrap2"><?php echo __("Tijdschriften"); ?></span>
                                 </span>
-                            </a>
-                        </div>
+                            </a>                        
                     </li>
                     <li>
 	       		<a href="<?php echo url(libis_get_language_slug()."databases")?>" class="page">
