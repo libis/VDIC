@@ -929,17 +929,17 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 
   .item-pagination {
     border-top: 1px solid #ccc;
-    margin: 0 0 1.5em 0;
+    
     overflow: hidden;
     padding-top: 1.5em;
   }
   .item-pagination li.previous {
-    width: 48%;
+    padding-left:0;
     display: block;
     float: left;
   }
   .item-pagination li.next {
-    width: 48%;
+   
     display: block;
     float: right;
     text-align: right;

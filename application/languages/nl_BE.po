@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Omeka\n"
 "Report-Msgid-Bugs-To: omeka-dev@googlegroups.com\n"
 "POT-Creation-Date: 2012-11-26 14:33-0500\n"
-"PO-Revision-Date: 2013-12-23 13:35+0100\n"
+"PO-Revision-Date: 2014-01-06 09:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: Dutch (Netherlands) (http://www.transifex.com/projects/p/"
 "omeka/language/nl_NL/)\n"
@@ -3012,7 +3012,7 @@ msgstr "Volgende item &rarr;"
 
 #: application/libraries/globals.php:2461
 msgid "&larr; Previous Item"
-msgstr "&larr; Previous Item"
+msgstr "&larr; Vorige item"
 
 #: application/libraries/globals.php:2638
 msgid "Browse All"
@@ -3983,3 +3983,7 @@ msgstr "Juridische informatie"
 # common/footer.php:10
 msgid "Privacy"
 msgstr "Privacy"
+
+# custom.php
+msgid "lees meer"
+msgstr "lees meer"

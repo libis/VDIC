@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vdic-vertaling\n"
 "POT-Creation-Date: 2013-12-12 14:54+0100\n"
-"PO-Revision-Date: 2013-12-23 14:22+0100\n"
+"PO-Revision-Date: 2014-01-06 09:33+0100\n"
 "Last-Translator: \n"
 "Language-Team: English (http://www.transifex.com/projects/p/vdic-vertaling/"
 "language/en/)\n"
@@ -3865,3 +3865,7 @@ msgstr "Legal information"
 
 msgid "Privacy"
 msgstr "Privacy"
+
+# custom.php
+msgid "lees meer"
+msgstr "read more"

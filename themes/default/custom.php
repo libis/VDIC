@@ -20,7 +20,7 @@ function Libis_get_nieuws($number){
                 }     
                 if(metadata('Item',array('Dublin Core','Description'))){
                     $html .= metadata('Item',array('Dublin Core','Description'),array('snippet'=>'200'));
-                    $html .= " [<a href=''>".link_to_item(metadata('Item',__("lees meer")))."</a>]";
+                    $html .= " [<a href=''>".link_to_item(__("lees meer"))."</a>]";
                 }   
                 $html .="</div>";                               
             endforeach;

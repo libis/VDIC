@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Omeka\n"
 "Report-Msgid-Bugs-To: omeka-dev@googlegroups.com\n"
 "POT-Creation-Date: 2012-11-26 14:33-0500\n"
-"PO-Revision-Date: 2013-12-23 14:37+0100\n"
+"PO-Revision-Date: 2014-01-06 09:33+0100\n"
 "Last-Translator: \n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/omeka/"
 "language/de_DE/)\n"
@@ -4080,3 +4080,7 @@ msgstr "Rechtsinformation"
 
 msgid "Privacy"
 msgstr "Intimsphäre"
+
+# custom.php
+msgid "lees meer"
+msgstr "mehr lesen"

@@ -44,7 +44,7 @@ $query = $_GET['query'];
                                                     ?>
                             <?php endif; ?>
                             <h2 class='heading'><span><a href="<?php echo record_url($record, 'show'); ?>"><?php echo $searchText['title'] ? $searchText['title'] : '[Unknown]'; ?></a></span></h3>
-                            <?php if ($searchRecordType == 'Item' && $desc = metadata($record, array('Dublin Core', 'Description'), array('snippet' => 200))): ?>
+                            <?php if ($searchRecordType == 'Item' && $desc = metadata($record, array('Dublin Core', 'Description'), array('snippet' => 200))." [<a href=''>".link_to_item(__("lees meer"),array(), 'show', $record)."</a>]"): ?>
                             <div class="description"><?php echo $desc; ?></div>
                             <?php endif; ?>
                             </div>

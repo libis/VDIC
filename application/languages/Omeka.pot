@@ -3854,3 +3854,7 @@ msgstr ""
 #common/footer.php:10
 msgid "Privacy"
 msgstr ""
+
+#custom.php
+msgid "lees meer"
+msgstr ""
