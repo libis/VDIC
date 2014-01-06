@@ -26,8 +26,8 @@
         
     queue_css_file('fod-health');
     queue_css_file('fod-Health-main');
-    queue_css_file('fod-health-ie','all','<!--[if IE]>');
-    queue_css_file('fod-health-ie6','all','<!--[if IE 6]>');
+    queue_css_file('fod-health-ie','all','IE');
+    queue_css_file('fod-health-ie6','all','IE 6');
     queue_css_file('belgium_header');
     queue_css_file('fod-health-print','print');
     //queue_css_url('http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic');
