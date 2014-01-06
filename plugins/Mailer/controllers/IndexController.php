@@ -324,7 +324,7 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
         $forwardToEmail = get_option('mailer_forward_to_email');
         
         if($diff_email){
-            $formEmail = $diff_email;
+            //$formEmail = $diff_email;
             $forwardToEmail = $diff_email;
         }
 
