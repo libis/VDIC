@@ -160,7 +160,7 @@ function Libis_language_widget(){
         <li class="blgm_last ">
             <a href="#" lang="en" class="blgm_lSwitch" title="English">en</a>
         </li>
-    <?php
+<?php
 }
 
 function libis_get_language_slug(){
@@ -180,4 +180,3 @@ function libis_get_language(){
     }   
 }
 ?>
-
