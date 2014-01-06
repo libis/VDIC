@@ -155,7 +155,7 @@
                             </span>
                         </a>
                     </li>
-                    <li>
+                    <li class="last">
 	       		<a href="<?php echo url(libis_get_language_slug()."publications")?>" class="page">
                             <span class="navWrap">
                                 <span class="navWrap2"><?php echo __("Publicaties"); ?></span>
