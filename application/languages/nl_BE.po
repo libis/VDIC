@@ -3987,3 +3987,147 @@ msgstr "Privacy"
 # custom.php
 msgid "lees meer"
 msgstr "lees meer"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Je CAPTCHA submissie is niet geldig."
+msgstr "Je CAPTCHA submissie is niet geldig."
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Je emailadres is niet geldig."
+msgstr "Je emailadres is niet geldig."
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Je moet de titel van het tijdschrift geven."
+msgstr "Je moet de titel van het tijdschrift geven."
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Je bent de uitgever vergeten."
+msgstr "Je bent de uitgever vergeten."
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Je moet de titel van het artikel geven."
+msgstr "Je moet de titel van het artikel geven."
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Je moet het jaar van uitgave geven."
+msgstr "Je moet het jaar van uitgave geven."
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Je moet het volume geven."
+msgstr "Je moet het volume geven."
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Je moet de paginas geven."
+msgstr "Je moet de paginas geven."
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Je bent je voornaam vergeten."
+msgstr "Je bent je voornaam vergeten."
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Je bent je familienaam vergeten."
+msgstr "Je bent je familienaam vergeten."
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Je bent je instelling vergeten."
+msgstr "Je bent je instelling vergeten."
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Je bent je dienst vergeten."
+msgstr "Je bent je dienst vergeten."
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Je moet de titel van het boek geven."
+msgstr "Je moet de titel van het boek geven."
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Je moet het jaar van uitgave geven."
+msgstr "Je moet het jaar van uitgave geven."
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Een gebruiker heeft je de volgende boodschap verzonden:"
+msgstr "Een gebruiker heeft je de volgende boodschap verzonden:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Aanvraag ontvangen"
+msgstr "Aanvraag ontvangen"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Dank u, wij hebben de volgende aanvraag van u ontvangen:"
+msgstr "Dank u, wij hebben de volgende aanvraag van u ontvangen:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Aanvraag verzonden"
+msgstr "Aanvraag verzonden"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Tijdschrift:"
+msgstr "Tijdschrift:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Uitgever*:"
+msgstr "Uitgever*:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Artikel:"
+msgstr "Artikel:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Jaar:"
+msgstr "Jaar:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Volume:"
+msgstr "Volume:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Nummer:"
+msgstr "Nummer:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Pagina:"
+msgstr "Pagina:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Commentaar:"
+msgstr "Commentaar:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Taal:"
+msgstr "Taal:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Dienst:"
+msgstr "Dienst:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Instelling:"
+msgstr "Instelling:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "E-mail:"
+msgstr "E-mail:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Boek:"
+msgstr "Boek:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Auteur:"
+msgstr "Auteur:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Editie:"
+msgstr "Editie:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Bibliotheek:"
+msgstr "Bibliotheek:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Plaatsingsnummer:"
+msgstr "Plaatsingsnummer:"
+
+#plugins/Mailer/controllers/IndexController.php
+msgid "Commentaar:"
+msgstr "Commentaar:"
