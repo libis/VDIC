@@ -35,7 +35,7 @@
             </div>
              <div class="field">
                     <?php 
-                        echo $this->formLabel('uitgever', __('Uitgever:'));
+                        echo $this->formLabel('uitgever', __('Uitgever*:'));
                         echo $this->formText('uitgever', $uitgever, array('class'=>'textinput')); ?>
             </div>
              <div class="field">
