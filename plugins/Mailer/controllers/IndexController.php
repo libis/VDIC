@@ -93,7 +93,7 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
 	            //$this->_redirect->gotoRoute(array(), 'mailer_thankyou');
                     $mailer = new Mailer();
                     
-                    $message = __("Boek: ").$titel_tijdschrift."<br>";
+                    $message = __("Boek: ").$titel_boek."<br>";
                     $message .= __("Uitgever: ").$uitgever."<br>";
                     $message .= __("ISBN: ").$isbn."<br>";
                     $message .= __("Auteur: ").$auteur."<br>";
