@@ -30,20 +30,20 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
 	            //$this->_redirect->gotoRoute(array(), 'mailer_thankyou');
                     $mailer = new Mailer();
                     
-                    $message = __("Tijdschrift: ").$titel_tijdschrift."<br>";
-                    $message .= __("Uitgever: ").$uitgever."<br>";
-                    $message .= __("ISSN: ").$issn."<br>";
-                    $message .= __("Artikel: ").$titel_artikel."<br>";
-                    $message .= __("Auteur: ").$auteur."<br>";
-                    $message .= __("Jaar: ").$jaar."<br>";
-                    $message .= __("Volume: ").$volume."<br>";
-                    $message .= __("Nummer: ").$nummer."<br>";
-                    $message .= __("Pagina: ").$pagina."<br>";            
-                    $message .= __("Commentaar: ").$commentaar."<br><br>";   
-                    $message .= __("Naam: ").$voornaam." ".$familienaam."<br>";   
-                    $message .= __("Email: ").$email."<br>";  
-                    $message .= __("Instelling: ").$instelling."<br>"; 
-                    $message .= __("Dienst: ").$dienst;
+                    $message = __("Tijdschrift:")." ".$titel_tijdschrift."<br>";
+                    $message .= __("Uitgever:")." ".$uitgever."<br>";
+                    $message .= __("ISSN:")." ".$issn."<br>";
+                    $message .= __("Artikel:")." ".$titel_artikel."<br>";
+                    $message .= __("Auteur:")." ".$auteur."<br>";
+                    $message .= __("Jaar:")." ".$jaar."<br>";
+                    $message .= __("Volume:")." ".$volume."<br>";
+                    $message .= __("Nummer:")." ".$nummer."<br>";
+                    $message .= __("Pagina:")." ".$pagina."<br>";            
+                    $message .= __("Commentaar:")." ".$commentaar."<br><br>";   
+                    $message .= __("Naam:")." ".$voornaam." ".$familienaam."<br>";   
+                    $message .= __("E-mail:")." ".$email."<br>";  
+                    $message .= __("Instelling:")." ".$instelling."<br>"; 
+                    $message .= __("Dienst:")." ".$dienst;
                        
                     $this->sendEmailNotification($email,$voornaam.' '.$familienaam, $message,'biblio@wiv-isp.be');               
                     
@@ -93,19 +93,19 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
 	            //$this->_redirect->gotoRoute(array(), 'mailer_thankyou');
                     $mailer = new Mailer();
                     
-                    $message = __("Boek: ").$titel_boek."<br>";
-                    $message .= __("Uitgever: ").$uitgever."<br>";
-                    $message .= __("ISBN: ").$isbn."<br>";
-                    $message .= __("Auteur: ").$auteur."<br>";
-                    $message .= __("Jaar: ").$jaar."<br>";
-                    $message .= __("Editie ").$editie."<br>";
-                    $message .= __("Bibliotheek: ").$bibliotheek."<br>";
-                    $message .= __("Plaatsingsnummer").$plaatsingsnummer."<br>";            
-                    $message .= __("Commentaar: ").$commentaar."<br><br>";   
-                    $message .= __("Naam: ").$voornaam." ".$familienaam."<br>";   
-                    $message .= __("Email: ").$email."<br>";  
-                    $message .= __("Instelling: ").$instelling."<br>"; 
-                    $message .= __("Dienst: ").$dienst;
+                    $message = __("Boek:")." ".$titel_boek."<br>";
+                    $message .= __("Uitgever:")." ".$uitgever."<br>";
+                    $message .= __("ISBN:")." ".$isbn."<br>";
+                    $message .= __("Auteur:")." ".$auteur."<br>";
+                    $message .= __("Jaar:")." ".$jaar."<br>";
+                    $message .= __("Editie:")." ".$editie."<br>";
+                    $message .= __("Bibliotheek:")." ".$bibliotheek."<br>";
+                    $message .= __("Plaatsingsnummer:")." ".$plaatsingsnummer."<br>";            
+                    $message .= __("Commentaar:")." ".$commentaar."<br><br>";   
+                    $message .= __("Naam:")." ".$voornaam." ".$familienaam."<br>";   
+                    $message .= __("E-mail:")." ".$email."<br>";  
+                    $message .= __("Instelling:")." ".$instelling."<br>"; 
+                    $message .= __("Dienst:")." ".$dienst;
                        
                     $this->sendEmailNotification($email,$voornaam.' '.$familienaam, $message);               
                     
@@ -145,11 +145,11 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
 	            //$this->_redirect->gotoRoute(array(), 'mailer_thankyou');
                     $mailer = new Mailer();                   
                     $message = "<h2>".__('Aanvraagformulier voor toegangscodes tot CEBAM')."</h2>";
-                    $message .= __("Naam: ").$voornaam." ".$familienaam."<br>";   
-                    $message .= __("Email: ").$email."<br>";  
-                    $message .= __("Instelling: ").$instelling."<br>"; 
-                    $message .= __("Dienst: ").$dienst."<br>";
-                    $message .= __("Taal: ").$taal."<br>";
+                    $message .= __("Naam:")." ".$voornaam." ".$familienaam."<br>";   
+                    $message .= __("E-mail:")." ".$email."<br>";  
+                    $message .= __("Instelling:")." ".$instelling."<br>"; 
+                    $message .= __("Dienst:")." ".$dienst."<br>";
+                    $message .= __("Taal:")." ".$taal."<br>";
                        
                     $this->sendEmailNotification($email,$voornaam.' '.$familienaam, $message);               
                     
@@ -329,7 +329,7 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
         }
 
         if (!empty($forwardToEmail)) {
-            $mail = new Zend_Mail();
+            $mail = new Zend_Mail('UTF-8');
             $mail->setBodyHtml(__('Een gebruiker heeft je de volgende boodschap verzonden:') . "<br><br>" . $formMessage);
             $mail->setFrom($formEmail, $formName);
             $mail->addTo($forwardToEmail);
@@ -340,7 +340,7 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
         //notify the user who sent the message
         $replyToEmail = get_option('mailer_reply_from_email');
         if (!empty($replyToEmail)) {
-            $mail = new Zend_Mail();
+            $mail = new Zend_Mail('UTF-8');
             $mail->setBodyHtml(__('Dank u, wij hebben de volgende aanvraag van u ontvangen:') . "<br><br>" . $formMessage);
             $mail->setFrom($replyToEmail);
             $mail->addTo($formEmail, $formName);
