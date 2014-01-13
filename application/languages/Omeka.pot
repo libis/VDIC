@@ -3858,3 +3858,115 @@ msgstr ""
 #custom.php
 msgid "lees meer"
 msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Je CAPTCHA submissie is niet geldig."
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Je emailadres is niet geldig."
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Je moet de titel van het tijdschrift geven."
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Je bent de uitgever vergeten."
+msgstr "Je bent de uitgever vergeten."
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Je moet de titel van het artikel geven."
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Je moet het jaar van uitgave geven."
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Je moet het volume geven."
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Je moet de paginas geven."
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Je bent je voornaam vergeten."
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Je bent je familienaam vergeten."
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Je bent je instelling vergeten."
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Je bent je dienst vergeten."
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Je moet de titel van het boek geven."
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Een gebruiker heeft je de volgende boodschap verzonden:"
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Aanvraag ontvangen"
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Dank u, wij hebben de volgende aanvraag van u ontvangen:"
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Aanvraag verzonden"
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Tijdschrift:"
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Artikel:"
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Jaar:"
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Volume:"
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Nummer:"
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Pagina:"
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Taal:"
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Dienst:"
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Instelling:"
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "E-mail:"
+msgstr ""
+
+# plugins/Mailer/controllers/IndexController.php
+msgid "Boek:"
+msgstr ""

@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: Omeka\n"
 "Report-Msgid-Bugs-To: omeka-dev@googlegroups.com\n"
 "POT-Creation-Date: 2012-11-26 14:33-0500\n"
-"PO-Revision-Date: 2014-01-06 09:33+0100\n"
+"PO-Revision-Date: 2014-01-13 09:38+0100\n"
 "Last-Translator: \n"
 "Language-Team: French (http://www.transifex.com/projects/p/omeka/language/"
 "fr/)\n"
@@ -4105,3 +4105,87 @@ msgstr "Vie privée"
 # custom.php
 msgid "lees meer"
 msgstr "lire plus"
+
+msgid "Je CAPTCHA submissie is niet geldig."
+msgstr "Votre code CAPTCHA n'est pas valable."
+
+msgid "Je emailadres is niet geldig."
+msgstr "Votre adresse e-mail n'est pas valable."
+
+msgid "Je moet de titel van het tijdschrift geven."
+msgstr "Vous devez introduire le titre du périodique."
+
+msgid "Je bent de uitgever vergeten."
+msgstr "Vous avez oublié de remplir l'éditeur."
+
+msgid "Je moet de titel van het artikel geven."
+msgstr "Vous devez introduire le titre de l'article."
+
+msgid "Je moet het jaar van uitgave geven."
+msgstr "Vous devez introduire l'année d'édition."
+
+msgid "Je moet het volume geven."
+msgstr "Vous devez introduire le volume."
+
+msgid "Je moet de paginas geven."
+msgstr "Vous devez introduire les pages."
+
+msgid "Je bent je voornaam vergeten."
+msgstr "Vous avez oublié de remplir votre prénom."
+
+msgid "Je bent je familienaam vergeten."
+msgstr "Vous avez oublié de remplir votre nom."
+
+msgid "Je bent je instelling vergeten."
+msgstr "Vous avez oublié de remplir votre institution."
+
+msgid "Je bent je dienst vergeten."
+msgstr "Vous avez oublié de remplir votre service."
+
+msgid "Je moet de titel van het boek geven."
+msgstr "Vous devez introduire le titre du livre."
+
+msgid "Een gebruiker heeft je de volgende boodschap verzonden:"
+msgstr "Un utilisateur vous a envoyé le message suivant:"
+
+msgid "Aanvraag ontvangen"
+msgstr "Demande reçu"
+
+msgid "Dank u, wij hebben de volgende aanvraag van u ontvangen:"
+msgstr "Merci, nous avons reçu la demande suivante de votre part:"
+
+msgid "Aanvraag verzonden"
+msgstr "Demande envoyée"
+
+msgid "Tijdschrift:"
+msgstr "Périodique:"
+
+msgid "Artikel:"
+msgstr "Article:"
+
+msgid "Jaar:"
+msgstr "Année:"
+
+msgid "Volume:"
+msgstr "Volume:"
+
+msgid "Nummer:"
+msgstr "Numéro:"
+
+msgid "Pagina:"
+msgstr "Page:"
+
+msgid "Taal:"
+msgstr "Langue:"
+
+msgid "Dienst:"
+msgstr "Service:"
+
+msgid "Instelling:"
+msgstr "Institution:"
+
+msgid "E-mail:"
+msgstr "E-mail:"
+
+msgid "Boek:"
+msgstr "Livre:"

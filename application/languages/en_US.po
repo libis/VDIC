@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vdic-vertaling\n"
 "POT-Creation-Date: 2013-12-12 14:54+0100\n"
-"PO-Revision-Date: 2014-01-06 09:33+0100\n"
+"PO-Revision-Date: 2014-01-13 09:39+0100\n"
 "Last-Translator: \n"
 "Language-Team: English (http://www.transifex.com/projects/p/vdic-vertaling/"
 "language/en/)\n"
@@ -3869,3 +3869,87 @@ msgstr "Privacy"
 # custom.php
 msgid "lees meer"
 msgstr "read more"
+
+msgid "Je CAPTCHA submissie is niet geldig."
+msgstr "Your CAPTCHA code is incorrect."
+
+msgid "Je emailadres is niet geldig."
+msgstr "The email address you entered is incorrect."
+
+msgid "Je moet de titel van het tijdschrift geven."
+msgstr "You have to complete the periodical title."
+
+msgid "Je bent de uitgever vergeten."
+msgstr "Please fill in the editor."
+
+msgid "Je moet de titel van het artikel geven."
+msgstr "Please fill in the article title."
+
+msgid "Je moet het jaar van uitgave geven."
+msgstr "Please fill in the publication year."
+
+msgid "Je moet het volume geven."
+msgstr "Please fill in the volume."
+
+msgid "Je moet de paginas geven."
+msgstr "Please fill in the pages."
+
+msgid "Je bent je voornaam vergeten."
+msgstr "Please fill in your first name."
+
+msgid "Je bent je familienaam vergeten."
+msgstr "Please fill in your surname."
+
+msgid "Je bent je instelling vergeten."
+msgstr "Please fill in your institution."
+
+msgid "Je bent je dienst vergeten."
+msgstr "Please fill in your service."
+
+msgid "Je moet de titel van het boek geven."
+msgstr "Please fill in the book title."
+
+msgid "Een gebruiker heeft je de volgende boodschap verzonden:"
+msgstr "A user has sent you the following message:"
+
+msgid "Aanvraag ontvangen"
+msgstr "Request received"
+
+msgid "Dank u, wij hebben de volgende aanvraag van u ontvangen:"
+msgstr "Thank you, we have received your question:"
+
+msgid "Aanvraag verzonden"
+msgstr "Request sent"
+
+msgid "Tijdschrift:"
+msgstr "Periodical:"
+
+msgid "Artikel:"
+msgstr "Article:"
+
+msgid "Jaar:"
+msgstr "Year:"
+
+msgid "Volume:"
+msgstr "Volume:"
+
+msgid "Nummer:"
+msgstr "Issue:"
+
+msgid "Pagina:"
+msgstr "Page:"
+
+msgid "Taal:"
+msgstr "Language:"
+
+msgid "Dienst:"
+msgstr "Service"
+
+msgid "Instelling:"
+msgstr "Institution:"
+
+msgid "E-mail:"
+msgstr "Email:"
+
+msgid "Boek:"
+msgstr "Book:"
