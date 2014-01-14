@@ -20,6 +20,13 @@ before_script:
   - pear channel-discover pear.phpmd.org
   - pear install --alldeps phpmd/PHP_PMD
   - phpenv rehash
+  - if [[ "$DB" == "mysql" ]]; then mysql -e "create database IF NOT EXISTS omeka_test;" -uroot; fi
+  - mv application/tests/config.ini.changeme application/tests/config.ini
+  - sed -i 's/db.host = ""/db.host = "localhost"/' application/tests/config.ini
+  - sed -i 's/db.username = ""/db.username = "root"/' application/tests/config.ini
+  - sed -i 's/db.dbname = ""/db.dbname = "omeka_test"/' application/tests/config.ini
+  - sed -i 's/paths.imagemagick = ""/paths.imagemagick = "\/usr\/bin\/"/' application/tests/config.ini
+
 script:
   - phpunit -c plugins/Mailer/tests/phpunit.xml
   - phpunit -c plugins/SimpleContactForm/tests/phpunit.xml
