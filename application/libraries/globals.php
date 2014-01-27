@@ -3330,6 +3330,17 @@ function is_allowed($resource, $privilege)
 }
 
 function get_language_for_omeka_switch(){
+    //if language in slug set language 
+    $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']."<br>";
+    $slug = str_replace(WEB_DIR,'',$url);
+    $lang_url = substr($slug,1,2);
+    
+    if($lang_url == 'nl' || $lang_url == 'fr' || $lang_url == 'de' || $lang_url == 'en'){
+        $_SESSION['lang'] = $lang_url;
+        $_SESSION['lang_po']=transform_language_id_for_omeka($lang_url);
+        return $_SESSION['lang_po'];
+    }
+    //if language change requested (via language menu)   
     if(isset($_GET['lang'])){
        $_SESSION['lang'] = $_GET['lang'];
        $_SESSION['lang_po']=transform_language_id_for_omeka($_GET['lang']);
