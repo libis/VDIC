@@ -28,7 +28,7 @@
                                             </td></tr>
                                         <tr><td><?php echo __("Tel: ");?></td><td>+32 (0)2 524 93 55 (Bernadette Claus), +32 (0)2 524 98 41 (Kristof Eelen)</td></tr>
                                         <tr><td><?php echo __("E-mail: ");?></td><td><a href="mailto:biblio@health.belgium.be">biblio@health.belgium.be</a></td></tr>
-                                        <tr><td colspan="2"><a href="http://www.health.belgium.be/eportal/Aboutus/ourorganisation/HowtogettotheFPS/index.htm?fodnlang=<?php echo Libis_get_language();?>"><?php echo __("Toegangsplan FOD VVVL");?></a></td></tr>
+                                        <tr><td colspan="2"><a target="_blank" href="http://www.health.belgium.be/eportal/Aboutus/ourorganisation/HowtogettotheFPS/index.htm?fodnlang=<?php echo Libis_get_language();?>"><?php echo __("Toegangsplan FOD VVVL");?></a></td></tr>
                                     </table>
                                     
                                     <?php //echo get_option('simple_contact_form_contact_page_instructions'); // HTML ?>
