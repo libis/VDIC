@@ -111,7 +111,15 @@
                 <!-- to be placed inside div tag with class="siteLabel" -->
                 <div class="siteLogo"> 
                     <a href="http://www.health.belgium.be/eportal/" title="Federale Overheidsdienst Volksgezondheid, Veiligheid van de Voedselketen en Leefmilieu - Home pagina"> 
-                    <img title="VDIC - Home pagina" src="<?php echo img('logo.gif'); ?>" /></a> 
+                    <?php
+                        $titel_logo = array(
+                            'nl'=>'FOD VVVL - Home',
+                            'fr'=>'SPF SPSCAE - Home',
+                            'de'=>'FÖD VSNU',
+                            'en'=>'FPS HSFCE'
+                        );
+                    ?>
+                        <img title="<?php echo $titel_logo[libis_get_language()];?>" src="<?php echo img('logo.gif'); ?>" /></a> 
                 </div>					
             <div class="siteTag" >	
                 <img alt="Banner VDIC" src="<?php echo img('vdic_logo.gif'); ?>" />		
