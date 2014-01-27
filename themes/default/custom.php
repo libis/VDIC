@@ -77,13 +77,13 @@ function Libis_get_nieuws_partners($number){
  * @return string
  */
 function Libis_contact_partners(){
-    $partners = array(
+    $partners = array(        
+        array('name'=>'FOD VVVL','link'=>'/contact/?partner=VES'),
         array('name'=>'WIV','link'=>'/contact/?partner=WIV'),
         array('name'=>'CODA','link'=>'/contact/?partner=CODA'),
         array('name'=>'HGR','link'=>'/contact/?partner=HGR'),
+        array('name'=>'BIOETH','link'=>'/contact/?partner=BIOET'),        
         array('name'=>'FAGG','link'=>'/contact/?partner=FAGG'),
-        array('name'=>'VESALIUS Eurostation','link'=>'/contact/?partner=VES'),
-        array('name'=>'Raadgevend Comité voor Bio-ethiek','link'=>'/contact/?partner=BIOET'),
         array('name'=>'FAVV','link'=>'/contact/?partner=FAVV'),
         array('name'=>'KCE','link'=>'/contact/?partner=KCE'),
         array('name'=>'NICC','link'=>'/contact/?partner=NICC')
