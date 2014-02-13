@@ -72,20 +72,20 @@ class SimpleContactForm_IndexController extends Omeka_Controller_AbstractActionC
         return Omeka_Captcha::getCaptcha();
     }
 	
-	protected function sendEmailNotification($formEmail, $formName, $formMessage,$subject,$email_to) {
+    protected function sendEmailNotification($formEmail, $formName, $formMessage,$subject,$email_to) {
 		
-		//notify the admin
-		//use the admin email specified in the plugin configuration.
+        //notify the admin
+        //use the admin email specified in the plugin configuration.
         $forwardToEmail = get_option('simple_contact_form_forward_to_email');
         if (!empty($forwardToEmail)) {
             $mail = new Zend_Mail('UTF-8');
             $mail->setBodyText(get_option('simple_contact_form_admin_notification_email_message_header') . "\n\n" . $formMessage);
             $mail->setFrom($formEmail, $formName);
             
-             if($email_to){
-                $mail->addTo($email_to, $formName);                
+            if($email_to){
+                $mail->addTo($email_to);                
             }else{
-                $mail->addTo($formEmail, $formName);
+                $mail->addTo($forwardToEmail);
             }
             
             if($subject != ""){
