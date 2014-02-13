@@ -3334,16 +3334,16 @@ function get_language_for_omeka_switch(){
     $request = $_SERVER['REQUEST_URI'];  
     
     $lang_url = '';
-    if (strpos($request,'/nl/')!= false) {
+    if (strpos($request,'nl/')!= false) {
        $lang_url ='nl';
     }
-    if (strpos($request,'/fr/')!= false) {
+    if (strpos($request,'fr/')!= false) {
        $lang_url ='fr';
     }
-    if (strpos($request,'/en/')!= false) {
+    if (strpos($request,'en/')!= false) {
        $lang_url ='en';
     }
-    if (strpos($request,'/de/')!= false) {
+    if (strpos($request,'de/')!= false) {
        $lang_url ='de';
     }
        
