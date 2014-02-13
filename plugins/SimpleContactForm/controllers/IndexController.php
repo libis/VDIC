@@ -24,7 +24,7 @@ class SimpleContactForm_IndexController extends Omeka_Controller_AbstractActionC
 	    if ($this->getRequest()->isPost()) {    		
     		// If the form submission is valid, then send out the email
     		if ($this->_validateFormSubmission($captchaObj)) {
-		    $this->sendEmailNotification($_POST['email'], $_POST['name'], $_POST['message'],$_POST['onderwerp'],$_POST['email_to']);
+		    $this->sendEmailNotification($_POST['email'], $_POST['name'], $_POST['message'],$_POST['onderwerp']);
 	            $url = WEB_ROOT."/".SIMPLE_CONTACT_FORM_PAGE_PATH."thankyou";
                     $this->_helper->redirector->goToUrl($url);
                  
@@ -72,7 +72,7 @@ class SimpleContactForm_IndexController extends Omeka_Controller_AbstractActionC
         return Omeka_Captcha::getCaptcha();
     }
 	
-    protected function sendEmailNotification($formEmail, $formName, $formMessage,$subject,$email_to) {
+    protected function sendEmailNotification($formEmail, $formName, $formMessage,$subject) {
 		
         //notify the admin
         //use the admin email specified in the plugin configuration.
@@ -82,12 +82,8 @@ class SimpleContactForm_IndexController extends Omeka_Controller_AbstractActionC
             $mail->setBodyText(get_option('simple_contact_form_admin_notification_email_message_header') . "\n\n" . $formMessage);
             $mail->setFrom($formEmail, $formName);
             
-            if($email_to){
-                $mail->addTo($email_to);                
-            }else{
-                $mail->addTo($forwardToEmail);
-            }
-            
+            $mail->addTo($forwardToEmail);
+                        
             if($subject != ""){
                 $mail->setSubject($subject);
             }else{
@@ -102,11 +98,9 @@ class SimpleContactForm_IndexController extends Omeka_Controller_AbstractActionC
             $mail = new Zend_Mail('UTF-8');
             $mail->setBodyText(get_option('simple_contact_form_user_notification_email_message_header') . "\n\n" . $formMessage);
             $mail->setFrom($replyToEmail);
-            if($email_to){
-                $mail->addTo($email_to, $formName);                
-            }else{
-                $mail->addTo($formEmail, $formName);
-            }
+          
+            $mail->addTo($formEmail, $formName);
+            
             if($subject != ""){
                 $mail->setSubject($subject);
             }else{
