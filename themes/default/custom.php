@@ -52,7 +52,19 @@ function Libis_get_nieuws_partners($number){
     foreach($partners as $partner){
         $html .= "<li><a class='page active' href='".url($partner['link'])."'>".$partner['name']."</a>";
         
-        $items = get_records('Item',array('type'=> '8','tag'=>$partner['name']),$number);
+       if($lang == 'nl') {
+            $type = '8';
+        } elseif($lang == 'fr') {
+            $type = '19';
+        } elseif($lang == 'de') {
+            $type = '22';
+        } elseif($lang == 'en') {
+            $type = '25';
+        } else {
+            // if everything fails, we default to dutch
+            $type = '8';
+        }
+        $items = get_records('Item',array('type'=> $type ,'tag'=>$partner['name']),$number);
        
         if(sizeof($items)>0){            
             set_loop_records('items', $items);
