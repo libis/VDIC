@@ -115,9 +115,9 @@
                             if($lang == 'fr')
                                 $html = nav(simple_pages_get_links_for_children_pages(106));
                             if($lang == 'de')
-                                $html = nav(simple_pages_get_links_for_children_pages(229));
-                            if($lang == 'en')
                                 $html = nav(simple_pages_get_links_for_children_pages(259));
+                            if($lang == 'en')
+                                $html = nav(simple_pages_get_links_for_children_pages(229));
                             
                             if($html->render() != ""){
                               
