@@ -38,19 +38,20 @@ function Libis_get_nieuws($number){
 function Libis_get_nieuws_partners($number){
     $lang = libis_get_language();
     $partners = array(
-        array('name'=>'WIV','link'=>'/items/browse/?tag=WIV&type=nieuws-'.$lang),
-        array('name'=>'CODA','link'=>'/items/browse/?tag=CODA&type=nieuws-'.$lang),
-        array('name'=>'HGR','link'=>'/items/browse/?tag=HGR&type=nieuws-'.$lang),
-        array('name'=>'FAGG','link'=>'/items/browse/?tag=FAGG&type=nieuws-'.$lang),
-        array('name'=>'VESALIUS Eurostation','link'=>'/items/browse/?tag=Vesalius&type=nieuws-'.$lang),
-        array('name'=>'Raadgevend Comité voor Bio-ethiek','link'=>'/items/browse/?tag=Bio-ethiek&type=nieuws-'.$lang),
-        array('name'=>'FAVV','link'=>'/items/browse/?tag=FAVV&type=nieuws-'.$lang),
-        array('name'=>'KCE','link'=>'/items/browse/?tag=KCE&type=nieuws-'.$lang),
-        array('name'=>'NICC','link'=>'/items/browse/?tag=NICC&type=nieuws-'.$lang)
+        array('name_nl'=>'FOD VVVL','name_fr'=>'SPF SPSCAE','name_de'=>'FÖD VSNU','name_en'=>'FPS HSFCE','link'=>'/items/browse/?tag=Vesalius&type=nieuws-'.$lang),
+        array('name_nl'=>'WIV','name_fr'=>'ISP','name_de'=>'WIV','name_en'=>'IPH','link'=>'/items/browse/?tag=WIV&type=nieuws-'.$lang),
+        array('name_nl'=>'CODA','name_fr'=>'CERVA','name_de'=>'VAF','name_en'=>'VAR','link'=>'/items/browse/?tag=CODA&type=nieuws-'.$lang),
+        array('name_nl'=>'HGR','name_fr'=>'VAF','name_de'=>'HGR','name_en'=>'SHC','link'=>'/items/browse/?tag=HGR&type=nieuws-'.$lang),
+        array('name_nl'=>'BIOETH','name_fr'=>'BIOETH','name_de'=>'BIOETH','name_en'=>'BIOETH','link'=>'/items/browse/?tag=Bio-ethiek&type=nieuws-'.$lang),
+        array('name_nl'=>'FAGG','name_fr'=>'AFMPS','name_de'=>'FAGG-AFMPS','name_en'=>'FADHP','link'=>'/items/browse/?tag=FAGG&type=nieuws-'.$lang),
+        array('name_nl'=>'FAVV','name_fr'=>'AFSCA','name_de'=>'FASNK','name_en'=>'FASFC','link'=>'/items/browse/?tag=FAVV&type=nieuws-'.$lang),
+        array('name_nl'=>'KCE','name_fr'=>'KCE','name_de'=>'KCE','name_en'=>'KCE','link'=>'/items/browse/?tag=KCE&type=nieuws-'.$lang),
+        array('name_nl'=>'NICC','name_fr'=>'INCC','name_de'=>'NICC-INCC','name_en'=>'NICC','link'=>'/items/browse/?tag=NICC&type=nieuws-'.$lang)
     );
+   
     $html = "<ul>";
     foreach($partners as $partner){
-        $html .= "<li><a class='page active' href='".url($partner['link'])."'>".$partner['name']."</a>";
+        $html .= "<li><a class='page active' href='".url($partner['link'])."'>".$partner['name_'.$lang]."</a>";
         
        if($lang == 'nl') {
             $type = '8';
@@ -64,7 +65,7 @@ function Libis_get_nieuws_partners($number){
             // if everything fails, we default to dutch
             $type = '8';
         }
-        $items = get_records('Item',array('type'=> $type ,'tag'=>$partner['name']),$number);
+        $items = get_records('Item',array('type'=> $type ,'tag'=>$partner['name_'.$lang]),$number);
        
         if(sizeof($items)>0){            
             set_loop_records('items', $items);
