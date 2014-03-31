@@ -65,7 +65,7 @@ function Libis_get_nieuws_partners($number){
             // if everything fails, we default to dutch
             $type = '8';
         }
-        $items = get_records('Item',array('type'=> $type ,'tag'=>$partner['name_'.$lang]),$number);
+        $items = get_records('Item',array('type'=> $type ,'tag'=>$partner['name_nl']),$number);
        
         if(sizeof($items)>0){            
             set_loop_records('items', $items);
