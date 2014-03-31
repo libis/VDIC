@@ -89,20 +89,21 @@ function Libis_get_nieuws_partners($number){
  * @return string
  */
 function Libis_contact_partners(){
+    $lang = libis_get_language();
     $partners = array(        
-        array('name'=>'FOD VVVL','link'=>'/contact/?partner=VES'),
-        array('name'=>'WIV','link'=>'/contact/?partner=WIV'),
-        array('name'=>'CODA','link'=>'/contact/?partner=CODA'),
-        array('name'=>'HGR','link'=>'/contact/?partner=HGR'),
-        array('name'=>'BIOETH','link'=>'/contact/?partner=BIOET'),        
-        array('name'=>'FAGG','link'=>'/contact/?partner=FAGG'),
-        array('name'=>'FAVV','link'=>'/contact/?partner=FAVV'),
-        array('name'=>'KCE','link'=>'/contact/?partner=KCE'),
-        array('name'=>'NICC','link'=>'/contact/?partner=NICC')
+        array('name_nl'=>'FOD VVVL','name_fr'=>'SPF SPSCAE','name_de'=>'FÖD VSNU','name_en'=>'FPS HSFCE','link'=>'/contact/?partner=VES'),
+        array('name_nl'=>'WIV','name_fr'=>'ISP','name_de'=>'WIV','name_en'=>'IPH','link'=>'/contact/?partner=WIV'),
+        array('name_nl'=>'CODA','name_fr'=>'CERVA','name_de'=>'VAF','name_en'=>'VAR','link'=>'/contact/?partner=CODA'),
+        array('name_nl'=>'HGR','name_fr'=>'VAF','name_de'=>'HGR','name_en'=>'SHC','link'=>'/contact/?partner=HGR'),
+        array('name_nl'=>'BIOETH','name_fr'=>'BIOETH','name_de'=>'BIOETH','name_en'=>'BIOETH','link'=>'/contact/?partner=BIOET'),        
+        array('name_nl'=>'FAGG','name_fr'=>'AFMPS','name_de'=>'FAGG-AFMPS','name_en'=>'FADHP','link'=>'/contact/?partner=FAGG'),
+        array('name_nl'=>'FAVV','name_fr'=>'AFSCA','name_de'=>'FASNK','name_en'=>'FASFC','link'=>'/contact/?partner=FAVV'),
+        array('name_nl'=>'KCE','name_fr'=>'KCE','name_de'=>'KCE','name_en'=>'KCE','link'=>'/contact/?partner=KCE'),
+        array('name_nl'=>'NICC','name_fr'=>'INCC','name_de'=>'NICC-INCC','name_en'=>'NICC','link'=>'/contact/?partner=NICC')
     );
     $html = "<ul>";
     foreach($partners as $partner){
-        $html .= "<li><a class='page active' href='".$partner['link']."'>".$partner['name']."</a></li>";
+        $html .= "<li><a class='page active' href='".$partner['link']."'>".$partner['name_'.$lang]."</a></li>";
     }
     $html .="</ul>";
     return $html;
