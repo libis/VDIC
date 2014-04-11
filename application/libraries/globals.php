@@ -3333,6 +3333,13 @@ function get_language_for_omeka_switch(){
     //if language in slug set language 
     $request = $_SERVER['REQUEST_URI'];  
     
+    //catch direct links to items
+    if (strpos($request,'items/show/')!= false) {
+        $id = intval(substr($request, strrpos($request, '/') + 1));
+        $item = get_record_by_id('Item', $id);
+        $request = $item->getItemType()->name."/";
+    }
+    
     $lang_url = '';
     if (strpos($request,'nl/')!= false) {
        $lang_url ='nl';
@@ -3346,7 +3353,7 @@ function get_language_for_omeka_switch(){
     if (strpos($request,'de/')!= false) {
        $lang_url ='de';
     }
-       
+           
     if($lang_url != ''){
         $_SESSION['lang'] = $lang_url;
         $_SESSION['lang_po']=transform_language_id_for_omeka($lang_url);

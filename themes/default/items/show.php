@@ -4,7 +4,7 @@
             <div class="breadIndicator"> U bevindt zich hier: </div>
             <ol>
                 <li class="first"><span class="page"><a href="<?php echo url("");?>">Home</a></span></li> /
-                <li class="last"><span class="page"><a href="<?php echo url("");?>">Nieuwsarchief</a></span></li> /
+                <li class="last"><span class="page"><a href="<?php echo url("");?>"><?php echo _("Nieuwsarchief");?></a></span></li> /
                 <li class="last"><span class="page"><?php echo metadata('item', array('Dublin Core', 'Title')); ?></li>
             </ol>   
         </div>
