@@ -5,7 +5,7 @@
  */
 function Libis_get_nieuws($number){
         $lang = libis_get_language();    
-        $items = get_records('Item',array('type'=>'nieuws-'.$lang),$number);	   
+        $items = get_records('Item',array('type'=>'nieuws-'.$lang,'sort_field'=>'added','sort_dir'=>'d'),$number);	   
 	
         $html =""; 
         if(sizeof($items)>0){                      
