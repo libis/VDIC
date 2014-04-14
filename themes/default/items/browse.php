@@ -7,7 +7,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
             <div class="breadIndicator"> U bevindt zich hier: </div>
             <ol>
                 <li class="first"><span class="page"><a href="<?php echo url("");?>">Home</a></span></li> /
-                <li class="last"><span class="page"><?php __('Nieuwsarchief');?></span></li>
+                <li class="last"><span class="page"><?php echo __('Nieuwsarchief');?></span></li>
             </ol>   
         </div>
     </div>
