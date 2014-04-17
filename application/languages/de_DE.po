@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Omeka\n"
 "Report-Msgid-Bugs-To: omeka-dev@googlegroups.com\n"
 "POT-Creation-Date: 2012-11-26 14:33-0500\n"
-"PO-Revision-Date: 2014-01-13 09:38+0100\n"
+"PO-Revision-Date: 2014-04-17 11:10+0100\n"
 "Last-Translator: \n"
 "Language-Team: German (Germany) (http://www.transifex.com/projects/p/omeka/"
 "language/de_DE/)\n"
@@ -4168,3 +4168,16 @@ msgstr "E-Mail:"
 
 msgid "Boek:"
 msgstr "Buch:"
+
+# cebam form
+msgid "Rijksregisternummer*:"
+msgstr "Nummer des Nationalregisters*:"
+
+msgid "Rijksregisternummer:"
+msgstr "Nummer des Nationalregisters:"
+
+msgid "Je bent je rijksregisternummer vergeten."
+msgstr "Bitte füllen Sie Ihre Nummer des Nationalregisters aus."
+
+msgid "RIZIV-nummer:"
+msgstr "LIKIV-Nummer:"

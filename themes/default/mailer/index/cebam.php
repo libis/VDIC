@@ -38,7 +38,17 @@
                     <?php 
                         echo $this->formLabel('familienaam', __('Familienaam*:'));
                         echo $this->formText('familienaam', $familienaam, array('class'=>'textinput')); ?>
-            </div>           
+            </div>  
+             <div class="field">
+                    <?php 
+                        echo $this->formLabel('rijksregister', __('Rijksregisternummer*:'));
+                        echo $this->formText('rijksregister', $rijksregister, array('class'=>'textinput')); ?>
+            </div>   
+             <div class="field">
+                    <?php 
+                        echo $this->formLabel('riziv', __('RIZIV-nummer:'));
+                        echo $this->formText('riziv', $riziv, array('class'=>'textinput')); ?>
+            </div>   
             <div class="field">
                 <?php 
                 echo $this->formLabel('email', __('E-mail*:'));

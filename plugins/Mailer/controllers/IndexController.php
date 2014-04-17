@@ -134,7 +134,9 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
             $email = isset($_POST['email']) ? $_POST['email'] : '';  
             $instelling = isset($_POST['instelling']) ? $_POST['instelling'] : ''; 
             $dienst = isset($_POST['dienst']) ? $_POST['dienst'] : ''; 
-            $taal = isset($_POST['taal']) ? $_POST['taal'] : '';     
+            $taal = isset($_POST['taal']) ? $_POST['taal'] : '';   
+            $rijksregister = isset($_POST['rijksregister']) ? $_POST['rijksregister'] : '';   
+            $riziv = isset($_POST['riziv']) ? $_POST['riziv'] : '';   
 	    $captchaObj = $this->_setupCaptcha();
 
 	    if ($this->getRequest()->isPost()) {
@@ -145,7 +147,9 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
 	            //$this->_redirect->gotoRoute(array(), 'mailer_thankyou');
                     $mailer = new Mailer();                   
                     $message = "<h2>".__('Aanvraagformulier voor toegangscodes tot CEBAM')."</h2>";
-                    $message .= __("Naam:")." ".$voornaam." ".$familienaam."<br>";   
+                    $message .= __("Naam:")." ".$voornaam." ".$familienaam."<br>";  
+                    $message .= __("Rijksregisternummer:")." ".$rijksregister."<br>";
+                    $message .= __("RIZIV-nummer:")." ".$riziv."<br>";
                     $message .= __("E-mail:")." ".$email."<br>";  
                     $message .= __("Instelling:")." ".$instelling."<br>"; 
                     $message .= __("Dienst:")." ".$dienst."<br>";
@@ -167,7 +171,7 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
 		}
 
 		$this->view->assign(compact('voornaam','familienaam','email','instelling',
-                        'dienst','taal','captcha'));
+                        'dienst','taal','rijksregister','riziv','captcha'));
 	}
 
 	public function thankyouAction()
@@ -283,6 +287,7 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
             $instelling = $this->getRequest()->getPost('instelling');
             $dienst = $this->getRequest()->getPost('dienst');
             $email = $this->getRequest()->getPost('email');
+            $rijksregister = $this->getRequest()->getPost('rijksregister');
             // ZF ReCaptcha ignores the 1st arg.
             if ($captcha and !$captcha->isValid('foo', $_POST)) {
                         $this->_helper->flashMessenger(__('Je CAPTCHA submissie is niet geldig.'));
@@ -301,6 +306,9 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
                         $valid = false;
             } else if (empty($dienst)) {
                         $this->_helper->flashMessenger(__('Je bent je dienst vergeten.'));
+                        $valid = false;
+            } else if (empty($rijksregister)) {
+                        $this->_helper->flashMessenger(__('Je bent je rijksregisternummer vergeten.'));
                         $valid = false;
             }
 

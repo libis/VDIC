@@ -3970,3 +3970,16 @@ msgstr ""
 # plugins/Mailer/controllers/IndexController.php
 msgid "Boek:"
 msgstr ""
+
+# cebam form
+msgid "Rijksregisternummer*:"
+msgstr ""
+
+msgid "Rijksregisternummer:"
+msgstr ""
+
+msgid "Je bent je rijksregisternummer vergeten."
+msgstr ""
+
+msgid "RIZIV-nummer:"
+msgstr ""

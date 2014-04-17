@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vdic-vertaling\n"
 "POT-Creation-Date: 2013-12-12 14:54+0100\n"
-"PO-Revision-Date: 2014-01-13 09:39+0100\n"
+"PO-Revision-Date: 2014-04-17 11:09+0100\n"
 "Last-Translator: \n"
 "Language-Team: English (http://www.transifex.com/projects/p/vdic-vertaling/"
 "language/en/)\n"
@@ -3953,3 +3953,16 @@ msgstr "Email:"
 
 msgid "Boek:"
 msgstr "Book:"
+
+# cebam form
+msgid "Rijksregisternummer*:"
+msgstr "National Register Number*:"
+
+msgid "Rijksregisternummer:"
+msgstr "National Register Number:"
+
+msgid "Je bent je rijksregisternummer vergeten."
+msgstr "Please fill in your National Register Number."
+
+msgid "RIZIV-nummer:"
+msgstr "NISDI Number:"
