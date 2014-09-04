@@ -3335,7 +3335,7 @@ function get_language_for_omeka_switch(){
     
     //catch direct links to items
     if (strpos($request,'items/show/')!= false) {
-        $id = intval(substr($request, strrpos($request, '/') + 1));
+        $id = intval(preg_replace('/\/items\/show\/([0-9]+).*/i', '$1', $request));
         $item = get_record_by_id('Item', $id);
         $request = $item->getItemType()->name."/";
     }
