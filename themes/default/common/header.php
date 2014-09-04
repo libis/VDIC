@@ -8,6 +8,8 @@
 <head>
    
     <meta charset="utf-8">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="-1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php if ( $description = option('description')): ?>
     <meta name="description" content="<?php echo $description; ?>" />
