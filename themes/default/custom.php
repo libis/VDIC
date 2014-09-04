@@ -38,7 +38,7 @@ function Libis_get_nieuws($number){
 function Libis_get_nieuws_partners($number){
     $lang = libis_get_language();
     $partners = array(
-        array('name_nl'=>'FOD VVVL','name_fr'=>'SPF SPSCAE','name_de'=>'FÖD VSNU','name_en'=>'FPS HSFCE','link'=>'/items/browse/?tag=Vesalius&type=nieuws-'.$lang),
+        array('name_nl'=>'FOD VVVL','name_fr'=>'SPF SPSCAE','name_de'=>'FÖD VSNU','name_en'=>'FPS HSFCE','link'=>'/items/browse/?tag=fod vvvl&type=nieuws-'.$lang),
         array('name_nl'=>'WIV','name_fr'=>'ISP','name_de'=>'WIV','name_en'=>'IPH','link'=>'/items/browse/?tag=WIV&type=nieuws-'.$lang),
         array('name_nl'=>'CODA','name_fr'=>'CERVA','name_de'=>'VAF','name_en'=>'VAR','link'=>'/items/browse/?tag=CODA&type=nieuws-'.$lang),
         array('name_nl'=>'HGR','name_fr'=>'CSS','name_de'=>'HGR','name_en'=>'SHC','link'=>'/items/browse/?tag=HGR&type=nieuws-'.$lang),
