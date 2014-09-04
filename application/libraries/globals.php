@@ -3331,7 +3331,7 @@ function is_allowed($resource, $privilege)
 
 function get_language_for_omeka_switch(){
     //if language in slug set language 
-    $request = $_SERVER['REQUEST_URI'];  
+    $request = strtolower($_SERVER['REQUEST_URI']);  
     
     //catch direct links to items
     if (strpos($request,'items/show/')!= false) {
