@@ -17,6 +17,7 @@
                         <h1 class="heading "><span><?php echo __('Nieuws');?></span></h1>
                         <div class="textblock">
                             <?php echo Libis_get_nieuws(10);?>
+                            <div class="archief_link"><a href="<?php echo url("items/browse/?type=nieuws-".libis_get_language());?>"><?php echo __('Nieuwsarchief');?></a></div>
                         </div>
                         
                 <div class="navAction">

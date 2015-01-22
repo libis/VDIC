@@ -385,6 +385,7 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 .textblock .date {color: #606E2F;}
 .textblock .newsitem {padding-bottom:10px;margin-bottom:10px;border-bottom: 1px solid #EFF0EA;clear:both;}
 
+.archief_link{text-align:right;}
 
 /* image .................................................................... */
 .image img {border:1px solid #2079a6;display:block;}
