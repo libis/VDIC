@@ -45,7 +45,7 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
                     $message .= __("Instelling:")." ".$instelling."<br>"; 
                     $message .= __("Dienst:")." ".$dienst;
                        
-                    $this->sendEmailNotification($email,$voornaam.' '.$familienaam, $message,'biblio@wiv-isp.be');               
+                    $this->sendEmailNotification($email,$voornaam.' '.$familienaam, $message);               
                     
                     $this->_helper->redirector('thankyou');
     		}
