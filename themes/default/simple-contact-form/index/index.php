@@ -28,7 +28,15 @@
                                             </td></tr>
                                         <tr><td><?php echo __("Tel: ");?></td><td>+32 (0)2 524 93 55 (Bernadette Claus), +32 (0)2 524 98 41 (Kristof Eelen)</td></tr>
                                         <tr><td><?php echo __("E-mail: ");?></td><td><a href="mailto:biblio@health.belgium.be">biblio@health.belgium.be</a></td></tr>
-                                        <tr><td colspan="2"><a target="_blank" href="http://www.health.belgium.be/eportal/Aboutus/ourorganisation/HowtogettotheFPS/index.htm?fodnlang=<?php echo Libis_get_language();?>"><?php echo __("Toegangsplan FOD VVVL");?></a></td></tr>
+                                         <?php
+                                            $link_vvvl = array(
+                                                'nl'=>'https://www.google.be/maps/place/FOD+Volksgezondheid,+Veiligheid+van+de+Voedselketen+en+Leefmilieu/@50.8369075,4.332751,16z/data=!4m6!1m3!3m2!1s0x0000000000000000:0xcc8f4ff42d2e65ad!2sFOD+Volksgezondheid,+Veiligheid+van+de+Voedselketen+en+Leefmilieu!3m1!1s0x0000000000000000:0xcc8f4ff42d2e65ad?hl=nl',
+                                                'fr'=>'https://www.google.be/maps/place/SPF+Sant%C3%A9+publique,+s%C3%A9curit%C3%A9+de+la+cha%C3%AEne+alimentaire+et+environnement/@50.8369075,4.332751,16z/data=!4m6!1m3!3m2!1s0x0000000000000000:0xcc8f4ff42d2e65ad!2sSPF+Sant%C3%A9+publique,+s%C3%A9curit%C3%A9+de+la+cha%C3%AEne+alimentaire+et+environnement!3m1!1s0x0000000000000000:0xcc8f4ff42d2e65ad?hl=fr',
+                                                'de'=>'https://www.google.be/maps/place/FOD+Volkgesundheit,+sicherheit+der+nahrungsmittelkette+und+umwelt/@50.8369075,4.332751,16z/data=!4m6!1m3!3m2!1s0x0000000000000000:0xcc8f4ff42d2e65ad!2sFOD+Volkgesundheit,+sicherheit+der+nahrungsmittelkette+und+umwelt!3m1!1s0x0000000000000000:0xcc8f4ff42d2e65ad?hl=de',
+                                                'en'=>'https://www.google.be/maps/place/FPS+Health,+food+chain+safety+an+environment/@50.8369075,4.332751,16z/data=!4m6!1m3!3m2!1s0x0000000000000000:0xcc8f4ff42d2e65ad!2sFPS+Health,+food+chain+safety+an+environment!3m1!1s0x0000000000000000:0xcc8f4ff42d2e65ad?hl=en'
+                                            );                        
+                                        ?>
+                                        <tr><td colspan="2"><a target="_blank" href="<?php echo $link_vvvl[libis_get_language()];?>"><?php echo __("Toegangsplan FOD VVVL");?></a></td></tr>
                                     </table>
                                     
                                     <?php //echo get_option('simple_contact_form_contact_page_instructions'); // HTML ?>

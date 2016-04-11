@@ -117,15 +117,16 @@
             <div class="siteLabel site">
                 <!-- to be placed inside div tag with class="siteLabel" -->
                 <div class="siteLogo"> 
-                    <a href="http://www.health.belgium.be/eportal/" title="Federale Overheidsdienst Volksgezondheid, Veiligheid van de Voedselketen en Leefmilieu - Home pagina" target='_blank'> 
                     <?php
                         $titel_logo = array(
                             'nl'=>'FOD VVVL - Home',
                             'fr'=>'SPF SPSCAE - Home',
                             'de'=>'FÖD VSNU',
                             'en'=>'FPS HSFCE'
-                        );
+                        );                        
                     ?>
+                    <a href="http://www.health.belgium.be/<?php echo libis_get_language();?>" title="Federale Overheidsdienst Volksgezondheid, Veiligheid van de Voedselketen en Leefmilieu - Home pagina" target='_blank'> 
+                    
                         <img title="<?php echo $titel_logo[libis_get_language()];?>" src="<?php echo img('logo.gif'); ?>" /></a> 
                 </div>					
             <div class="siteTag" >	
