@@ -90,25 +90,7 @@
                     <div id="blgm_beLogo">                        
                         <img src="<?php echo img('blgm_beLogo.gif'); ?>" alt="Logo van de Belgische overheid" />
                     </div>
-                    <ul id="blgm_languageSwitch">
-                        <?php if(isset($_SESSION['lang'])){
-                            $lang = $_SESSION['lang'];
-                        }else{
-                            $lang ='nl';
-                        }?>
-                        <li class="blgm_first <?php if($lang=='nl'){echo "blgm_active";}?>">
-                            <a href="<?php echo url("/?lang=nl"); ?>" lang="nl" class="blgm_lSwitch" title="Nederlands">nl</a>
-                        </li>
-                        <li class="<?php if($lang=='fr'){echo "blgm_active";}?>">
-                            <a href="<?php echo url("/?lang=fr"); ?>" lang="fr" class="blgm_lSwitch" title="Francais">fr</a>
-                        </li>
-                        <li class="<?php if($lang=='de'){echo "blgm_active";}?>">
-                            <a href="<?php echo url("/?lang=de"); ?>" lang="de" class="blgm_lSwitch" title="Deutsch">de</a>
-                        </li>
-                        <li class="blgm_last <?php if($lang=='en'){echo "blgm_active";}?>">
-                            <a href="<?php echo url("/?lang=en"); ?>" lang="en" class="blgm_lSwitch" title="English">en</a>
-                        </li>
-                    </ul>
+                    <?php echo libis_language_nav();?>
                     <div id="blgm_beLink">
                             <?php echo __("Andere informatie en diensten van de overheid:");?> <a href="http://www.belgium.be/nl/" class="blgm_loglink" title="http://www.belgium.be/nl/">www.belgium.be</a>
                     </div>

@@ -193,4 +193,55 @@ function libis_get_language(){
         return $_SESSION['lang'];
     }   
 }
+
+function libis_language_nav(){
+    $html = '<ul id="blgm_languageSwitch">';
+    $active = array('nl'=>'','fr'=>'','de'=>'','en'=>'');
+    $langs = array('nl/','fr/','de/','en/');
+    $links=array();
+    
+    if(isset($_SESSION['lang'])){
+        $lang = $_SESSION['lang'];
+        $active[$lang]="blgm_active";
+    }else{
+        $lang ='nl';
+        $active['nl']="blgm_active";
+    }
+    
+    //get current url
+    if(get_current_record('simple_pages_page', false)):
+        $slug = metadata('simple_pages_page', 'slug');
+        $temp = substr($slug, 0, 3);
+        
+        if(in_array($temp,$langs)):
+            $links['nl']= str_replace($temp, 'nl/', $slug);
+            $links['fr']= str_replace($temp, 'fr/', $slug);
+            $links['de']= str_replace($temp, 'de/', $slug);
+            $links['en']= str_replace($temp, 'en/', $slug);
+        endif;
+    elseif(strpos($_SERVER['REQUEST_URI'], 'contact') !== false):
+        $links['nl']= 'contact/?lang=nl';
+        $links['fr']= 'contact/?lang=fr';
+        $links['de']= 'contact/?lang=de';
+        $links['en']= 'contact/?lang=en';
+    else:
+        $links['nl']= '/?lang=nl';
+        $links['fr']= '/?lang=fr';
+        $links['de']= '/?lang=de';
+        $links['en']= '/?lang=en';
+    endif;
+       
+    $html .= '<li class="blgm_first '.$active['nl'].'">';
+    $html .= '<a href="'.url($links['nl']).'" lang="nl" class="blgm_lSwitch" title="Nederlands">nl</a>';
+    $html .= '</li><li class="'.$active['fr'].'">';
+    $html .= '<a href="'.url($links['fr']).'" lang="fr" class="blgm_lSwitch" title="Francais">fr</a>';
+    $html .= '</li><li class="'.$active['de'].'">';
+    $html .= '<a href="'.url($links['de']).'" lang="de" class="blgm_lSwitch" title="Deutsch">de</a>';
+    $html .= '</li><li class="blgm_last '.$active['en'].'">';
+    $html .= '<a href="'.url($links['en']).'" lang="en" class="blgm_lSwitch" title="English">en</a>';
+    $html .= '</li></ul>';
+    
+    return $html;
+    
+}
 ?>
