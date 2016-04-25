@@ -209,7 +209,16 @@ function libis_language_nav(){
     }
     
     //get current url
-    if(get_current_record('simple_pages_page', false)):
+    $item = get_current_record('item', false);    
+    
+    if($item):
+        $date = metadata($item,array('Dublin Core','Identifier'));
+    endif;
+    
+    if($date):
+        $links = libis_get_other_lang_new($date);
+      
+    elseif(get_current_record('simple_pages_page', false)):
         $slug = metadata('simple_pages_page', 'slug');
         $temp = substr($slug, 0, 3);
         
@@ -243,5 +252,39 @@ function libis_language_nav(){
     
     return $html;
     
+}
+
+function libis_get_other_lang_new($date){
+    $links['nl']= '/?lang=nl';
+    $links['fr']= '/?lang=fr';
+    $links['de']= '/?lang=de';
+    $links['en']= '/?lang=en';
+    //find all element text with this date
+    $db = get_db();
+    
+    $select = $db->getTable('ElementText')->getSelect();
+    $select->where('element_texts.text = ?', $date);    
+    $texts = $db->getTable('ElementText')->fetchObjects($select);
+    
+    //get items from the record_ids
+    foreach($texts as $text):
+        $item = get_record_by_id('item', $text->record_id);
+        switch($item->getItemType()->name):
+            case 'nieuws-nl':
+                $links['nl']='/items/show/'.$item->id;
+                break;
+            case 'nieuws-fr':
+                $links['fr']='/items/show/'.$item->id;
+                break;
+            case 'nieuws-de':
+                $links['de']='/items/show/'.$item->id;
+                break;
+            case 'nieuws-en':
+                $links['en']='/items/show/'.$item->id;
+                break;
+        endswitch;
+    endforeach;
+    
+    return $links;
 }
 ?>
