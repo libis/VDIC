@@ -198,6 +198,7 @@ function libis_language_nav(){
     $html = '<ul id="blgm_languageSwitch">';
     $active = array('nl'=>'','fr'=>'','de'=>'','en'=>'');
     $langs = array('nl/','fr/','de/','en/');
+    $date="";
     $links=array();
     
     if(isset($_SESSION['lang'])){
@@ -269,6 +270,9 @@ function libis_get_other_lang_new($date){
     //get items from the record_ids
     foreach($texts as $text):
         $item = get_record_by_id('item', $text->record_id);
+        if(!$item):
+            return $links;
+        endif;
         switch($item->getItemType()->name):
             case 'nieuws-nl':
                 $links['nl']='/items/show/'.$item->id;
