@@ -5,7 +5,7 @@
             <ol>
                 <li class="first"><span class="page"><a href="<?php echo url("");?>">Home</a></span></li> /
                 <li class="last"><span class="page"><?php echo __('Aanvraagformulier boek')?></span></li>
-            </ol>   
+            </ol>
         </div>
     </div>
 </div>
@@ -25,91 +25,112 @@
 	</div>
 	<?php echo flash(); ?>
 	<form name="contact_form" id="contact-form"  method="post" accept-charset="utf-8">
-        
+
         <fieldset>
             <h4><?php echo __('Welk boek?');?></h4>
             <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('titel_boek', __('Titel boek*:'));
                         echo $this->formText('titel_boek', $titel_boek, array('class'=>'textinput')); ?>
             </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('uitgever', __('Uitgever*:'));
                         echo $this->formText('uitgever', $uitgever, array('class'=>'textinput')); ?>
             </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('isbn', __('ISBN?:'));
                         echo $this->formText('isbn', $isbn, array('class'=>'textinput')); ?>
             </div>
-            
+
             <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('auteur', __('Auteur:'));
                         echo $this->formText('auteur', $auteur, array('class'=>'textinput')); ?>
             </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('jaar', __('Jaar*:'));
                         echo $this->formText('jaar', $jaar, array('class'=>'textinput')); ?>
             </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('editie', __('Editie:'));
                         echo $this->formText('editie', $editie, array('class'=>'textinput')); ?>
             </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('bibliotheek', __('Bibliotheek:'));
                         echo $this->formText('bibliotheek', $bibliotheek, array('class'=>'textinput')); ?>
             </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('plaatsingsnummer', __('Plaatsingsnummer:'));
                         echo $this->formText('plaatsingsnummer', $plaatsingsnummer, array('class'=>'textinput')); ?>
             </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('commentaar', __('Commentaar:'));
                         echo $this->formText('commentaar', $commentaar, array('class'=>'textinput')); ?>
             </div>
-            
+
             <h4><?php echo __('Wie bent u?');?></h4>
-            
+
             <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('voornaam', __('Voornaam*:'));
                         echo $this->formText('voornaam', $voornaam, array('class'=>'textinput')); ?>
             </div>
             <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('familienaam', __('Familienaam*:'));
                         echo $this->formText('familienaam', $familienaam, array('class'=>'textinput')); ?>
-            </div>           
+            </div>
             <div class="field">
-                <?php 
+                <?php
                 echo $this->formLabel('email', __('E-mail*:'));
                         echo $this->formText('email', $email, array('class'=>'textinput'));  ?>
             </div>
             <div class="field">
-                    <?php 
-                        echo $this->formLabel('instelling', __('Instelling*:'));
-                        echo $this->formText('instelling', $instelling, array('class'=>'textinput')); ?>
+              <?php
+                echo $this->formLabel('instelling', __('Instelling*:'));
+                $lang = libis_get_language();
+                $instellingen = array(
+                    array('name_nl'=>'FOD VVVL','name_fr'=>'SPF SPSCAE','name_de'=>'FÖD VSNU','name_en'=>'FPS HSFCE'),
+                    array('name_nl'=>'WIV','name_fr'=>'ISP','name_de'=>'WIV','name_en'=>'IPH'),
+                    array('name_nl'=>'CODA','name_fr'=>'CERVA','name_de'=>'VAF','name_en'=>'VAR'),
+                    array('name_nl'=>'HGR','name_fr'=>'CSS','name_de'=>'HGR','name_en'=>'SHC'),
+                    array('name_nl'=>'BIOETH','name_fr'=>'BIOETH','name_de'=>'BIOETH','name_en'=>'BIOETH'),
+                    array('name_nl'=>'FAGG','name_fr'=>'AFMPS','name_de'=>'FAGG-AFMPS','name_en'=>'FADHP'),
+                    array('name_nl'=>'FAVV','name_fr'=>'AFSCA','name_de'=>'FASNK','name_en'=>'FASFC'),
+                    array('name_nl'=>'KCE','name_fr'=>'KCE','name_de'=>'KCE','name_en'=>'KCE'),
+                    array('name_nl'=>'NICC','name_fr'=>'INCC','name_de'=>'NICC-INCC','name_en'=>'NICC'),
+                    array('name_nl'=>'VAZG','name_fr'=>'VAZG','name_de'=>'VAZG','name_en'=>'VAZG')
+                );
+              ?>
+
+              <select name="instelling">
+                <?php
+                  foreach($instellingen as $instelling):
+                    echo "<option value='".$instelling['name_'.$lang]."'>".$instelling['name_'.$lang]."</option>";
+                  endforeach;
+                ?>
+              </select>
             </div>
             <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('dienst', __('Dienst*:'));
                         echo $this->formText('dienst', $dienst, array('class'=>'textinput')); ?>
             </div>
-           
+
         </fieldset>
 
         <fieldset>
-		    
+
             <div class="field">
               <?php echo $captcha; ?>
-            </div>		
+            </div>
 
             <div class="field">
               <?php echo $this->formSubmit('send', __('Aanvragen')); ?>
@@ -133,11 +154,11 @@
                     </div>
                 </div>
                 <div class="context">
-                    
+
                     <div class="contextBlock">
                         <div class="section first">
                             <h2 class="heading "><span><?php echo __("Contacteer een partner");?></span></h2>
-                            <?php echo Libis_contact_partners();?>                                                 
+                            <?php echo Libis_contact_partners();?>
                         </div>
 
                     </div>
@@ -149,6 +170,6 @@
             </div>
         </div>
     </div>
-</div>    
-                       
+</div>
+
 <?php echo foot();

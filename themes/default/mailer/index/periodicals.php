@@ -100,9 +100,31 @@
                         echo $this->formText('email', $email, array('class'=>'textinput'));  ?>
             </div>
             <div class="field">
+                  <?php
+                    echo $this->formLabel('instelling', __('Instelling*:'));
+                    $lang = libis_get_language();
+                    $instellingen = array(
+                        array('name_nl'=>'FOD VVVL','name_fr'=>'SPF SPSCAE','name_de'=>'FÖD VSNU','name_en'=>'FPS HSFCE'),
+                        array('name_nl'=>'WIV','name_fr'=>'ISP','name_de'=>'WIV','name_en'=>'IPH'),
+                        array('name_nl'=>'CODA','name_fr'=>'CERVA','name_de'=>'VAF','name_en'=>'VAR'),
+                        array('name_nl'=>'HGR','name_fr'=>'CSS','name_de'=>'HGR','name_en'=>'SHC'),
+                        array('name_nl'=>'BIOETH','name_fr'=>'BIOETH','name_de'=>'BIOETH','name_en'=>'BIOETH'),
+                        array('name_nl'=>'FAGG','name_fr'=>'AFMPS','name_de'=>'FAGG-AFMPS','name_en'=>'FADHP'),
+                        array('name_nl'=>'FAVV','name_fr'=>'AFSCA','name_de'=>'FASNK','name_en'=>'FASFC'),
+                        array('name_nl'=>'KCE','name_fr'=>'KCE','name_de'=>'KCE','name_en'=>'KCE'),
+                        array('name_nl'=>'NICC','name_fr'=>'INCC','name_de'=>'NICC-INCC','name_en'=>'NICC'),
+                        array('name_nl'=>'VAZG','name_fr'=>'VAZG','name_de'=>'VAZG','name_en'=>'VAZG')
+                    );
+                  ?>
+
+                  <select name="instelling">
                     <?php
-                        echo $this->formLabel('instelling', __('Instelling*:'));
-                        echo $this->formText('instelling', $instelling, array('class'=>'textinput')); ?>
+                      foreach($instellingen as $instelling):
+                        echo "<option value='".$instelling['name_'.$lang]."'>".$instelling['name_'.$lang]."</option>";
+                      endforeach;
+                    ?>
+                  </select>
+
             </div>
             <div class="field">
                     <?php
