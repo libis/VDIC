@@ -3817,8 +3817,8 @@ msgstr "Fichiers"
 
 #: mailer/index/periodicals.php:7 mailer/index/periodicals.php:19
 #: mailer/index/index.php:7
-msgid "Aanvraagformulier tijdschrift"
-msgstr "Formulaire de demande de périodique"
+msgid "Aanvraagformulier artikel"
+msgstr "Formulaire de demande d'article"
 
 #: mailer/index/periodicals.php:24 mailer/index/books.php:24
 msgid "Velden met * zijn verplicht in the vullen"
