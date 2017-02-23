@@ -26,7 +26,7 @@
                                                 <br>Victor Hortaplein/Place Victor Horta 40/10
                                                 <br>1060 Brussel / Bruxelles
                                             </td></tr>
-                                        <tr><td><?php echo __("Tel: ");?></td><td>+32 (0)2 524 93 55 (Bernadette Claus), +32 (0)2 524 98 41 (Kristof Eelen)</td></tr>
+                                        <tr><td><?php echo __("Tel: ");?></td><td>+32 (0)2 524 98 41 (Kristof Eelen)</td></tr>
                                         <tr><td><?php echo __("E-mail: ");?></td><td><a href="mailto:biblio@health.belgium.be">biblio@health.belgium.be</a></td></tr>
                                          <?php
                                             $link_vvvl = array(
