@@ -3586,7 +3586,7 @@ msgstr ""
 #: mailer/index/periodicals.php:7 mailer/index/periodicals.php:19
 #: mailer/index/index.php:7
 msgid "Aanvraagformulier artikel"
-msgstr "A"
+msgstr ""
 
 #: mailer/index/periodicals.php:24 mailer/index/books.php:24
 msgid "Velden met * zijn verplicht in the vullen"
