@@ -105,8 +105,7 @@
                     $lang = libis_get_language();
                     $instellingen = array(
                         array('name_nl'=>'FOD VVVL','name_fr'=>'SPF SPSCAE','name_de'=>'FÖD VSNU','name_en'=>'FPS HSFCE'),
-                        array('name_nl'=>'WIV','name_fr'=>'ISP','name_de'=>'WIV','name_en'=>'IPH'),
-                        array('name_nl'=>'CODA','name_fr'=>'CERVA','name_de'=>'VAF','name_en'=>'VAR'),
+                        array('name_nl'=>'Sciensano','name_fr'=>'Sciensano','name_de'=>'Sciensano','name_en'=>'Sciensano'),
                         array('name_nl'=>'HGR','name_fr'=>'CSS','name_de'=>'HGR','name_en'=>'SHC'),
                         array('name_nl'=>'BIOETH','name_fr'=>'BIOETH','name_de'=>'BIOETH','name_en'=>'BIOETH'),
                         array('name_nl'=>'FAGG','name_fr'=>'AFMPS','name_de'=>'FAGG-AFMPS','name_en'=>'FADHP'),
