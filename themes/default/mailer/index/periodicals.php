@@ -134,10 +134,10 @@
             <div class="field">
               <?php
                 $privacy_message = array(
-                  'nl' => "Ik heb de <a href='".url("nl/about/privacy")."'>privacyverklaring</a> gelezen en ga ermee akkoord.",
-                  'fr' => "J’ai lu la <a href='".url("fr/about/privacy")."'>politique de confidentialité</a> et je suis d’accord.",
-                  'de' => "Ich habe die <a href='".url("de/about/privacy")."'>Datenschutzerklärung</a> zur Kenntnis genommen und erkläre mich mit dieser einverstanden.",
-                  'en' => "I have read and agree to the <a href='".url("en/about/privacy")."'>privacy policy</a>."
+                  'nl' => "Ik heb de <a target='_blank'  href='".url("nl/about/privacy")."'>privacyverklaring</a> gelezen en ga ermee akkoord.",
+                  'fr' => "J’ai lu la <a target='_blank' href='".url("fr/about/privacy")."'>politique de confidentialité</a> et je suis d’accord.",
+                  'de' => "Ich habe die <a target='_blank' href='".url("de/about/privacy")."'>Datenschutzerklärung</a> zur Kenntnis genommen und erkläre mich mit dieser einverstanden.",
+                  'en' => "I have read and agree to the <a target='_blank' href='".url("en/about/privacy")."'>privacy policy</a>."
                   );
               ?>
               <input type="checkbox" name="privacy"><?php echo " ".$privacy_message[libis_get_language()]; ?></input>
