@@ -11,26 +11,26 @@
  * @package SimpleContactForm
  */
 class SimpleContactForm_IndexController extends Omeka_Controller_AbstractActionController
-{    
+{
 	public function indexAction()
-	{	
-	    $name = isset($_POST['name']) ? $_POST['name'] : '';
-		$email = isset($_POST['email']) ? $_POST['email'] : '';;
-		$message = isset($_POST['message']) ? $_POST['message'] : '';;
-                $subject = isset($_POST['onderwerp']) ? $_POST['onderwerp'] : '';;
+	{
+		  $name = isset($_POST['name']) ? $_POST['name'] : '';
+			$email = isset($_POST['email']) ? $_POST['email'] : '';;
+			$message = isset($_POST['message']) ? $_POST['message'] : '';;
+	    $subject = isset($_POST['onderwerp']) ? $_POST['onderwerp'] : '';;
 
 	    $captchaObj = $this->_setupCaptcha();
-	    
-	    if ($this->getRequest()->isPost()) {    		
+
+	    if ($this->getRequest()->isPost()) {
     		// If the form submission is valid, then send out the email
     		if ($this->_validateFormSubmission($captchaObj)) {
 		    $this->sendEmailNotification($_POST['email'], $_POST['name'], $_POST['message'],$_POST['onderwerp']);
 	            $url = WEB_ROOT."/".SIMPLE_CONTACT_FORM_PAGE_PATH."thankyou";
                     $this->_helper->redirector->goToUrl($url);
-                 
+
     		}
-	    }	
-	    
+	    }
+
 	    // Render the HTML for the captcha itself.
 	    // Pass this a blank Zend_View b/c ZF forces it.
 		if ($captchaObj) {
@@ -38,20 +38,22 @@ class SimpleContactForm_IndexController extends Omeka_Controller_AbstractActionC
 		} else {
 		    $captcha = '';
 		}
-		
+
 		$this->view->assign(compact('name','email','message', 'captcha'));
 	}
-	
+
 	public function thankyouAction()
 	{
-		
+
 	}
-	
+
 	protected function _validateFormSubmission($captcha = null)
 	{
 	    $valid = true;
 	    $msg = $this->getRequest()->getPost('message');
 	    $email = $this->getRequest()->getPost('email');
+			$privacy = $this->getRequest()->getPost('privacy');
+
 	    // ZF ReCaptcha ignores the 1st arg.
 	    if ($captcha and !$captcha->isValid('foo', $_POST)) {
             $this->_helper->flashMessenger(__('Your CAPTCHA submission was invalid, please try again.'));
@@ -62,8 +64,22 @@ class SimpleContactForm_IndexController extends Omeka_Controller_AbstractActionC
 	    } else if (empty($msg)) {
             $this->_helper->flashMessenger(__('Please enter a message.'));
             $valid = false;
+	    } else if ($privacy != 'Yes') {
+						if(!isset($_SESSION['lang']) || $_SESSION['lang']=='nl'){
+								$lang = "nl";
+						}else{
+								$lang = $_SESSION['lang'];
+						}
+						$privacy_fout = array(
+							'nl' => "Je hebt de privacyverklaring nog niet geaccepteerd.",
+							'fr' => "Vous n'êtes pas d'accord avec la politique de confidentialité.",
+							'de' => "Sie sind mit der Datenschutzerklärung nicht einverstanden",
+							'en' => "You have no agreed with the privacy policy."
+							);
+							$this->_helper->flashMessenger($privacy_fout[$lang]);
+            $valid = false;
 	    }
-	    
+
 	    return $valid;
 	}
 
@@ -71,9 +87,9 @@ class SimpleContactForm_IndexController extends Omeka_Controller_AbstractActionC
     {
         return Omeka_Captcha::getCaptcha();
     }
-	
+
     protected function sendEmailNotification($formEmail, $formName, $formMessage,$subject) {
-		
+
         //notify the admin
         //use the admin email specified in the plugin configuration.
         $forwardToEmail = get_option('simple_contact_form_forward_to_email');
@@ -81,15 +97,15 @@ class SimpleContactForm_IndexController extends Omeka_Controller_AbstractActionC
             $mail = new Zend_Mail('UTF-8');
             $mail->setBodyText(get_option('simple_contact_form_admin_notification_email_message_header') . "\n\n" . $formMessage);
             $mail->setFrom($formEmail, $formName);
-            
+
             $mail->addTo($forwardToEmail);
-                        
+
             if($subject != ""){
                 $mail->setSubject($subject);
             }else{
                 $mail->setSubject(get_option('site_title') . ' - ' . get_option('simple_contact_form_admin_notification_email_subject'));
             }
-            $mail->send();		
+            $mail->send();
         }
 
         //notify the user who sent the message
@@ -98,9 +114,9 @@ class SimpleContactForm_IndexController extends Omeka_Controller_AbstractActionC
             $mail = new Zend_Mail('UTF-8');
             $mail->setBodyText(get_option('simple_contact_form_user_notification_email_message_header') . "\n\n" . $formMessage);
             $mail->setFrom($replyToEmail);
-          
+
             $mail->addTo($formEmail, $formName);
-            
+
             if($subject != ""){
                 $mail->setSubject($subject);
             }else{

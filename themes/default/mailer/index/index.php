@@ -5,7 +5,7 @@
             <ol>
                 <li class="first"><span class="page"><a href="<?php echo url("");?>">Home</a></span></li> /
                 <li class="last"><span class="page"><?php echo __('Aanvraagformulier tijdschrift')?></span></li>
-            </ol>   
+            </ol>
         </div>
     </div>
 </div>
@@ -25,98 +25,110 @@
 	</div>
 	<?php echo flash(); ?>
 	<form name="contact_form" id="contact-form"  method="post" accept-charset="utf-8">
-        
+
         <fieldset>
             <h4><?php echo __('Welk tijdschrift?');?></h4>
             <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('titel_tijdschrift', __('Titel tijdschrift*:'));
                         echo $this->formText('titel_tijdschrift', $titel_tijdschrift, array('class'=>'textinput')); ?>
             </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('uitgever', __('Uitgever:'));
                         echo $this->formText('uitgever', $uitgever, array('class'=>'textinput')); ?>
             </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('issn', __('ISSN?:'));
                         echo $this->formText('issn', $issn, array('class'=>'textinput')); ?>
             </div>
-            
+
             <h4><?php echo __('Welk artikel?');?></h4>
-            
+
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('titel_artikel', __('Titel artikel*:'));
                         echo $this->formText('titel_artikel', $titel_artikel, array('class'=>'textinput')); ?>
             </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('auteur', __('Auteur:'));
                         echo $this->formText('auteur', $auteur, array('class'=>'textinput')); ?>
             </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('jaar', __('Jaar*:'));
                         echo $this->formText('jaar', $jaar, array('class'=>'textinput')); ?>
             </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('volume', __('Volume*:'));
                         echo $this->formText('volume', $volume, array('class'=>'textinput')); ?>
             </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('nummer', __('Tijdschriftnummer:'));
                         echo $this->formText('nummer', $nummer, array('class'=>'textinput')); ?>
             </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('pagina', __('Pagina*:'));
                         echo $this->formText('pagina', $pagina, array('class'=>'textinput')); ?>
             </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('commentaar', __('Commentaar:'));
                         echo $this->formText('commentaar', $commentaar, array('class'=>'textinput')); ?>
             </div>
-            
+
             <h4><?php echo __('Wie bent u?');?></h4>
-            
+
             <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('voornaam', __('Voornaam*:'));
                         echo $this->formText('voornaam', $voornaam, array('class'=>'textinput')); ?>
             </div>
             <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('familienaam', __('Familienaam:'));
                         echo $this->formText('familienaam', $familienaam, array('class'=>'textinput')); ?>
-            </div>           
+            </div>
             <div class="field">
-                <?php 
+                <?php
                 echo $this->formLabel('email', __('E-mail*:'));
                         echo $this->formText('email', $email, array('class'=>'textinput'));  ?>
             </div>
             <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('instelling', __('Instelling*:'));
                         echo $this->formText('instelling', $instelling, array('class'=>'textinput')); ?>
             </div>
             <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('dienst', __('Dienst*:'));
                         echo $this->formText('dienst', $dienst, array('class'=>'textinput')); ?>
             </div>
-           
+            <br>
+            <div class="field">
+              <?php
+                $privacy_message = array(
+                  'nl' => "Ik heb de privacyverklaring gelezen en ga ermee akkoord.",
+                  'fr' => "J’ai lu la politique de confidentialité et je suis d’accord.",
+                  'de' => "Ich habe die Datenschutzerklärung zur Kenntnis genommen und erkläre mich mit dieser einverstanden.",
+                  'en' => "I have read and agree to the privacy policy."
+                  );
+              ?>
+              <input type="checkbox" name="privacy"><?php echo " ".$privacy_message[libis_get_language()]; ?></input>
+            </div>
+
         </fieldset>
 
         <fieldset>
-		    
+
             <div class="field">
               <?php echo $captcha; ?>
-            </div>		
+            </div>
 
             <div class="field">
               <?php echo $this->formSubmit('send', __('Aanvragen')); ?>
@@ -135,11 +147,11 @@
                     </div>
                 </div>
                 <div class="context">
-                    
+
                     <div class="contextBlock">
                         <div class="section first">
                             <h2 class="heading "><span><?php echo __("Contacteer een partner");?></span></h2>
-                            <?php echo Libis_contact_partners();?>                                                 
+                            <?php echo Libis_contact_partners();?>
                         </div>
 
                     </div>
@@ -151,6 +163,6 @@
             </div>
         </div>
     </div>
-</div>    
-                       
+</div>
+
 <?php echo foot();

@@ -5,7 +5,7 @@
             <ol>
                 <li class="first"><span class="page"><a href="<?php echo url("");?>">Home</a></span></li> /
                 <li class="last"><span class="page"><?php echo __('Aanvraagformulier boek')?></span></li>
-            </ol>   
+            </ol>
         </div>
     </div>
 </div>
@@ -25,49 +25,49 @@
 	</div>
 	<?php echo flash(); ?>
 	<form name="contact_form" id="contact-form"  method="post" accept-charset="utf-8">
-        
+
         <fieldset>
             <h4><?php echo __('Wie bent u?');?></h4>
-            
+
             <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('voornaam', __('Voornaam*:'));
                         echo $this->formText('voornaam', $voornaam, array('class'=>'textinput')); ?>
             </div>
             <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('familienaam', __('Familienaam*:'));
                         echo $this->formText('familienaam', $familienaam, array('class'=>'textinput')); ?>
-            </div>  
+            </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('rijksregister', __('Rijksregisternummer*:'));
                         echo $this->formText('rijksregister', $rijksregister, array('class'=>'textinput')); ?>
-            </div>   
+            </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('riziv', __('RIZIV-nummer:'));
                         echo $this->formText('riziv', $riziv, array('class'=>'textinput')); ?>
-            </div>   
+            </div>
             <div class="field">
-                <?php 
+                <?php
                 echo $this->formLabel('email', __('E-mail*:'));
                         echo $this->formText('email', $email, array('class'=>'textinput'));  ?>
             </div>
             <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('instelling', __('Instelling*:'));
                         echo $this->formText('instelling', $instelling, array('class'=>'textinput')); ?>
             </div>
              <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('dienst', __('Dienst*:'));
                         echo $this->formText('dienst', $dienst, array('class'=>'textinput')); ?>
             </div>
             <div class="field">
-                    <?php 
+                    <?php
                         echo $this->formLabel('taal', __('Taal*:'));
-                        
+
                         echo $this->formSelect('taal',$taal,array(),
                                             array(
                                                 'NL' => 'NL',
@@ -75,17 +75,28 @@
                                                 'DE' => 'DE',
                                                 'EN' => 'EN'
                                             )
-                                        );?>                       
-                
+                                        );?>
+
             </div>
-           
+            <br>
+            <div class="field">
+              <?php
+                $privacy_message = array(
+                  'nl' => "Ik heb de privacyverklaring gelezen en ga ermee akkoord.",
+                  'fr' => "J’ai lu la politique de confidentialité et je suis d’accord.",
+                  'de' => "Ich habe die Datenschutzerklärung zur Kenntnis genommen und erkläre mich mit dieser einverstanden.",
+                  'en' => "I have read and agree to the privacy policy."
+                  );
+              ?>
+              <input type="checkbox" name="privacy"><?php echo " ".$privacy_message[libis_get_language()]; ?></input>
+            </div>
         </fieldset>
 
         <fieldset>
-		    
+
             <div class="field">
               <?php echo $captcha; ?>
-            </div>		
+            </div>
 
             <div class="field">
               <?php echo $this->formSubmit('send', __('Aanvragen')); ?>
@@ -104,11 +115,11 @@
                     </div>
                 </div>
                 <div class="context">
-                    
+
                     <div class="contextBlock">
                         <div class="section first">
                             <h2 class="heading "><span><?php echo __("Contacteer een partner");?></span></h2>
-                            <?php echo Libis_contact_partners();?>                                                 
+                            <?php echo Libis_contact_partners();?>
                         </div>
 
                     </div>
@@ -120,6 +131,6 @@
             </div>
         </div>
     </div>
-</div>    
-                       
+</div>
+
 <?php echo foot();

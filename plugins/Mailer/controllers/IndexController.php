@@ -11,25 +11,25 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
             $jaar = isset($_POST['jaar']) ? $_POST['jaar'] : '';
             $volume = isset($_POST['volume']) ? $_POST['volume'] : '';
             $nummer = isset($_POST['nummer']) ? $_POST['nummer'] : '';
-            $pagina = isset($_POST['pagina']) ? $_POST['pagina'] : '';            
-            $commentaar = isset($_POST['commentaar']) ? $_POST['commentaar'] : '';   
-            $voornaam = isset($_POST['voornaam']) ? $_POST['voornaam'] : '';   
-            $familienaam = isset($_POST['familienaam']) ? $_POST['familienaam'] : '';   
-            $email = isset($_POST['email']) ? $_POST['email'] : '';  
-            $instelling = isset($_POST['instelling']) ? $_POST['instelling'] : ''; 
-            $dienst = isset($_POST['dienst']) ? $_POST['dienst'] : ''; 
-              
+            $pagina = isset($_POST['pagina']) ? $_POST['pagina'] : '';
+            $commentaar = isset($_POST['commentaar']) ? $_POST['commentaar'] : '';
+            $voornaam = isset($_POST['voornaam']) ? $_POST['voornaam'] : '';
+            $familienaam = isset($_POST['familienaam']) ? $_POST['familienaam'] : '';
+            $email = isset($_POST['email']) ? $_POST['email'] : '';
+            $instelling = isset($_POST['instelling']) ? $_POST['instelling'] : '';
+            $dienst = isset($_POST['dienst']) ? $_POST['dienst'] : '';
+
 	    $captchaObj = $this->_setupCaptcha();
 
 	    if ($this->getRequest()->isPost()) {
     		// If the form submission is valid, then send out the email
-               
+
     		if ($this->_validate_periodicals($captchaObj)) {
-                    
+
                     //
 	            //$this->_redirect->gotoRoute(array(), 'mailer_thankyou');
                     $mailer = new Mailer();
-                    
+
                     $message = __("Tijdschrift:")." ".$titel_tijdschrift."<br>";
                     $message .= __("Uitgever:")." ".$uitgever."<br>";
                     $message .= __("ISSN:")." ".$issn."<br>";
@@ -38,18 +38,18 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
                     $message .= __("Jaar:")." ".$jaar."<br>";
                     $message .= __("Volume:")." ".$volume."<br>";
                     $message .= __("Nummer:")." ".$nummer."<br>";
-                    $message .= __("Pagina:")." ".$pagina."<br>";            
-                    $message .= __("Commentaar:")." ".$commentaar."<br><br>";   
-                    $message .= __("Naam:")." ".$voornaam." ".$familienaam."<br>";   
-                    $message .= __("E-mail:")." ".$email."<br>";  
-                    $message .= __("Instelling:")." ".$instelling."<br>"; 
+                    $message .= __("Pagina:")." ".$pagina."<br>";
+                    $message .= __("Commentaar:")." ".$commentaar."<br><br>";
+                    $message .= __("Naam:")." ".$voornaam." ".$familienaam."<br>";
+                    $message .= __("E-mail:")." ".$email."<br>";
+                    $message .= __("Instelling:")." ".$instelling."<br>";
                     $message .= __("Dienst:")." ".$dienst;
-                       
-                    $this->sendEmailNotification($email,$voornaam.' '.$familienaam, $message);               
-                    
+
+                    $this->sendEmailNotification($email,$voornaam.' '.$familienaam, $message);
+
                     $this->_helper->redirector('thankyou');
     		}
-                
+
 	    }
 
 	    // Render the HTML for the captcha itself.
@@ -64,7 +64,7 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
                         'auteur','jaar','volume', 'nummer','pagina','commentaar','voornaam',
                         'familienaam','email','instelling','dienst','captcha'));
 	}
-        
+
         public function booksAction()
 	{
             $titel_boek = isset($_POST['titel_boek']) ? $_POST['titel_boek'] : '';
@@ -74,25 +74,25 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
             $jaar = isset($_POST['jaar']) ? $_POST['jaar'] : '';
             $editie = isset($_POST['editie']) ? $_POST['editie'] : '';
             $bibliotheek = isset($_POST['bibliotheek']) ? $_POST['bibliotheek'] : '';
-            $plaatsingsnummer = isset($_POST['plaatsingsnummer']) ? $_POST['plaatsingsnummer'] : '';            
-            $commentaar = isset($_POST['commentaar']) ? $_POST['commentaar'] : '';   
-            $voornaam = isset($_POST['voornaam']) ? $_POST['voornaam'] : '';   
-            $familienaam = isset($_POST['familienaam']) ? $_POST['familienaam'] : '';   
-            $email = isset($_POST['email']) ? $_POST['email'] : '';  
-            $instelling = isset($_POST['instelling']) ? $_POST['instelling'] : ''; 
-            $dienst = isset($_POST['dienst']) ? $_POST['dienst'] : ''; 
-              
+            $plaatsingsnummer = isset($_POST['plaatsingsnummer']) ? $_POST['plaatsingsnummer'] : '';
+            $commentaar = isset($_POST['commentaar']) ? $_POST['commentaar'] : '';
+            $voornaam = isset($_POST['voornaam']) ? $_POST['voornaam'] : '';
+            $familienaam = isset($_POST['familienaam']) ? $_POST['familienaam'] : '';
+            $email = isset($_POST['email']) ? $_POST['email'] : '';
+            $instelling = isset($_POST['instelling']) ? $_POST['instelling'] : '';
+            $dienst = isset($_POST['dienst']) ? $_POST['dienst'] : '';
+
 	    $captchaObj = $this->_setupCaptcha();
 
 	    if ($this->getRequest()->isPost()) {
     		// If the form submission is valid, then send out the email
-               
+
     		if ($this->_validate_books($captchaObj)) {
-                    
+
                     //
 	            //$this->_redirect->gotoRoute(array(), 'mailer_thankyou');
                     $mailer = new Mailer();
-                    
+
                     $message = __("Boek:")." ".$titel_boek."<br>";
                     $message .= __("Uitgever:")." ".$uitgever."<br>";
                     $message .= __("ISBN:")." ".$isbn."<br>";
@@ -100,18 +100,18 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
                     $message .= __("Jaar:")." ".$jaar."<br>";
                     $message .= __("Editie:")." ".$editie."<br>";
                     $message .= __("Bibliotheek:")." ".$bibliotheek."<br>";
-                    $message .= __("Plaatsingsnummer:")." ".$plaatsingsnummer."<br>";            
-                    $message .= __("Commentaar:")." ".$commentaar."<br><br>";   
-                    $message .= __("Naam:")." ".$voornaam." ".$familienaam."<br>";   
-                    $message .= __("E-mail:")." ".$email."<br>";  
-                    $message .= __("Instelling:")." ".$instelling."<br>"; 
+                    $message .= __("Plaatsingsnummer:")." ".$plaatsingsnummer."<br>";
+                    $message .= __("Commentaar:")." ".$commentaar."<br><br>";
+                    $message .= __("Naam:")." ".$voornaam." ".$familienaam."<br>";
+                    $message .= __("E-mail:")." ".$email."<br>";
+                    $message .= __("Instelling:")." ".$instelling."<br>";
                     $message .= __("Dienst:")." ".$dienst;
-                       
-                    $this->sendEmailNotification($email,$voornaam.' '.$familienaam, $message);               
-                    
+
+                    $this->sendEmailNotification($email,$voornaam.' '.$familienaam, $message);
+
                     $this->_helper->redirector('thankyou');
     		}
-                
+
 	    }
 
 	    // Render the HTML for the captcha itself.
@@ -126,40 +126,40 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
                         'auteur','jaar','editie', 'bibliotheek','plaatsingsnummer','commentaar','voornaam',
                         'familienaam','email','instelling','dienst','captcha'));
 	}
-        
+
         public function cebamAction()
-	{         
-            $voornaam = isset($_POST['voornaam']) ? $_POST['voornaam'] : '';   
-            $familienaam = isset($_POST['familienaam']) ? $_POST['familienaam'] : '';   
-            $email = isset($_POST['email']) ? $_POST['email'] : '';  
-            $instelling = isset($_POST['instelling']) ? $_POST['instelling'] : ''; 
-            $dienst = isset($_POST['dienst']) ? $_POST['dienst'] : ''; 
-            $taal = isset($_POST['taal']) ? $_POST['taal'] : '';   
-            $rijksregister = isset($_POST['rijksregister']) ? $_POST['rijksregister'] : '';   
-            $riziv = isset($_POST['riziv']) ? $_POST['riziv'] : '';   
+	{
+            $voornaam = isset($_POST['voornaam']) ? $_POST['voornaam'] : '';
+            $familienaam = isset($_POST['familienaam']) ? $_POST['familienaam'] : '';
+            $email = isset($_POST['email']) ? $_POST['email'] : '';
+            $instelling = isset($_POST['instelling']) ? $_POST['instelling'] : '';
+            $dienst = isset($_POST['dienst']) ? $_POST['dienst'] : '';
+            $taal = isset($_POST['taal']) ? $_POST['taal'] : '';
+            $rijksregister = isset($_POST['rijksregister']) ? $_POST['rijksregister'] : '';
+            $riziv = isset($_POST['riziv']) ? $_POST['riziv'] : '';
 	    $captchaObj = $this->_setupCaptcha();
 
 	    if ($this->getRequest()->isPost()) {
     		// If the form submission is valid, then send out the email
-               
-    		if ($this->_validate_cebam($captchaObj)) {                    
+
+    		if ($this->_validate_cebam($captchaObj)) {
                     //
 	            //$this->_redirect->gotoRoute(array(), 'mailer_thankyou');
-                    $mailer = new Mailer();                   
+                    $mailer = new Mailer();
                     $message = "<h2>".__('Aanvraagformulier voor toegangscodes tot CEBAM')."</h2>";
-                    $message .= __("Naam:")." ".$voornaam." ".$familienaam."<br>";  
+                    $message .= __("Naam:")." ".$voornaam." ".$familienaam."<br>";
                     $message .= __("Rijksregisternummer:")." ".$rijksregister."<br>";
                     $message .= __("RIZIV-nummer:")." ".$riziv."<br>";
-                    $message .= __("E-mail:")." ".$email."<br>";  
-                    $message .= __("Instelling:")." ".$instelling."<br>"; 
+                    $message .= __("E-mail:")." ".$email."<br>";
+                    $message .= __("Instelling:")." ".$instelling."<br>";
                     $message .= __("Dienst:")." ".$dienst."<br>";
                     $message .= __("Taal:")." ".$taal."<br>";
-                       
-                    $this->sendEmailNotification($email,$voornaam.' '.$familienaam, $message);               
-                    
+
+                    $this->sendEmailNotification($email,$voornaam.' '.$familienaam, $message);
+
                     $this->_helper->redirector('thankyou');
     		}
-                
+
 	    }
 
 	    // Render the HTML for the captcha itself.
@@ -193,6 +193,8 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
                 $instelling = $this->getRequest()->getPost('instelling');
                 $dienst = $this->getRequest()->getPost('dienst');
                 $email = $this->getRequest()->getPost('email');
+								$privacy = $this->getRequest()->getPost('privacy');
+
                 // ZF ReCaptcha ignores the 1st arg.
                 if ($captcha and !$captcha->isValid('foo', $_POST)) {
                             $this->_helper->flashMessenger(__('Je CAPTCHA submissie is niet geldig.'));
@@ -230,11 +232,25 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
                  } else if (empty($dienst)) {
                             $this->_helper->flashMessenger(__('Je bent je dienst vergeten.'));
                             $valid = false;
-                }
+                }  else if ($privacy != 'Yes') {
+									if(!isset($_SESSION['lang']) || $_SESSION['lang']=='nl'){
+											$lang = "nl";
+									}else{
+											$lang = $_SESSION['lang'];
+									}
+									$privacy_fout = array(
+										'nl' => "Je hebt de privacyverklaring nog niet geaccepteerd.",
+										'fr' => "Vous n'êtes pas d'accord avec la politique de confidentialité.",
+										'de' => "Sie sind mit der Datenschutzerklärung nicht einverstanden",
+										'en' => "You have no agreed with the privacy policy."
+										);
+										$this->_helper->flashMessenger($privacy_fout[$lang]);
+					            $valid = false;
+						    }
 
                 return $valid;
 	}
-        
+
     protected function _validate_books($captcha = null)
     {
             $valid = true;
@@ -246,6 +262,8 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
             $instelling = $this->getRequest()->getPost('instelling');
             $dienst = $this->getRequest()->getPost('dienst');
             $email = $this->getRequest()->getPost('email');
+						$privacy = $this->getRequest()->getPost('privacy');
+
             // ZF ReCaptcha ignores the 1st arg.
             if ($captcha and !$captcha->isValid('foo', $_POST)) {
                         $this->_helper->flashMessenger(__('Je CAPTCHA submissie is niet geldig.'));
@@ -274,11 +292,25 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
             } else if (empty($dienst)) {
                         $this->_helper->flashMessenger(__('Je bent je dienst vergeten.'));
                         $valid = false;
-            }
+            } else if ($privacy != 'Yes') {
+							if(!isset($_SESSION['lang']) || $_SESSION['lang']=='nl'){
+									$lang = "nl";
+							}else{
+									$lang = $_SESSION['lang'];
+							}
+							$privacy_fout = array(
+								'nl' => "Je hebt de privacyverklaring nog niet geaccepteerd.",
+								'fr' => "Vous n'êtes pas d'accord avec la politique de confidentialité.",
+								'de' => "Sie sind mit der Datenschutzerklärung nicht einverstanden",
+								'en' => "You have no agreed with the privacy policy."
+								);
+								$this->_helper->flashMessenger($privacy_fout[$lang]);
+			            $valid = false;
+				    }
 
             return $valid;
     }
-    
+
     protected function _validate_cebam($captcha = null)
     {
             $valid = true;
@@ -288,13 +320,15 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
             $dienst = $this->getRequest()->getPost('dienst');
             $email = $this->getRequest()->getPost('email');
             $rijksregister = $this->getRequest()->getPost('rijksregister');
+						$privacy = $this->getRequest()->getPost('privacy');
+
             // ZF ReCaptcha ignores the 1st arg.
             if ($captcha and !$captcha->isValid('foo', $_POST)) {
                         $this->_helper->flashMessenger(__('Je CAPTCHA submissie is niet geldig.'));
                         $valid = false;
             } else if (!Zend_Validate::is($email, 'EmailAddress')) {
                         $this->_helper->flashMessenger(__('Je emailadres is niet geldig.'));
-                        $valid = false;           
+                        $valid = false;
             } else if (empty($voornaam)) {
                         $this->_helper->flashMessenger(__('Je bent je voornaam vergeten.'));
                         $valid = false;
@@ -310,7 +344,21 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
             } else if (empty($rijksregister)) {
                         $this->_helper->flashMessenger(__('Je bent je rijksregisternummer vergeten.'));
                         $valid = false;
-            }
+            } else if ($privacy != 'Yes') {
+							if(!isset($_SESSION['lang']) || $_SESSION['lang']=='nl'){
+									$lang = "nl";
+							}else{
+									$lang = $_SESSION['lang'];
+							}
+							$privacy_fout = array(
+								'nl' => "Je hebt de privacyverklaring nog niet geaccepteerd.",
+								'fr' => "Vous n'êtes pas d'accord avec la politique de confidentialité.",
+								'de' => "Sie sind mit der Datenschutzerklärung nicht einverstanden",
+								'en' => "You have no agreed with the privacy policy."
+								);
+								$this->_helper->flashMessenger($privacy_fout[$lang]);
+			            $valid = false;
+				    }
 
             return $valid;
     }
@@ -325,12 +373,12 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
 		//setup smtp
 		$tr = new Zend_Mail_Transport_Smtp('smtp.kuleuven.be');
 		Zend_Mail::setDefaultTransport($tr);
-                
+
 
         //notify the admin
         //use the admin email specified in the plugin configuration.
         $forwardToEmail = get_option('mailer_forward_to_email');
-        
+
         if($diff_email){
             //$formEmail = $diff_email;
             $forwardToEmail = $diff_email;

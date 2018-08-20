@@ -130,7 +130,18 @@
                         echo $this->formLabel('dienst', __('Dienst*:'));
                         echo $this->formText('dienst', $dienst, array('class'=>'textinput')); ?>
             </div>
-
+            <br>
+            <div class="field">
+              <?php
+                $privacy_message = array(
+                  'nl' => "Ik heb de privacyverklaring gelezen en ga ermee akkoord.",
+                  'fr' => "J’ai lu la politique de confidentialité et je suis d’accord.",
+                  'de' => "Ich habe die Datenschutzerklärung zur Kenntnis genommen und erkläre mich mit dieser einverstanden.",
+                  'en' => "I have read and agree to the privacy policy."
+                  );
+              ?>
+              <input type="checkbox" name="privacy"><?php echo " ".$privacy_message[libis_get_language()]; ?></input>
+            </div>
         </fieldset>
 
         <fieldset>
