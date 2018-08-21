@@ -232,7 +232,7 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
                  } else if (empty($dienst)) {
                             $this->_helper->flashMessenger(__('Je bent je dienst vergeten.'));
                             $valid = false;
-                }  else if ($privacy != 'Yes') {
+                }  else if (!isset($privacy)) {
 									if(!isset($_SESSION['lang']) || $_SESSION['lang']=='nl'){
 											$lang = "nl";
 									}else{
@@ -292,7 +292,7 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
             } else if (empty($dienst)) {
                         $this->_helper->flashMessenger(__('Je bent je dienst vergeten.'));
                         $valid = false;
-            } else if ($privacy != 'Yes') {
+            } else if (!isset($privacy)) {
 							if(!isset($_SESSION['lang']) || $_SESSION['lang']=='nl'){
 									$lang = "nl";
 							}else{
@@ -344,7 +344,7 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
             } else if (empty($rijksregister)) {
                         $this->_helper->flashMessenger(__('Je bent je rijksregisternummer vergeten.'));
                         $valid = false;
-            } else if ($privacy != 'Yes') {
+            } else if (!isset($privacy)) {
 							if(!isset($_SESSION['lang']) || $_SESSION['lang']=='nl'){
 									$lang = "nl";
 							}else{

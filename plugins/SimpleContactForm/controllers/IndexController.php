@@ -64,7 +64,7 @@ class SimpleContactForm_IndexController extends Omeka_Controller_AbstractActionC
 	    } else if (empty($msg)) {
             $this->_helper->flashMessenger(__('Please enter a message.'));
             $valid = false;
-	    } else if ($privacy != 'Yes') {
+	    } else if (!isset($privacy)) {
 						if(!isset($_SESSION['lang']) || $_SESSION['lang']=='nl'){
 								$lang = "nl";
 						}else{
