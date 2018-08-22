@@ -74,7 +74,7 @@ class SimpleContactForm_IndexController extends Omeka_Controller_AbstractActionC
 							'nl' => "Je hebt de privacyverklaring nog niet geaccepteerd.",
 							'fr' => "Vous n'êtes pas d'accord avec la politique de confidentialité.",
 							'de' => "Sie sind mit der Datenschutzerklärung nicht einverstanden",
-							'en' => "You have no agreed with the privacy policy."
+							'en' => "You have not agreed with the privacy policy."
 							);
 							$this->_helper->flashMessenger($privacy_fout[$lang]);
             $valid = false;
@@ -112,8 +112,8 @@ class SimpleContactForm_IndexController extends Omeka_Controller_AbstractActionC
         $replyToEmail = get_option('simple_contact_form_reply_from_email');
         if (!empty($replyToEmail)) {
             $mail = new Zend_Mail('UTF-8');
-            $mail->setBodyText(get_option('simple_contact_form_user_notification_email_message_header') . "\n\n" . $formMessage);
-            $mail->setFrom($replyToEmail);
+              $mail->setBodyHtml(__('Dank u, wij hebben de volgende aanvraag van u ontvangen:') . "<br><br>" . $formMessage);
+							$mail->setFrom($replyToEmail);
 
             $mail->addTo($formEmail, $formName);
 

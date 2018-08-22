@@ -5,7 +5,7 @@
             <ol>
                 <li class="first"><span class="page"><a href="<?php echo url("");?>">Home</a></span></li> /
                 <li class="last"><span class="page">Contact</span></li>
-            </ol>   
+            </ol>
         </div>
     </div>
 </div>
@@ -16,13 +16,11 @@
             <div class="wrapper clearfix">
                 <div class="wrapperIn">
                     <div class="content">
-                        <h1 class="heading "><span><?php echo html_escape(get_option('simple_contact_form_thankyou_page_title')); // Not HTML ?></span></h1>
-                        <div class="textblock">
-                            <?php echo get_option('simple_contact_form_thankyou_page_message'); // HTML ?>
-                        </div>
-                    
-                    
-                        
+                      <h1 class="heading "><span><?php echo __("Dank U"); // Not HTML ?></span></h1>
+                      <div class="textblock">
+                          <?php echo __("We hebben uw aanvraag goed ontvangen en helpen u zo spoedig mogelijk verder.") // HTML ?>
+                      </div>
+
                     <div class="navAction">
                         <div class="label"><?php echo __("Deze pagina: ")?></div>
                         <ul>
@@ -32,11 +30,11 @@
                     </div>
                 </div>
                 <div class="context">
-                     
+
                     <div class="contextBlock">
                         <div class="section first">
                             <h2 class="heading "><span><?php echo __("Contacteer een partner");?></span></h2>
-                            <?php echo Libis_contact_partners();?>                                                 
+                            <?php echo Libis_contact_partners();?>
                         </div>
 
                     </div>
@@ -48,6 +46,6 @@
             </div>
         </div>
     </div>
-</div>    
-                       
+</div>
+
 <?php echo foot();

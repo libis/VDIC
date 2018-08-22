@@ -242,7 +242,7 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
 										'nl' => "Je hebt de privacyverklaring nog niet geaccepteerd.",
 										'fr' => "Vous n'êtes pas d'accord avec la politique de confidentialité.",
 										'de' => "Sie sind mit der Datenschutzerklärung nicht einverstanden",
-										'en' => "You have no agreed with the privacy policy."
+										'en' => "You have not agreed with the privacy policy."
 										);
 										$this->_helper->flashMessenger($privacy_fout[$lang]);
 					            $valid = false;
@@ -302,7 +302,7 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
 								'nl' => "Je hebt de privacyverklaring nog niet geaccepteerd.",
 								'fr' => "Vous n'êtes pas d'accord avec la politique de confidentialité.",
 								'de' => "Sie sind mit der Datenschutzerklärung nicht einverstanden",
-								'en' => "You have no agreed with the privacy policy."
+								'en' => "You have not agreed with the privacy policy."
 								);
 								$this->_helper->flashMessenger($privacy_fout[$lang]);
 			            $valid = false;
@@ -354,7 +354,7 @@ class Mailer_IndexController extends Omeka_Controller_AbstractActionController
 								'nl' => "Je hebt de privacyverklaring nog niet geaccepteerd.",
 								'fr' => "Vous n'êtes pas d'accord avec la politique de confidentialité.",
 								'de' => "Sie sind mit der Datenschutzerklärung nicht einverstanden",
-								'en' => "You have no agreed with the privacy policy."
+								'en' => "You have not agreed with the privacy policy."
 								);
 								$this->_helper->flashMessenger($privacy_fout[$lang]);
 			            $valid = false;
