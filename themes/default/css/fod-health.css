@@ -141,7 +141,7 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 	width: 55%;
 	overflow:hidden;
 	margin-left: 15em;
-	
+
 }
 .navMain ul li {
 	position: inherit;
@@ -451,7 +451,7 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 }
 .fotolinks li{
     display: inline;
- 
+
 }
 .fotolinks img{
     height: 51px;
@@ -828,11 +828,11 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 }
 .pagination {
     padding-left: 0;
-    float: right;   
+    float: right;
     display: block;
     overflow: auto;
     line-height: 48px;
-    
+
   }
   .pagination li {
     list-style-type: none;
@@ -846,7 +846,7 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
   .pagination input[type=text] {
     width: 2em;
     margin-right: 5px;
-    padding:0 2px;  
+    padding:0 2px;
   }
   .pagination .pagination_next, .pagination .pagination_previous {
     height: 24px;
@@ -930,7 +930,7 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 
   .item-pagination {
     border-top: 1px solid #ccc;
-    
+
     overflow: hidden;
     padding-top: 1.5em;
   }
@@ -940,8 +940,26 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
     float: left;
   }
   .item-pagination li.next {
-   
+
     display: block;
     float: right;
     text-align: right;
   }
+
+	.textblock td{
+	  margin: 0;
+	  padding: 8px 10px;
+	  border: 0;
+	  border: 1px solid #d7e1e3;
+	}
+
+	.textblock th{
+	  font-weight: 700;
+	  margin: 0;
+	  padding: 8px 10px;
+	  color: #b30838;
+	  text-transform: uppercase;
+	  border: 0;
+	  border: 1px solid #d7e1e3;
+	  background: rgba(215, 225, 227, 0.4);
+	}
