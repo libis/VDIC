@@ -3813,7 +3813,7 @@ msgstr ""
 
 #: mailer/index/periodicals.php:129
 msgid ""
-"Het International Serials Standard Number (ISSN) is een uniek "
+"Het International Standard Serial Number (ISSN) is een uniek "
 "identificatienummer voor periodieke\n"
 "        publicaties. Een ISSN bestaat uit twee groepen van vier cijfers, "
 "gescheiden door een liggend streepje."

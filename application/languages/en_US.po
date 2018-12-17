@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vdic-vertaling\n"
 "POT-Creation-Date: 2013-12-12 14:54+0100\n"
-"PO-Revision-Date: 2014-04-17 11:09+0100\n"
+"PO-Revision-Date: 2018-12-17 14:44+0100\n"
 "Last-Translator: \n"
 "Language-Team: English (http://www.transifex.com/projects/p/vdic-vertaling/"
 "language/en/)\n"
@@ -11,8 +11,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
-"X-Poedit-Basepath: /opt/lampp/htdocs/omeka/vdic/themes/default/\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: /opt/lampp/htdocs/omeka/vdic/themes/default\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -700,8 +700,7 @@ msgid "API"
 msgstr ""
 
 #: admin/themes/default/element-sets/browse.php:16
-#: admin/themes/default/users/browse.php:17
-#: application/forms/ItemTypes.php:141
+#: admin/themes/default/users/browse.php:17 application/forms/ItemTypes.php:141
 msgid "Name"
 msgstr ""
 
@@ -791,8 +790,7 @@ msgstr ""
 msgid "File #%s"
 msgstr ""
 
-#: admin/themes/default/files/show.php:37
-#: application/libraries/globals.php:398
+#: admin/themes/default/files/show.php:37 application/libraries/globals.php:398
 msgid "Item"
 msgstr ""
 
@@ -1019,8 +1017,7 @@ msgstr ""
 #: admin/themes/default/items/batch-edit.php:89
 #: admin/themes/default/items/browse.php:90
 #: admin/themes/default/items/edit.php:41
-#: admin/themes/default/items/show.php:57
-#: application/libraries/globals.php:400
+#: admin/themes/default/items/show.php:57 application/libraries/globals.php:400
 #: application/views/scripts/items/show.php:18
 msgid "Collection"
 msgstr ""
@@ -3791,8 +3788,7 @@ msgstr "general"
 msgid "Onderwerp: "
 msgstr "Subject:"
 
-#: simple-contact-form/index/index.php:7
-#: simple-contact-form/index/index.php:19
+#: simple-contact-form/index/index.php:7 simple-contact-form/index/index.php:19
 msgid "Contact"
 msgstr "Contact"
 
@@ -3819,12 +3815,12 @@ msgstr ""
 
 #: mailer/index/periodicals.php:129
 msgid ""
-"Het International Serials Standard Number (ISSN) is een uniek "
+"Het International Standard Serial Number (ISSN) is een uniek "
 "identificatienummer voor periodieke\n"
 "        publicaties. Een ISSN bestaat uit twee groepen van vier cijfers, "
 "gescheiden door een liggend streepje."
 msgstr ""
-"An International Serials Standard Number (ISSN) is a unique number used to "
+"An International Standard Serial Number (ISSN) is a unique number used to "
 "identify a periodical\n"
 "publication. The format of the ISSN is a eight digit number, divided by a "
 "hyphen into two four-digit numbers."

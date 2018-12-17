@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: Omeka\n"
 "Report-Msgid-Bugs-To: omeka-dev@googlegroups.com\n"
 "POT-Creation-Date: 2012-11-26 14:33-0500\n"
-"PO-Revision-Date: 2014-04-17 11:09+0100\n"
+"PO-Revision-Date: 2018-12-17 14:44+0100\n"
 "Last-Translator: \n"
 "Language-Team: French (http://www.transifex.com/projects/p/omeka/language/"
 "fr/)\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 2.2\n"
 
 #. Dublin Core description
 msgid ""
@@ -739,8 +739,7 @@ msgid "API"
 msgstr "API"
 
 #: admin/themes/default/element-sets/browse.php:16
-#: admin/themes/default/users/browse.php:17
-#: application/forms/ItemTypes.php:141
+#: admin/themes/default/users/browse.php:17 application/forms/ItemTypes.php:141
 msgid "Name"
 msgstr "Nom"
 
@@ -843,8 +842,7 @@ msgstr "Modifier le fichier #%s"
 msgid "File #%s"
 msgstr "Fichier #%s"
 
-#: admin/themes/default/files/show.php:37
-#: application/libraries/globals.php:398
+#: admin/themes/default/files/show.php:37 application/libraries/globals.php:398
 msgid "Item"
 msgstr "Contenu"
 
@@ -1071,8 +1069,7 @@ msgstr "Ajouter un contenu"
 #: admin/themes/default/items/batch-edit.php:89
 #: admin/themes/default/items/browse.php:90
 #: admin/themes/default/items/edit.php:41
-#: admin/themes/default/items/show.php:57
-#: application/libraries/globals.php:400
+#: admin/themes/default/items/show.php:57 application/libraries/globals.php:400
 #: application/views/scripts/items/show.php:18
 msgid "Collection"
 msgstr "Collection"
@@ -4025,8 +4022,7 @@ msgstr "général"
 msgid "Onderwerp: "
 msgstr "Sujet:"
 
-#: simple-contact-form/index/index.php:7
-#: simple-contact-form/index/index.php:19
+#: simple-contact-form/index/index.php:7 simple-contact-form/index/index.php:19
 msgid "Contact"
 msgstr "Contact"
 
@@ -4054,15 +4050,14 @@ msgstr ""
 
 #: mailer/index/periodicals.php:129
 msgid ""
-"Het International Serials Standard Number (ISSN) is een uniek "
+"Het International Standard Serial Number (ISSN) is een uniek "
 "identificatienummer voor periodieke\n"
 "        publicaties. Een ISSN bestaat uit twee groepen van vier cijfers, "
 "gescheiden door een liggend streepje."
 msgstr ""
-"L’International Serials Standard Number (ISSN) est un numéro "
-"d’identification unique destiné aux publications en série. L’ISSN est "
-"constitué de deux groupes de quatre chiffres, ces groupes étant séparés par "
-"un tiret."
+"L’International Standard Serial Number (ISSN) est un numéro d’identification "
+"unique destiné aux publications en série. L’ISSN est constitué de deux "
+"groupes de quatre chiffres, ces groupes étant séparés par un tiret."
 
 #: mailer/index/periodicals.php:131
 msgid ""
