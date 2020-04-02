@@ -27,7 +27,7 @@
                                                 <br>1060 Brussel / Bruxelles
                                             </td></tr>
                                         <tr><td><?php echo __("Tel: ");?></td><td>+32 (0)2 524 98 41 (Kristof Eelen)</td></tr>
-                                        <tr><td><?php echo __("E-mail: ");?></td><td><a href="mailto:biblio@health.belgium.be">biblio@health.belgium.be</a></td></tr>
+                                        <tr><td><?php echo __("E-mail: ");?></td><td><a href="mailto:biblio@health.fgov.be">biblio@health.fgov.be</a></td></tr>
                                          <?php
                                             $link_vvvl = array(
                                                 'nl'=>'https://www.google.be/maps/place/FOD+Volksgezondheid,+Veiligheid+van+de+Voedselketen+en+Leefmilieu/@50.8369075,4.332751,16z/data=!4m6!1m3!3m2!1s0x0000000000000000:0xcc8f4ff42d2e65ad!2sFOD+Volksgezondheid,+Veiligheid+van+de+Voedselketen+en+Leefmilieu!3m1!1s0x0000000000000000:0xcc8f4ff42d2e65ad?hl=nl',
