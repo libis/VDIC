@@ -6,7 +6,7 @@
 <div class="breadcrumb">
     <div class="wrapper">
         <div class="breadIndicator"> U bevindt zich hier: </div>
-        <?php echo simple_pages_display_breadcrumbs(null," / ");?>              
+        <?php echo simple_pages_display_breadcrumbs(null," / ");?>
     </div>
 </div>
 </div>
@@ -27,17 +27,16 @@
                             }
                         ?>
                         </div>
-                        
+
                 <div class="navAction">
                     <div class="label"><?php echo __("Deze pagina: ")?></div>
                     <ul>
                         <li class="first"><a href="#" onClick="window.print()" class="page print"><?php echo __("printen")?></a></li>
-                        <li><a class="addthis_button page share" href="http://www.addthis.com/bookmark.php"><?php echo __("delen")?></a></li>
                     </ul>
 		</div>
             </div>
-            <div class="context">              
-                <?php 
+            <div class="context">
+                <?php
                     if(get_current_record('simple_pages_page', false)->parent_id == 0){
                         $parent = get_current_record('simple_pages_page', false)->id;
                     }else{
@@ -52,22 +51,22 @@
                         echo "</div></div>";
                     }
                 ?>
-                <?php 
-                    $slug= get_current_record('simple_pages_page', false)->slug; 
-                   
+                <?php
+                    $slug= get_current_record('simple_pages_page', false)->slug;
+
                     if(strpos($slug,'nl/databases')!==false
-                       || strpos($slug,'fr/databases')!==false      
+                       || strpos($slug,'fr/databases')!==false
                        || strpos($slug,'de/databases')!==false
-                       || strpos($slug,'en/databases')!==false     
+                       || strpos($slug,'en/databases')!==false
                     ){
                         echo "<div class='contextBlock'><div class='section first'>";
                         echo '<h2 class="heading "><span>CEBAM</span></h2>';
                         echo '<a href='.url("request/cebam").'>'.__("Aanvraag CEBAM-login").'</a>';
                         echo "</div></div>";
                     }
-                
+
                 ?>
-                <?php 
+                <?php
                     if(strpos($slug,'manual')==false && strpos($slug,'about')==false){
                 ?>
                     <div class='contextBlock'>
@@ -77,10 +76,10 @@
                                 <li><a href="<?php echo url(libis_get_language_slug()."manual/periodicals")?>"><?php echo __("Wegwijs")." ".__("Tijdschriften");?></a></li>
                                 <li><a href="<?php echo url(libis_get_language_slug()."manual/databases")?>"><?php echo __("Wegwijs")." ".__("Databanken");?></a></li>
                                 <li><a href="<?php echo url(libis_get_language_slug()."manual/books")?>"><?php echo __("Wegwijs")." ".__("Boeken");?></a></li>
-                            </ul>                  
+                            </ul>
                         </div>
-                    </div>                          
-                 <?php } ?>   
+                    </div>
+                 <?php } ?>
 	    </div>
         </div>
         <div class="navigation simple"></div>
@@ -93,7 +92,7 @@
     jQuery('document').ready(function(){
         img = jQuery('.textblock img:first-child');
         img.remove();
-        jQuery('.simple').append(img);        
+        jQuery('.simple').append(img);
     });
 </script>
 <?php echo foot(); ?>

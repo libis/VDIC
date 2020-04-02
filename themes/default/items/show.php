@@ -6,7 +6,7 @@
                 <li class="first"><span class="page"><a href="<?php echo url("");?>">Home</a></span></li> /
                 <li class="last"><span class="page"><a href="<?php echo url("");?>"><?php echo __("Nieuwsarchief");?></a></span></li> /
                 <li class="last"><span class="page"><?php echo metadata('item', array('Dublin Core', 'Title')); ?></li>
-            </ol>   
+            </ol>
         </div>
     </div>
 </div>
@@ -35,13 +35,13 @@
                         </div>
                         <?php endif; ?>
 
-               
+
 
                 <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
 
                 <nav>
                 <ul class="item-pagination">
-                   <center> 
+                   <center>
                        <li id="previous-item" class="previous"><?php echo link_to_previous_item_show(); ?></li>
                        <li id="next-item" class="next"><?php echo link_to_next_item_show(); ?></li>
                    </center>
@@ -50,22 +50,22 @@
 
 
                 </div>
-                        
+
                 <div class="navAction">
                     <div class="label"><?php echo __("Deze pagina: ")?></div>
                     <ul>
                         <li class="first"><a href="#" onClick="window.print()" class="page print"><?php echo __("printen")?></a></li>
-                        <li><li><a class="addthis_button page share" href="http://www.addthis.com/bookmark.php"><?php echo __("delen")?></a></li>
+                      
                     </ul>
 		</div>
             </div>
             <div class="context">
-               
-              
+
+
 	    </div>
         </div>
         <div class="navigation">
-            
+
                 <!-- The following returns all of the files associated with an item. -->
                 <?php if (metadata('item', 'has files')): ?>
                 <div id="itemfiles" class="element">
@@ -76,8 +76,8 @@
                     <div class="element-text"><?php echo files_for_item(); ?></div>
                     <?php endif; ?>
                 </div>
-                <?php endif; ?>         
-            
+                <?php endif; ?>
+
         </div>
     </div>
 </div>

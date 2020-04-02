@@ -5,7 +5,7 @@
             <ol>
                 <li class="first"><span class="page"><a href="<?php echo url("");?>">Home</a></span></li> /
                 <li class="last"><span class="page"><?php echo __('Sitemap');?></span></li>
-            </ol>   
+            </ol>
         </div>
     </div>
 </div>
@@ -19,26 +19,25 @@
                         <h1 class="heading "><span><?php echo __("Sitemap"); ?></span></h1>
                         <div class="textblock">
 
-                            <div id="sitemap">    
+                            <div id="sitemap">
                                 <?php echo xml_sitemap_build_html_sitemap();?>
                             </div>
 
                         </div>
-                        
+
                     <div class="navAction">
                         <div class="label"><?php echo __("Deze pagina: ")?></div>
                         <ul>
                             <li class="first"><a href="#" onClick="window.print()" class="page print"><?php echo __("printen")?></a></li>
-                            <li><a class="addthis_button page share" href="http://www.addthis.com/bookmark.php"><?php echo __("delen")?></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="context">
-                    
+
                     <div class="contextBlock">
                         <div class="section first">
                             <h2 class="heading "><span><?php echo __("Contacteer een partner");?></span></h2>
-                            <?php echo Libis_contact_partners();?>                                                 
+                            <?php echo Libis_contact_partners();?>
                         </div>
 
                     </div>
@@ -50,6 +49,6 @@
             </div>
         </div>
     </div>
-</div>    
-                            
+</div>
+
 <?php echo foot();?>

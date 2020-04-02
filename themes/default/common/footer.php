@@ -15,6 +15,5 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4de3a8704c741536"></script>
 </body>
 </html>

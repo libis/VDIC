@@ -9,9 +9,9 @@ $query = $_GET['query'];
         <div class="wrapper">
             <div class="breadIndicator"> U bevindt zich hier: </div>
             <ol>
-                <li class="first"><span class="page"><a href="/omeka/vdic/">Home</a></span></li> / 
+                <li class="first"><span class="page"><a href="/omeka/vdic/">Home</a></span></li> /
                 <li ><span class="page"><?php echo __('Zoekresultaten')?></span></li>
-            </ol>   
+            </ol>
         </div>
     </div>
 </div>
@@ -26,7 +26,7 @@ $query = $_GET['query'];
                             <?php if ($total_results): ?>
                             <div class="pagination-container">
                                 <?php echo pagination_links(); ?>
-                            </div>    
+                            </div>
                             <?php foreach (loop('search_texts') as $searchText): ?>
                             <?php $record = get_record_by_id($searchText['record_type'], $searchText['record_id']); ?>
                             <?php $searchRecordType = $searchText['record_type']; ?>
@@ -60,12 +60,11 @@ $query = $_GET['query'];
                     <div class="label"><?php echo __("Deze pagina: ")?></div>
                    <ul>
                         <li class="first"><a href="#" onClick="window.print()" class="page print"><?php echo __("printen")?></a></li>
-                        <li><li><a class="addthis_button page share" href="http://www.addthis.com/bookmark.php"><?php echo __("delen")?></a></li>
-                    </ul>
+                        </ul>
 		</div>
             </div>
             <div class="context">
-                
+
                 <div class="contextBlock">
                     <div class="section first">
                         <h2 class="heading "><span><?php echo __("Meer Info");?></span></h2>
@@ -73,13 +72,13 @@ $query = $_GET['query'];
                             <li><a href="<?php echo url(libis_get_language_slug()."manual/periodicals")?>"><?php echo __("Wegwijs")." ".__("Tijdschriften");?></a></li>
                             <li><a href="<?php echo url(libis_get_language_slug()."manual/databases")?>"><?php echo __("Wegwijs")." ".__("Databanken");?></a></li>
                             <li><a href="<?php echo url(libis_get_language_slug()."manual/books")?>"><?php echo __("Wegwijs")." ".__("Boeken");?></a></li>
-                        </ul>                  
+                        </ul>
                     </div>
-									
+
                 </div>
 	    </div>
         </div>
-      
+
 </div>
 </div>
 </div>

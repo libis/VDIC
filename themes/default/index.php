@@ -4,7 +4,7 @@
             <div class="breadIndicator"> U bevindt zich hier: </div>
             <ol>
                 <li class="first"><span class="page">Home</span></li>
-            </ol>   
+            </ol>
         </div>
     </div>
 </div>
@@ -19,17 +19,16 @@
                             <?php echo Libis_get_nieuws(10);?>
                             <div class="archief_link"><a href="<?php echo url("items/browse/?type=nieuws-".libis_get_language());?>"><?php echo __('Nieuwsarchief');?></a></div>
                         </div>
-                        
+
                 <div class="navAction">
                     <div class="label"><?php echo __("Deze pagina: ")?></div>
                    <ul>
                         <li class="first"><a href="#" onClick="window.print()" class="page print"><?php echo __("printen")?></a></li>
-                        <li><li><a class="addthis_button page share" href="http://www.addthis.com/bookmark.php"><?php echo __("delen")?></a></li>
                     </ul>
 		</div>
             </div>
             <div class="context">
-                
+
                 <div class="contextBlock">
                     <div class="section first">
                         <h2 class="heading "><span><?php echo __("Meer Info");?></span></h2>
@@ -37,9 +36,9 @@
                             <li><a href="<?php echo url(libis_get_language_slug()."manual/periodicals")?>"><?php echo __("Wegwijs")." ".__("Tijdschriften");?></a></li>
                             <li><a href="<?php echo url(libis_get_language_slug()."manual/databases")?>"><?php echo __("Wegwijs")." ".__("Databanken");?></a></li>
                             <li><a href="<?php echo url(libis_get_language_slug()."manual/books")?>"><?php echo __("Wegwijs")." ".__("Boeken");?></a></li>
-                        </ul>                  
+                        </ul>
                     </div>
-									
+
                 </div>
 	    </div>
         </div>
@@ -51,7 +50,7 @@
                     </div>
                 </div>
             <div class="subContent">
-                <?php echo Libis_get_nieuws_partners(3); ?>               
+                <?php echo Libis_get_nieuws_partners(3); ?>
             </div>
         </div>
     </div>
