@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Omeka\n"
 "Report-Msgid-Bugs-To: omeka-dev@googlegroups.com\n"
 "POT-Creation-Date: 2012-11-26 14:33-0500\n"
-"PO-Revision-Date: 2018-12-17 14:44+0100\n"
+"PO-Revision-Date: 2020-04-02 13:10+0200\n"
 "Last-Translator: \n"
 "Language-Team: Dutch (Netherlands) (http://www.transifex.com/projects/p/"
 "omeka/language/nl_NL/)\n"
@@ -3954,7 +3954,7 @@ msgstr ""
 
 #: mailer/index/cebam.php:19
 msgid "Aanvraagformulier voor toegangscodes tot CEBAM"
-msgstr "Aanvraagformulier voor toegangscodes tot CEBAM"
+msgstr "Aanvraagformulier voor CEBAM-licentie"
 
 #: mailer/index/cebam.php:59
 msgid "Taal*:"
@@ -3966,7 +3966,7 @@ msgstr "Zoekresultaten"
 
 #: simple-pages/page/show.php:65
 msgid "Aanvraag CEBAM-login"
-msgstr "Aanvraag CEBAM-login"
+msgstr "Aanvraag CEBAM-licentie"
 
 # common/footer.php:8
 msgid "FOD Volksgezondheid, Veilighed van de Voedselketen en Leefmilieu"
