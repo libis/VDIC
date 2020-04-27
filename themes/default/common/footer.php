@@ -25,7 +25,7 @@ jQuery(document).ready(function(){
     link: "<?php echo url(libis_get_language_slug()."about/cookies/");?>",
     moreInfoLabel: "<?php echo __('Ok, ik ga akkoord');?>",
     acceptBtnLabel: "<?php echo __('Ok, ik ga akkoord');?>",
-    advancedBtnLabel: "<?php echo('Nee, geef me meer info');?>"
+    advancedBtnLabel: "<?php echo __('Nee, geef me meer info');?>"
   });
 });
 
