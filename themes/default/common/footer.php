@@ -17,3 +17,16 @@
 </div>
 </body>
 </html>
+<script>
+jQuery(document).ready(function(){
+  jQuery('body').ihavecookies({
+    title: "<?php echo __('Wij gebruiken cookies op deze website om uw gebruikerservaring te verbeteren');?>",
+    message: "<?php echo __('Door op een link op deze pagina te klikken, geeft u ons toestemming om cookies in te stellen.');?>",
+    link: "<?php echo url(libis_get_language_slug()."about/cookies/");?>",
+    moreInfoLabel: "<?php echo __('Ok, ik ga akkoord');?>",
+    acceptBtnLabel: "<?php echo __('Ok, ik ga akkoord');?>",
+    advancedBtnLabel: "<?php echo('Nee, geef me meer info');?>"
+  });
+});
+
+</script>
