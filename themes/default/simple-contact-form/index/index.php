@@ -26,7 +26,10 @@
                                                 <br>Victor Hortaplein/Place Victor Horta 40/10
                                                 <br>1060 Brussel / Bruxelles
                                             </td></tr>
-                                        <tr><td><?php echo __("Tel: ");?></td><td>+32 (0)2 524 98 41 (Kristof Eelen)</td></tr>
+                                        <tr><td>
+                                          <?php echo __("Tel: ");?></td><td>+32 (0)2 524 98 41 (Kristof Eelen)<br />
+                                            +32 (0)2 524 98 27 (Jean Rukara)
+                                        </td></tr>
                                         <tr><td><?php echo __("E-mail: ");?></td><td><a href="mailto:biblio@health.fgov.be">biblio@health.fgov.be</a></td></tr>
                                          <?php
                                             $link_vvvl = array(
