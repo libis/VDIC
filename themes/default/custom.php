@@ -46,7 +46,11 @@ function Libis_get_nieuws_partners($number){
         array('name_nl'=>'FAGG','name_fr'=>'AFMPS','name_de'=>'FAGG-AFMPS','name_en'=>'FADHP','link'=>'/items/browse/?tag=FAGG&type=nieuws-'.$lang),
         array('name_nl'=>'FAVV','name_fr'=>'AFSCA','name_de'=>'FASNK','name_en'=>'FASFC','link'=>'/items/browse/?tag=FAVV&type=nieuws-'.$lang),
         array('name_nl'=>'KCE','name_fr'=>'KCE','name_de'=>'KCE','name_en'=>'KCE','link'=>'/items/browse/?tag=KCE&type=nieuws-'.$lang),
-        array('name_nl'=>'NICC','name_fr'=>'INCC','name_de'=>'NICC-INCC','name_en'=>'NICC','link'=>'/items/browse/?tag=NICC&type=nieuws-'.$lang)
+        array('name_nl'=>'NICC','name_fr'=>'INCC','name_de'=>'NICC-INCC','name_en'=>'NICC','link'=>'/items/browse/?tag=NICC&type=nieuws-'.$lang),
+        array('name_nl'=>'RIZIV','name_fr'=>'INAMI','name_de'=>'LIKIV','name_en'=>'NIHDI','link'=>'/items/browse/?tag=RIZIV&type=nieuws-'.$lang),
+        array('name_nl'=>'AViQ','name_fr'=>'AViQ','name_de'=>'AViQ','name_en'=>'AViQ','link'=>'/items/browse/?tag=AViQ&type=nieuws-'.$lang),
+        array('name_nl'=>'Defensie','name_fr'=>'Défense','name_de'=>'Verteidigung','name_en'=>'Defense','link'=>'/items/browse/?tag=defensie&type=nieuws-'.$lang),
+        array('name_nl'=>'VAZG','name_fr'=>'VAZG','name_de'=>'VAZG','name_en'=>'VAZG','link'=>'/items/browse/?tag=VAZG&type=nieuws-'.$lang)
     );
 
     $html = "<ul>";
