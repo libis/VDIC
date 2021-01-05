@@ -112,7 +112,10 @@
                         array('name_nl'=>'FAVV','name_fr'=>'AFSCA','name_de'=>'FASNK','name_en'=>'FASFC'),
                         array('name_nl'=>'KCE','name_fr'=>'KCE','name_de'=>'KCE','name_en'=>'KCE'),
                         array('name_nl'=>'NICC','name_fr'=>'INCC','name_de'=>'NICC-INCC','name_en'=>'NICC'),
-                        array('name_nl'=>'VAZG','name_fr'=>'VAZG','name_de'=>'VAZG','name_en'=>'VAZG')
+                        array('name_nl'=>'VAZG','name_fr'=>'VAZG','name_de'=>'VAZG','name_en'=>'VAZG'),
+                        array('name_nl'=>'RIZIV','name_fr'=>'INAMI','name_de'=>'LIKIV','name_en'=>'NIHDI'),
+                        array('name_nl'=>'AViQ','name_fr'=>'AViQ','name_de'=>'AViQ','name_en'=>'AViQ'),
+                        array('name_nl'=>'Defensie','name_fr'=>'Défense','name_de'=>'Verteidigung','name_en'=>'Defense')
                     );
                   ?>
 
