@@ -15,14 +15,14 @@
         </div>
     </div>
 </div>
-</body>
-</html>
 <script src="//www.eucookie.eu/public/gdpr-cookie-consent.js" type="text/javascript"></script>
 <script type="text/javascript">
     var cookieConsent = new cookieConsent({
         clientId: '28fa0980-2e6e-4d0d-865c-7f637bd4fc93',
-        language: '<?php libis_get_language_slug()?>', // en, de, sk, cz, or any language code you setup in My Texts
+        language: '<?php echo libis_get_language_slug()?>', // en, de, sk, cz, or any language code you setup in My Texts
         buttonBackground: '#606e2f'
     });
     cookieConsent.run();
 </script>
+</body>
+</html>
