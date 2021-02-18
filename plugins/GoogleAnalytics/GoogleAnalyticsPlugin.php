@@ -2,7 +2,7 @@
 /**
  * GoogleAnalyticsErr Omeka plugin.
  *
- * This plug-in allows you to paste in the JavaScript for Google Analytics and 
+ * This plug-in allows you to paste in the JavaScript for Google Analytics and
  * outputs it on the bottom of every public page.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -56,7 +56,7 @@ class GoogleAnalyticsPlugin extends Omeka_Plugin_AbstractPlugin
         }
 
         $js = file_get_contents(GOOGLE_ANALYTICS_PLUGIN_DIR . '/snippet.js');
-        $html = '<script type="text/javascript">'
+        $html = '<script type="text/plain" data-cookie-if="analytical">'
               . 'var accountId =' . js_escape($accountId) .';'
               . $js
               . '</script>';
