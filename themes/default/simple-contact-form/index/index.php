@@ -23,8 +23,8 @@
 
                                     <table class='bib-info'>
                                         <tr><td><?php echo __("Adres: ");?></td><td>Vesalius Documentation and Information Center (VDIC)
-                                                <br>Victor Hortaplein/Place Victor Horta 40/10
-                                                <br>1060 Brussel / Bruxelles
+                                                <br>Galileelaan/Avenue Galilée 5/2
+                                                <br>1210 Brussel/Bruxelles
                                             </td></tr>
                                         <tr><td>
                                           <?php echo __("Tel: ");?></td><td>+32 (0)2 524 98 41 (Kristof Eelen)<br />
@@ -33,10 +33,10 @@
                                         <tr><td><?php echo __("E-mail: ");?></td><td><a href="mailto:biblio@health.fgov.be">biblio@health.fgov.be</a></td></tr>
                                          <?php
                                             $link_vvvl = array(
-                                                'nl'=>'https://www.google.be/maps/place/FOD+Volksgezondheid,+Veiligheid+van+de+Voedselketen+en+Leefmilieu/@50.8369075,4.332751,16z/data=!4m6!1m3!3m2!1s0x0000000000000000:0xcc8f4ff42d2e65ad!2sFOD+Volksgezondheid,+Veiligheid+van+de+Voedselketen+en+Leefmilieu!3m1!1s0x0000000000000000:0xcc8f4ff42d2e65ad?hl=nl',
-                                                'fr'=>'https://www.google.be/maps/place/SPF+Sant%C3%A9+publique,+s%C3%A9curit%C3%A9+de+la+cha%C3%AEne+alimentaire+et+environnement/@50.8369075,4.332751,16z/data=!4m6!1m3!3m2!1s0x0000000000000000:0xcc8f4ff42d2e65ad!2sSPF+Sant%C3%A9+publique,+s%C3%A9curit%C3%A9+de+la+cha%C3%AEne+alimentaire+et+environnement!3m1!1s0x0000000000000000:0xcc8f4ff42d2e65ad?hl=fr',
-                                                'de'=>'https://www.google.be/maps/place/FOD+Volkgesundheit,+sicherheit+der+nahrungsmittelkette+und+umwelt/@50.8369075,4.332751,16z/data=!4m6!1m3!3m2!1s0x0000000000000000:0xcc8f4ff42d2e65ad!2sFOD+Volkgesundheit,+sicherheit+der+nahrungsmittelkette+und+umwelt!3m1!1s0x0000000000000000:0xcc8f4ff42d2e65ad?hl=de',
-                                                'en'=>'https://www.google.be/maps/place/FPS+Health,+food+chain+safety+an+environment/@50.8369075,4.332751,16z/data=!4m6!1m3!3m2!1s0x0000000000000000:0xcc8f4ff42d2e65ad!2sFPS+Health,+food+chain+safety+an+environment!3m1!1s0x0000000000000000:0xcc8f4ff42d2e65ad?hl=en'
+                                                'nl'=>'https://www.google.be/maps/place/Galileelaan+5,+1210+Sint-Joost-ten-Node/@50.8530746,4.3653084,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c37b8db36225:0x9aaf69858674730!8m2!3d50.8530746!4d4.3674971?hl=nl',
+                                                'fr'=>'https://www.google.be/maps/place/Avenue+Galil%C3%A9e+5,+1210+Saint-Josse-ten-Noode/@50.8530746,4.3653084,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c37b8db36225:0x9aaf69858674730!8m2!3d50.8530746!4d4.3674971?hl=fr',
+                                                'de'=>'https://www.google.be/maps/place/Avenue+Galil%C3%A9e+5,+1210+Saint-Josse-ten-Noode/@50.8530746,4.3653084,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c37b8db36225:0x9aaf69858674730!8m2!3d50.8530746!4d4.3674971?hl=de',
+                                                'en'=>'https://www.google.be/maps/place/Avenue+Galil%C3%A9e+5,+1210+Saint-Josse-ten-Noode/@50.8530746,4.3653084,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c37b8db36225:0x9aaf69858674730!8m2!3d50.8530746!4d4.3674971?hl=en'
                                             );
                                         ?>
                                         <tr><td colspan="2"><a target="_blank" href="<?php echo $link_vvvl[libis_get_language()];?>"><?php echo __("Toegangsplan FOD VVVL");?></a></td></tr>
