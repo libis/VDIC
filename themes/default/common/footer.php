@@ -17,17 +17,11 @@
 </div>
 </body>
 </html>
-<script>
-jQuery(document).ready(function(){
-  jQuery('body').ihavecookies({
-    title: "<?php echo __('Wij gebruiken cookies op deze website om uw gebruikerservaring te verbeteren');?>",
-    message: "<?php echo __('Door op een link op deze pagina te klikken, geeft u ons toestemming om cookies in te stellen.');?>",
-    link: "<?php echo url(libis_get_language_slug()."about/cookies/");?>",
-    moreInfoLabel: "<?php echo __('Ok, ik ga akkoord');?>",
-    acceptBtnLabel: "<?php echo __('Ok, ik ga akkoord');?>",
-    advancedBtnLabel: "<?php echo __('Nee, geef me meer info');?>",
-    expires: 100
-  });
-});
-
+<script src="//www.eucookie.eu/public/gdpr-cookie-consent.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var cookieConsent = new cookieConsent({
+        clientId: '28fa0980-2e6e-4d0d-865c-7f637bd4fc93',
+        language: '<?php libis_get_language_slug()?>', // en, de, sk, cz, or any language code you setup in My Texts
+    });
+    cookieConsent.run();
 </script>
