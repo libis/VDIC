@@ -118,14 +118,7 @@ function Libis_partner_info($partner){
         .$partner."&day=04&month=09&year=2013&language=ENG&output=json";
 
     $vo_http_client = new Zend_Http_Client();
-    if($_SERVER['REMOTE_ADDR']!="127.0.0.1"){
-        $config = array(
-                        'adapter'    => 'Zend_Http_Client_Adapter_Proxy',
-                        'proxy_host' => 'icts-http-gw.cc.kuleuven.be',
-                        'proxy_port' => 8080
-        );
-        $vo_http_client->setConfig($config);
-    }
+    
     $vo_http_client->setUri($link);
 
     $vo_http_response = $vo_http_client->request();
