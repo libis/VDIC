@@ -9,6 +9,15 @@
                     <li><a href="<?php echo url(libis_get_language_slug()."about/regulations")?>" class="page"><?php echo __("Juridische informatie")?></a></li>
                     <li class="last active"><a href="<?php echo url(libis_get_language_slug()."about/privacy")?>" class="page"><?php echo __('Privacy');?></a></li>
                     <li class="last active"><a href="<?php echo url(libis_get_language_slug()."about/cookies")?>" class="page"><?php echo __('Cookies');?></a></li>
+                    <?php 
+                        $access= array(
+                           'nl/' => 'Toegangelijkheid',
+                           'en/' => 'Accessibility',
+                           'fr/' => 'Accessibilité',
+                           'de/' => 'Zugänglichkeit',
+                        );
+                    ?>
+                    <li class="last active"><a href="<?php echo url(libis_get_language_slug()."about/accessibility")?>" class="page"><?php echo $access[libis_get_language_slug()];?></a></li>
                 </ul>
             </div>
             <?php fire_plugin_hook('public_footer'); ?>
