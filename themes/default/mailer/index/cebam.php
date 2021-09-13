@@ -88,7 +88,7 @@
                   'en' => "I have read and agree to the <a target='_blank' href='".url("en/about/privacy")."'>privacy policy</a>."
                   );
               ?>
-              <input type="checkbox" name="privacy"><?php echo " ".$privacy_message[libis_get_language()]; ?></input>
+              <input aria-label="privacy" type="checkbox" name="privacy"><?php echo " ".$privacy_message[libis_get_language()]; ?></input>
             </div>
         </fieldset>
 
@@ -125,7 +125,7 @@
                 </div>
              </div>
                 <div class="navigation simple">
-                    <img src="<?php echo img("vesalius_contact.jpg");?>">
+                    <img alt="image contact" src="<?php echo img("vesalius_contact.jpg");?>">
                 </div>
             </div>
         </div>

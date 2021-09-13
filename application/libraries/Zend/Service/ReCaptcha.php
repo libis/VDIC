@@ -470,6 +470,12 @@ HTML;
         /* Fetch an instance of the http client */
         $httpClient = self::getHttpClient();
         $httpClient->resetParameters(true);
+		
+		$httpClient->setOptions(array(
+          'timeout' => '30',
+          'adapter' => 'Zend_Http_Client_Adapter_Curl',
+          'curloptions' => array(CURLOPT_SSL_VERIFYPEER => false, CURLOPT_SSL_VERIFYHOST => false)
+        ));
 
         $postParams = array('privatekey' => $this->_privateKey,
                             'remoteip'   => $this->_ip,
@@ -477,9 +483,12 @@ HTML;
                             'response'   => $responseField);
 
         /* Make the POST and return the response */
-        return $httpClient->setUri(self::VERIFY_SERVER)
-                          ->setParameterPost($postParams)
-                          ->request(Zend_Http_Client::POST);
+        //return $httpClient->setUri(self::VERIFY_SERVER)
+        //                  ->setParameterPost($postParams)
+        //                  ->request(Zend_Http_Client::POST);
+
+       return file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$this->_privateKey."&response=".$responseField."&remoteip=".$this->_ip);
+    
     }
 
     /**

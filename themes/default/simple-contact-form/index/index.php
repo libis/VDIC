@@ -47,7 +47,7 @@
                                 <?php echo flash(); ?>
                                 <form name="contact_form" id="contact-form"  method="post" enctype="multipart/form-data" accept-charset="utf-8">
 
-                                <fieldset>
+                             
                                     <div class="field">
                                     <?php
                                         echo $this->formLabel('name', __('Naam: '));
@@ -94,11 +94,9 @@
                                           'en' => "I have read and agree to the <a target='_blank' href='".url("en/about/privacy")."'>privacy policy</a>."
                                           );
                                       ?>
-                                      <input type="checkbox" name="privacy"><?php echo " ".$privacy_message[libis_get_language()]; ?></input>
+                                      <input type="checkbox" aria-label="privacy" name="privacy"><?php echo " ".$privacy_message[libis_get_language()]; ?></input>
                                     </div>
-                                </fieldset>
-
-                                <fieldset>
+                                
                                     <?php if ($captcha): ?>
                                     <div class="field">
                                         <?php echo $captcha; ?>
@@ -108,8 +106,6 @@
                                         <div class="field">
                                           <?php echo $this->formSubmit('send', __('Verstuur')); ?>
                                         </div>
-
-                                </fieldset>
                                 </form>
                             </div>
 
@@ -151,7 +147,7 @@
                 </div>
              </div>
                 <div class="navigation simple">
-                    <img src="<?php echo img("vesalius_contact.jpg");?>">
+                    <img alt="contact image" src="<?php echo img("vesalius_contact.jpg");?>">
                 </div>
             </div>
         </div>

@@ -111,7 +111,7 @@
                     ?>
                     <a href="http://www.health.belgium.be/<?php echo libis_get_language();?>" title="Federale Overheidsdienst Volksgezondheid, Veiligheid van de Voedselketen en Leefmilieu - Home pagina" target='_blank'>
 
-                        <img title="<?php echo $titel_logo[libis_get_language()];?>" src="<?php echo img('logo.gif'); ?>" /></a>
+                        <img alt="logo vdic" title="<?php echo $titel_logo[libis_get_language()];?>" src="<?php echo img('logo.gif'); ?>" /></a>
                 </div>
             <div class="siteTag" >
                 <img alt="Banner VDIC" src="<?php echo img('vdic_logo.gif'); ?>" />
@@ -130,8 +130,12 @@
                 </div>
             </div>
 
-            <?php echo search_form(array('submit_value'=>__("Zoek"),'form_attributes'=>array('id'=>'search-form')));?>
-
+            <?php //echo search_form(array('submit_value'=>__("Zoek"),'form_attributes'=>array('id'=>'search-form')));?>
+            <form id="search-form" name="search-form" action="/search" method="get" > 
+               <input type="text" name="query" id="query" value="" aria-label="search website">   
+                    <input type="submit" name="" value="Zoek">
+            </form>            
+            
             <div class="navMain">
                 <ul>
                     <li class="first">

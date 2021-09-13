@@ -20,7 +20,7 @@ function Libis_get_nieuws($number){
                 }
                 if(metadata('Item',array('Dublin Core','Description'))){
                     $html .= metadata('Item',array('Dublin Core','Description'),array('snippet'=>'200'));
-                    $html .= " [<a href=''>".link_to_item(__("lees meer"))."</a>]";
+                    $html .= " [".link_to_item(__("lees meer"))."]";
                 }
                 $html .="</div>";
             endforeach;
@@ -55,7 +55,7 @@ function Libis_get_nieuws_partners($number){
 
     $html = "<ul>";
     foreach($partners as $partner){
-        $html .= "<li><a class='page active' href='".url($partner['link'])."'>".$partner['name_'.$lang]."</a>";
+        $html .= "<li><a title='partner info' class='page active' href='".url($partner['link'])."'>".$partner['name_'.$lang]."</a>";
 
        if($lang == 'nl') {
             $type = '8';
@@ -107,7 +107,7 @@ function Libis_contact_partners(){
     );
     $html = "<ul>";
     foreach($partners as $partner){
-        $html .= "<li><a class='page active' href='".$partner['link']."'>".$partner['name_'.$lang]."</a></li>";
+        $html .= "<li><a title='partner info' class='page active' href='".$partner['link']."'>".$partner['name_'.$lang]."</a></li>";
     }
     $html .="</ul>";
     return $html;
@@ -148,13 +148,13 @@ function Libis_partner_info($partner){
 
 function Libis_language_widget(){
     if(!$_SESSION['lang'] || $_SESSION['lang']=='nl'){
-        $html = "<li><a href='".url("/?lang=en")."'>EN</a></li>";
+        $html = "<li><a title='English' href='".url("/?lang=en")."'>EN</a></li>";
         $html .= "<li>NL</li>";
         return $html;
     }
      if($_SESSION['lang']=='en'){
         $html = "EN";
-        $html .= " | <a href='".uri("/?lang=nl")."'>NL</a><br>";
+        $html .= " | <a title='Nederlands' href='".uri("/?lang=nl")."'>NL</a><br>";
         return $html;
     }
     ?>

@@ -25,8 +25,8 @@ li {list-style:none;}
 /* 01. page frame                                                             */
 
 /* site frame ............................................................... */
-#allContainer {width:73.85em;margin:0 auto;background:#fff url("img/body-right.gif") right top repeat-y;color:#000;overflow:hidden;padding-right:20px;}
-#allContainer .allWrap1 {background:url("img/body-left.gif") left top repeat-y;padding-left:10px;margin-right:-10px;overflow:hidden;}
+#allContainer {width:73.85em;margin:0 auto;background:#fff;color:#000;overflow:hidden;padding-right:20px;}
+#allContainer .allWrap1 {padding-left:10px;margin-right:-10px;overflow:hidden;}
 
 #header {margin:0em 1em;position:relative;}
 #content {margin:1em;}
@@ -137,7 +137,7 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 
 /* main navigation .......................................................... */
 .navMain {
-	background: #606e2f url(img/mainnav-bg.gif);
+	
 	width: 55%;
 	overflow:hidden;
 	margin-left: 15em;
@@ -150,26 +150,27 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 	margin: auto;
 	text-align: center;
 }
-.navMain ul li .page {display:block;color:#fff;text-decoration:none;font-weight:700;text-align:center;font-size:90%;}
-.navMain ul li .page .navWrap {display:block;background:url("img/mainnav-sep-right.gif") right top no-repeat;}
-.navMain ul li .page .navWrap2 {display:block;background:url("img/mainnav-sep-left.gif") left top no-repeat;padding:0.75em 8px;}
-.navMain ul li .active, .navMain ul li a:hover {background:#903 url("img/mainnav-bg-active.gif") top left repeat-x;}
-.navMain ul li .active .navWrap, .navMain ul li a:hover .navWrap {background-image:url("img/mainnav-sep-right-active.gif");}
-.navMain ul li .active .navWrap2, .navMain ul li a:hover .navWrap2 {background-image:url("img/mainnav-sep-left-active.gif");}
-.navMain ul li.first .page .navWrap2 {background:url("img/mainnav-lt.gif") left top no-repeat;}
-.navMain ul li.first .active .navWrap2, .navMain ul li.first a:hover .navWrap2 {background-image:url("img/mainnav-lt-active.gif");}
+.navMain ul li .page {background: #606e2f;border-right: 1px white dotted;border-radius:10px 10px 0 0px;display:block;color:#fff;text-decoration:none;font-weight:700;text-align:center;font-size:90%;}
+.navMain ul li.last .page{border-right:none;}
+.navMain ul li .page .navWrap {display:block;}
+.navMain ul li .page .navWrap2 {display:block;padding:0.75em 8px;}
+.navMain ul li .active, .navMain ul li a:hover {background:#903;}
+.navMain ul li .active .navWrap, .navMain ul li a:hover .navWrap {}
+.navMain ul li .active .navWrap2, .navMain ul li a:hover .navWrap2 {}
+.navMain ul li.first .page .navWrap2 {}
+.navMain ul li.first .active .navWrap2, .navMain ul li.first a:hover .navWrap2 {}
 .navMain ul li.last {padding-right:0;width:auto;margin-left:75%;float:none;}
-.navMain ul li.last .navWrap {background:url("img/mainnav-rt.gif") right top no-repeat;}
-.navMain ul li.last .active .navWrap, .navMain ul li.last a:hover .navWrap {background-image:url("img/mainnav-rt-active.gif");}
+.navMain ul li.last .navWrap {}
+.navMain ul li.last .active .navWrap, .navMain ul li.last a:hover .navWrap {}
 /* Themed */
 #themed .navMain {display:none;}
 
 /* secondary navigation ..................................................... */
 .navSecond {float:right;margin:0.5em 0em;margin-right:1em;}
 .navSecond ul {overflow:hidden;}
-.navSecond ul li {float:left;background:url("img/second-sep.gif") right center repeat-y;padding-right:1px;}
+.navSecond ul li {float:left;border-right:1px dotted #606e2f;padding-right:1px;}
    .navSecond .navigation li{display:none;}
-.navSecond ul li:last-child {float:left;background:none;padding-right:0px;}
+.navSecond ul li:last-child {float:left;background:none;padding-right:0px;border:none;}
 .navSecond ul li .page {color:#485223;text-decoration:none;margin:0em 0.5em;font-weight:700;}
 .navSecond ul li a.page:hover {color:#903;}
 .navSecond ul li a {color:#485223;text-decoration:none;margin:0em 0.5em;font-weight:700;}
@@ -185,7 +186,6 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 #footer .navSecond {float:none;background:#eff0ea;padding:0.5em;margin-right:3em;}
 #footer .navSecond .page {font-weight:300;}
 #footer .navSecond span.page {color:#000;font-weight:300;}
-#footer .navSecond span.page .copyright {}
 /* on splash */
 #splash #footer .navSecond {padding:0;background:none;margin-right:0;}
 #splash #footer .navSecond li {padding:0em 0.5em;}
@@ -197,8 +197,8 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 .content .navSecond {float:none;text-align:right;margin:0.5em 1em;}
 
 /* breadcrumb ............................................................... */
-.breadcrumb { font-size: 80%; background:#f7f8f4 url(img/bread-lb.gif) no-repeat left bottom; }
-.breadcrumb .wrapper {background:transparent url("img/bread-rb.gif") right bottom no-repeat;overflow:hidden;padding-right:23.5em;}
+.breadcrumb { font-size: 80%; background:#f7f8f4; }
+.breadcrumb .wrapper {overflow:hidden;padding-right:23.5em;}
 .breadcrumb .breadIndicator {position: absolute;left: 0; top: -10000px; overflow: hidden;}
 .breadcrumb ol {line-height:1.75em;}
 .breadcrumb ol li {display:inline;}
@@ -220,25 +220,26 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 #home .breadcrumb {height:2.5em;}
 
 /* sub navigation ........................................................... */
-.navSub {background:#e7e9e0 url("img/subnav-rb.gif") right bottom no-repeat;}
-.navSub .subHead {background:#616F30 url("img/subnav-head-bg.gif") left top repeat-x;color:#fff;}
+.navSub .subHead {background:#616F30;color:#fff;border-radius: 0 10px 0 0;}
 .navSub .subHead .subHeadWrap {background: url("img/topic-kid.gif") 5px 5px no-repeat;padding-left:55px;min-height:50px;overflow:hidden;}
-.navSub .subHead .back {color:#fff;display:block;padding:0.5em;padding-left:0;padding-bottom:0.25em;background:url("img/subnav-rt.gif") right top no-repeat;}
+.navSub .subHead .back {color:#fff;display:block;padding:0.5em;padding-left:0;padding-bottom:0.25em;}
 .navSub .subHead .heading a {text-decoration:none;color:#fff;display:block;margin:-2em 0 -0.5em -55px;padding:2em 0 0.5em 55px;position:relative;}
+
 .navSub .subHead .heading span {font-size:108%;color:#fff;}
-.navSub .subContent {border-left:1px solid #d9d9cc;overflow:hidden;}
+.navSub .subContent {border-left:1px solid #d9d9cc;overflow:hidden;background:#e7e9e0;}
 .navSub .subContent ul {margin:0.5em;}
 .navSub .subContent ul li {margin:0.25em 0em;}
 .navSub .subContent ul li .page {font-weight:700;text-decoration:none;display:block;}
 .navSub .subContent ul li .page.active {color:#903;}
-.navSub .subContent ul li ul li .page {font-weight:400;background:url("img/bullet.gif") left 0.5em no-repeat;padding-left:15px;}
+.navSub .subContent ul li ul li .page {color:#003366;font-weight:500;background:#e7e9e0;padding-left:10px;position:relative;}
+
+.navSub .subContent ul li ul li .page::before{content:" ";background:url("img/bullet.gif") left 0.5em no-repeat;height: 100%;position: absolute;left: -5px;top: -1px;width:15px;}
 
 /* simple pages */
 .simple img{display:block;margin:0 auto;}
 .section .navigation{float:none !important;margin:0 !important;}
 
 /* topic */
-#topic .navSub .subHead .subHeadWrap {xbackground-image:url("img/subnav-topic.gif");}
 
 #topic .navSub .dierenEnPlanten .subHeadWrap {background-image:url("img/illustratie-dierenEnPlanten-white.gif");}
 #topic .navSub .milieu .subHeadWrap {background-image:url("img/illustratie-milieu-white.gif");}
@@ -283,7 +284,7 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 .navAction ul li a {margin:0em 0.5em;}
 .navAction ul li.last a {margin-right:0;}
 /* in grid three */
-.gridThree .content .navAction, .gridTwoLeft .content .navAction, .gridOne .navAction {position:absolute;right:1em;top:0;}
+.gridThree .content .navAction, .gridTwoLeft .content .navAction, .gridOne .navAction {background:#fff;position:absolute;right:1em;top:0;}
 /*js sitemap */
 .navAction ul li .disabled {color:#ccc;text-decoration:none;}
 
@@ -377,7 +378,12 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 .textblock .heading {color:#0e2951;margin:0.5em 0em;}
 .textblock p {line-height:1.45em;margin:1em 0em;}
 .textblock ul {margin:1em 0em;}
-.textblock ul li {margin:0.5em 0em;padding-left:12px;background:url("img/bullet.gif") left 0.5em no-repeat;line-height:1.45em;}
+.textblock ul li {position:relative;margin:0.5em 0em;padding-left:12px;line-height:1.45em;}
+
+.textblock ul li::before{content:" ";background:url("img/bullet.gif") left 0.5em no-repeat;height: 100%;position: absolute;left: 0;top: -1px;width:15px;}
+
+.item-pagination li::before{background:none !important;}
+
 /* intro */
 .textblock.intro {font-weight:700;}
 /* in grid three */
@@ -618,7 +624,10 @@ a.ppt {background-image:url("img/icon_document-ppt.gif");}
 .contextBlock .section.first {background:none;margin-top:0;}
 .contextBlock .section .heading {margin:0.5em 0em;}
 .contextBlock .section .heading span {color:#000;font-size:116%;}
-.contextBlock .section ul li {padding-left:15px;background:url("img/bullet.gif") left 0.45em no-repeat;margin-bottom:0.25em;}
+
+.contextBlock .section ul li {position:relative;padding-left:15px;margin-bottom:0.25em;}
+.contextBlock .section ul li::before{content:" ";background:url("img/bullet.gif") left 0.5em no-repeat;height: 100%;position: absolute;left: 0px;top: -1px;width:15px;}
+
 .contextBlock .section ul li a {text-decoration:none;}
 
 /* feedback ................................................................. */

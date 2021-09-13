@@ -42,7 +42,7 @@
                 </div>
              </div>
                 <div class="navigation simple">
-                    <img src="<?php echo img("vesalius_contact.jpg");?>">
+                    <img alt="image contact" src="<?php echo img("vesalius_contact.jpg");?>">
                 </div>
             </div>
         </div>

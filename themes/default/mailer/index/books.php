@@ -26,7 +26,6 @@
 	<?php echo flash(); ?>
 	<form name="contact_form" id="contact-form"  method="post" accept-charset="utf-8">
 
-        <fieldset>
             <h4><?php echo __('Welk boek?');?></h4>
             <div class="field">
                     <?php
@@ -112,7 +111,7 @@
                 );
               ?>
 
-              <select name="instelling">
+              <select aria-label="instelling" name="instelling">
                 <?php
                   foreach($instellingen as $instelling):
                     echo "<option value='".$instelling['name_'.$lang]."'>".$instelling['name_'.$lang]."</option>";
@@ -134,12 +133,8 @@
                   'en' => "I have read and agree to the <a target='_blank' href='".url("en/about/privacy")."'>privacy policy</a>."
                   );
               ?>
-              <input type="checkbox" name="privacy"><?php echo " ".$privacy_message[libis_get_language()]; ?></input>
+              <input aria-label="privacy" type="checkbox" name="privacy"><?php echo " ".$privacy_message[libis_get_language()]; ?></input>
             </div>
-
-        </fieldset>
-
-        <fieldset>
 
             <div class="field">
               <?php echo $captcha; ?>
@@ -148,8 +143,6 @@
             <div class="field">
               <?php echo $this->formSubmit('send', __('Aanvragen')); ?>
             </div>
-
-        </fieldset>
 	</form>
     <p><b>(?)</b>
         <?php
@@ -177,7 +170,7 @@
                 </div>
              </div>
                 <div class="navigation simple">
-                    <img src="<?php echo img("vesalius_contact.jpg");?>">
+                    <img alt="image contact" src="<?php echo img("vesalius_contact.jpg");?>">
                 </div>
             </div>
         </div>
